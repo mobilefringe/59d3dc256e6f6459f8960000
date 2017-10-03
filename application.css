@@ -31,7 +31,7 @@ h3 {
 .footer_nav {
     .footer_nav_title {
         text-align: center;
-        :after {
+        &:after {
             width: 32px;
             height: 2px;
             background-color: $primary;
