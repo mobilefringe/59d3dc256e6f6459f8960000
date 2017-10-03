@@ -4,6 +4,9 @@ For more information on asset types please see http://www.getcodecloud.com/docs#
 */
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
+/* COLOUR VARIABLES */
+$primary: #009688;
+
 body{
     color:#777;
     font-family:'Open Sans';
@@ -28,6 +31,11 @@ h3 {
 .footer_nav {
     .footer_nav_title {
         text-align: center;
+        :after {
+            width: 32px;
+            height: 2px;
+            background-color: $primary;
+        }
     }
     .footer_menu {
         margin: 0;
