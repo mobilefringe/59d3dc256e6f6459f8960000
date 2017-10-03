@@ -142,6 +142,26 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
+                        <p class="">Monday – Friday</p>
+                        <div id="hours_mf_container">
+                            <script id="hours_mf_template" type="x-tmpl-mustache/text">
+                                <p class="">{{h}}</p>
+                            </script>
+                        </div>
+                        
+                        <p class="new_store_name no_margin">Saturday</p>
+                        <div id="hours_sat_container">
+                            <script id="hours_sat_template" type="x-tmpl-mustache/text">
+                                <p class="description no_margin">{{h}}</p>
+                            </script>
+                        </div>
+                        
+                        <p class="new_store_name no_margin">Sunday</p>
+                        <div id="hours_sun_container">
+                            <script id="hours_sun_template" type="x-tmpl-mustache/text">
+                                <p class="description no_margin">{{h}}</p>
+                            </script>
+                        </div>
                         <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
                     </div>
                     <div class="col-md-4">
