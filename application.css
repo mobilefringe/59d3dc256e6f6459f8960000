@@ -54,6 +54,9 @@ h3 {
         }
     }
 }
+.footer {
+    background: #d5d4d4;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
