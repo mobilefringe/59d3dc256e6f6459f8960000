@@ -97,32 +97,34 @@
                             </a>
                         </div>
                         <div class="col-md-10">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li>
-                                    <a href="">Stores</a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                    </ul>    
-                                </li>
-                                <li>
-                                    <a href="">Promos & Events</a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>    
-                                </li>
-                                <li>
-                                    <a href="">Information</a>
-                                    <ul>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                        <li><a href=""></a></li>
-                                    </ul>        
-                                </li>
-                                <li><a href="">News</a></li>
-                                <li><a href="">Mall Hours</a></li>
-                            </ul>
+                            <nav id="primary_nav">
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li>
+                                        <a href="">Stores</a>
+                                        <ul>
+                                            <li><a href=""></a></li>
+                                        </ul>    
+                                    </li>
+                                    <li>
+                                        <a href="">Promos & Events</a>
+                                        <ul>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>    
+                                    </li>
+                                    <li>
+                                        <a href="">Information</a>
+                                        <ul>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>        
+                                    </li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Mall Hours</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
