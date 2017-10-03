@@ -142,6 +142,7 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
+                        <h5 class="caps"><a href="/hours">View Full Hours</a></h5>
                     </div>
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Menu</h3>
