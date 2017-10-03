@@ -55,6 +55,7 @@ h3 {
     }
 }
 .footer {
+    height: 28px;
     background: #d5d4d4;
 }
 /* Small devices (tablets, 768px and up) */
