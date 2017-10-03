@@ -57,6 +57,10 @@ h3 {
 .footer {
     height: 28px;
     background: #d5d4d4;
+    p {
+        margin: 0;
+        padding: 6px 0;
+    }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
