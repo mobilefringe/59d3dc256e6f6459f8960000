@@ -33,6 +33,7 @@ h3 {
     background: rgba(255, 255, 255, 0.7);
 }
 .social_container {
+    padding-top: 7px;
     .fa {
         padding-left: 32px;
         font-size: 19px;
