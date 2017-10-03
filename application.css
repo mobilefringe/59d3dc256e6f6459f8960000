@@ -31,11 +31,11 @@ h3 {
 .footer_nav {
     .footer_nav_title {
         text-align: center;
-        &:after {
-            width: 32px;
-            height: 2px;
-            background-color: $primary;
-        }
+    }
+    .footer_nav_title:after {
+        width: 32px;
+        height: 2px;
+        background-color: $primary;
     }
     .footer_menu {
         margin: 0;
