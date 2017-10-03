@@ -78,9 +78,10 @@
         <div class="footer_nav">
             <div class="row">
                 <div class="col-md-4">
-                    
+                    <h3 class="footer_nav_title caps">Mall Hours</h3>
                 </div>
                 <div class="col-md-4">
+                    <h3 class="footer_nav_title caps">Menu</h3>
                     <ul>
                         <li><a href="">Map</a></li>
                         <li><a href="">Promos & Events</a></li>
@@ -92,6 +93,7 @@
                     </ul>    
                 </div>
                 <div class="col-md-4">
+                    <h3 class="footer_nav_title caps">Instagram</h3>
                     <!-- Instagram Feed -->
                 </div>
             </div>
