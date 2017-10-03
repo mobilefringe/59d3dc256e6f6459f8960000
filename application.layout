@@ -75,7 +75,13 @@
         {{yield}}
     </section>
     <footer>
-        <!--Footer Content-->
+        <div class="">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© 2017 10 Dundas. All rights reserved. <a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="" target="_blank">Mall Maverick</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
