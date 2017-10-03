@@ -30,12 +30,10 @@ h3 {
         text-align: center;
     }
     .footer_menu {
-        ul {
-            margin: 0;
-            li{
-                list-style-type: none;
-                text-align: center;
-            }
+        margin: 0;
+        li{
+            list-style-type: none;
+            text-align: center;
         }
     }
 }
