@@ -29,6 +29,15 @@ h3 {
     .footer_nav_title {
         text-align: center;
     }
+    .footer_menu {
+        ul {
+            margin: 0;
+            li{
+                list-style-type: none;
+                text-align: center;
+            }
+        }
+    }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
