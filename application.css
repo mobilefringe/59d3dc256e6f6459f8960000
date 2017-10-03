@@ -6,6 +6,7 @@ For more information on asset types please see http://www.getcodecloud.com/docs#
 
 /* COLOUR VARIABLES */
 $primary: #009688;
+$accent: #6b6c70
 
 body{
     color:#777;
@@ -29,15 +30,18 @@ h3 {
 }
 /* *** HEADER *** */
 .header {
-    border-top: 3px solid #009688;
+    border-top: 3px solid $primary;
     background: rgba(255, 255, 255, 0.7);
+}
+.social_header {
+    border-bottom: 1px solid $accent;
 }
 .social_container {
     padding-top: 7px;
     .fa {
         padding-left: 32px;
         font-size: 19px;
-        color: #6b6c70;
+        color: $accent;
     }
 }
 /* *** FOOTER *** */
