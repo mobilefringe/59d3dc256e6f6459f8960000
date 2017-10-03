@@ -34,7 +34,8 @@ h3 {
 }
 .social_container {
     .fa {
-        font-size: 16px;
+        padding-left: 32px;
+        font-size: 19px;
         color: #6b6c70;
     }
 }
