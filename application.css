@@ -30,6 +30,7 @@ h3 {
 /* *** FOOTER *** */
 .footer_nav {
     .footer_nav_title {
+        position: relative;
         text-align: center;
     }
     .footer_nav_title:after {
