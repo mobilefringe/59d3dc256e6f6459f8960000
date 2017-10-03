@@ -32,6 +32,12 @@ h3 {
     border-top: 3px solid #009688;
     background: rgba(255, 255, 255, 0.7);
 }
+.social_container {
+    .fa {
+        font-size: 16px;
+        color: #6b6c70;
+    }
+}
 /* *** FOOTER *** */
 .footer_nav {
     padding: 32px 0 36px 0;
