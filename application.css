@@ -37,13 +37,13 @@ h3 {
         width: 32px;
         height: 2px;
         position: absolute;
-    left: 50%;
-    bottom: -10px;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
-    transition: opacity 0.2s ease-in;
-    transition-delay: 0.45s;
+        left: 50%;
+        bottom: -10px;
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        transition: opacity 0.2s ease-in;
+        transition-delay: 0.45s;
         background-color: $primary;
     }
     .footer_menu {
