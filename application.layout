@@ -76,7 +76,7 @@
     </section>
     <footer>
         <div class="footer_nav">
-            <div class="cotent_container">
+            <div class="content_container">
                 <div class="row">
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
@@ -101,7 +101,7 @@
             </div>
         </div>
         <div class="">
-            <div class="cotent_container">
+            <div class="content_container">
                 <div class="row">
                     <div class="col-md-12">
                         <p>© 2017 10 Dundas. All rights reserved. <a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="" target="_blank">Mall Maverick</a></p>
