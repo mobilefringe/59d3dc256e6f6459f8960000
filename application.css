@@ -30,6 +30,7 @@ h3 {
 /* *** FOOTER *** */
 .footer_nav {
     padding: 32px 0 36px 0;
+    background: #ddd;
     .footer_nav_title {
         position: relative;
         text-align: center;
