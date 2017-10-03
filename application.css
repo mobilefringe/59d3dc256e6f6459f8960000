@@ -24,7 +24,12 @@ h3 {
 .caps {
     text-transform: uppercase;
 }
-
+/* *** FOOTER *** */
+.footer_nav {
+    .footer_nav_title {
+        text-align: center;
+    }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
