@@ -33,6 +33,7 @@ h3 {
         text-align: center;
     }
     .footer_nav_title:after {
+        content: " ";
         width: 32px;
         height: 2px;
         background-color: $primary;
