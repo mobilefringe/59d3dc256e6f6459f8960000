@@ -39,7 +39,7 @@ h3 {
         height: 2px;
         position: absolute;
         left: 50%;
-        bottom: -10px;
+        bottom: -5px;
         -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
