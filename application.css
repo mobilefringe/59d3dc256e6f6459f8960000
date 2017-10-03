@@ -31,6 +31,7 @@ h3 {
     }
     .footer_menu {
         margin: 0;
+        padding: 0;
         li{
             list-style-type: none;
             text-align: center;
