@@ -100,7 +100,7 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == true) {
                 holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = holiday.format("dddd, MMM D, YYYY");
+                val.formatted_date = holiday.format("MMM D");
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
