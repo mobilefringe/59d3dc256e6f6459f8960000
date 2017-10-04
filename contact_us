@@ -63,6 +63,25 @@
             renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
 
             show_content();
+            
+            $('#contact_form').submit(function(e) {
+                values = [];
+                values = JSON.stringify($('#contact_form').serializeArray());
+                e.preventDefault();
+                $.ajax({
+                    url : "/api/v1/contact_us",
+                    type: "POST",
+                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
+                    form_data:values},
+                    success: function(data, textStatus, jqXHR) {
+                        $('#send_contact_success').fadeIn();
+                        $('#contact_form').find("input[type=text], textarea").val("");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $('#send_contact_error').fadeIn();
+                    }
+                });
+    		});
         }
         loadMallDataCached(renderAll); 
     });
