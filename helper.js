@@ -3,6 +3,10 @@ function init() {
 }
 
 function show_content() {
+    var today_hours = getTodaysHours();
+    renderHomeHours('#home_hours_container', '#home_hours_template', today_hours);
+    renderHomeHours('#home_hours_container_footer', '#home_hours_template_footer', today_hours)
+    
     var hours = getPropertyRegularHours();
     var hours_mf = [];
     var hours_sat = [];
