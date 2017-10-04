@@ -7,7 +7,7 @@ function renderEvents(container, template, collection){
     $.each( collection , function( key, val ) {
         val.store_name = "10 Dundas";
         val.image_url = val.event_image_url_abs;
-        // val.logo  = default_image.image_url;
+        val.logo  = default_image.image_url;
         if(val.image_url.indexOf('missing.png') > 0){
             val.image_url  = val.logo;
         }
