@@ -1,3 +1,60 @@
+function init_home_hours(){
+    var hours = getPropertyHours();
+    var d = moment();
+    var n = moment().day();
+    var hours_today = [];
+    $.each(hours, function(key, val){
+        if (val.day_of_week == n && val.is_closed == false && val.is_holiday == false){
+            hours_today.push(val);
+        } 
+    });
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $('#home_hours_template').html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    $.each(hours_today, function(key, val) {
+        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+        val.open = check_open_time(open_time, close_time);
+        val.close = close_time.format("h:mm A");
+       
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $('#home_hours_container').html(item_rendered.join(''));
+    $.each(getPropertyHours(), function(i,v){
+        
+        if(v.is_holiday && v.is_closed){
+            
+            var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
+            
+            var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
+
+            if(hours_day === today){
+                $('#home_hours_container').text("Closed Today")
+                $('.chat_link').hide()
+            }
+        }
+        else if(v.is_holiday == true && v.is_closed == false){
+            
+            var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
+            
+            var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
+            
+            if(hours_day === today){
+                var open_time = moment(v.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(v.close_time).tz(getPropertyTimeZone());
+                v.open = check_open_time(open_time, close_time);
+                v.close = close_time.format("h:mm A");
+                $('#home_hours_container').text("Until " + v.close);
+            }
+            
+        }
+    });
+    
+    
+    
+}
 function renderHours(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];
