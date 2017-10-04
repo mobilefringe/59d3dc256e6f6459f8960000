@@ -73,11 +73,11 @@
                 <div class="content_container">
                     <div class="row">
                         <div class="col-md-6 pull-left">
-                            <div id="home_hours_container" class="">
+                            <span id="home_hours_container" class="">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
-                                    <p class="todays_hours caps">{% raw %} {{open}} {{hours}} {% endraw %}</p>
+                                    <span class="caps">{% raw %} {{open}} {{hours}} {% endraw %}</span>
                                 </script>
-                            </div>
+                            </span>
                             <a href="/hours">View Holiday Hours</a>
                         </div>
                         <div class="col-md-6">
