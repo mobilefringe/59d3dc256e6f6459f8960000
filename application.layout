@@ -78,7 +78,7 @@
                                     <span class="caps">{% raw %} {{open}} {{hours}} {% endraw %}</span>
                                 </script>
                             </span>
-                            <a href="/hours">View Holiday Hours</a>
+                            <a class="view_holiday_hours" href="/hours">View Holiday Hours</a>
                         </div>
                         <div class="col-md-6">
                             <div class="social_container pull-right">
