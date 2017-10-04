@@ -2,8 +2,11 @@
     <div class="content_container">
         <div class="inside_banner_content">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <h1>Promos & Events</h1>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="pull-right">Promos & Events <i class="fa fa-angle-right" aria-hidden="true"></i></h4>
                 </div>
             </div>
         </div>
