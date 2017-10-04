@@ -1,0 +1,13 @@
+<center>
+    Blank Website
+</center>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            
+            // show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
