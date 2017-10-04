@@ -305,3 +305,68 @@ function renderPromoDetails(container, template, collection){
     });
     $(container).html(item_rendered.join(''));
 }
+
+function renderStoreList(container, template, collection, type){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    var store_initial="";
+    $.each(collection, function(key, val) {
+        if(type == "stores" || type == "category_stores"){
+            if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                val.store_front_url_abs = default_image.image_url;
+            } 
+            if(val.assets != undefined){
+                var hover_url = val.assets[0].url;
+                val.hover_img = getImageURL(hover_url);
+            } else {
+                val.hover_img = val.store_front_url_abs;
+            }
+        }
+        
+        var current_initial = val.name[0];
+        val.cat_list = val.categories.join(',')
+        if(store_initial.toLowerCase() == current_initial.toLowerCase()){
+            val.initial = "";
+            val.show = "display:none;";
+        } else {
+            val.initial = current_initial.toUpperCase();
+            store_initial = current_initial;
+        }
+        
+        if(val.is_coming_soon_store == true){
+            val.coming_soon_store = "display: block";
+        } else {
+            val.coming_soon_store = "display:none";
+        }
+        
+        if(val.is_new_store == true){
+            val.new_store = "display: block";
+        } else {
+            val.new_store = "display: none";
+        }
+        
+        if(val.total_published_promos != null){
+            val.promotion_exist = "display: inline";
+            val.promotion_list = val.total_published_promos;
+        } else {
+            val.promotion_exist = "display: none";
+        }
+        
+        if (val.total_published_jobs != null){
+            val.job_exist = "display: inline";
+            val.job_list = val.total_published_jobs;
+        } else {
+            val.job_exist = "display: none";
+        }
+        
+        val.block = current_initial + '-block';
+        var rendered = Mustache.render(template_html,val);
+        var upper_current_initial = current_initial.toUpperCase();
+        item_rendered.push(rendered);
+    });
+    
+    $(container).show();
+    $(container).html(item_rendered.join(''));
+}
