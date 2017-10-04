@@ -25,6 +25,8 @@
                     </div>
                 </script>
             </div>
+            <br>
+            <p>Please see individual store listing for store hours.</p>
         </div>
         <div class="col-md-6">
             <h2>Holiday Hours</h2>
@@ -36,7 +38,6 @@
                     </div>
                 </script>
             </div>
-            <p>Please see individual store listing for store hours.</p>
         </div>
     </div>
 </div>
