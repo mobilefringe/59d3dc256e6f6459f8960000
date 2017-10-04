@@ -54,7 +54,8 @@
                 }
             });
             if(promos_events.length > 0){
-                renderPromotions("#promos_container","#promos_template", promos_events);
+                // renderPromotions("#promos_container","#promos_template", promos_events);
+                console.log(promos_events)
             } else {
                 $('#no_promos').show();
             }
