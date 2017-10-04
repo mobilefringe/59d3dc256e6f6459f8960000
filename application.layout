@@ -145,21 +145,21 @@
                         <div id="hours_mf_container">
                             <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class="">Mon – Fri {{h}}</p>
+                                <p class="center">Mon – Fri {{h}}</p>
                                 {% endraw %}
                             </script>
                         </div>
                         <div id="hours_sat_container">
                             <script id="hours_sat_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class="">Sat {{h}}</p>
+                                <p class="center">Sat {{h}}</p>
                                 {% endraw %}
                             </script>
                         </div>
                         <div id="hours_sun_container">
                             <script id="hours_sun_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class=""> Sun {{h}}</p>
+                                <p class="center"> Sun {{h}}</p>
                                 {% endraw %}
                             </script>
                         </div>
