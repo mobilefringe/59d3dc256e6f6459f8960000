@@ -8,7 +8,7 @@
                             <h1> {{store_name}} Promotion</h1>
                         </div>
                         <div class="col-md-6">
-                            <h4 class="pull-right"><a href="/promotions">Promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{store_name}} <i class="fa fa-angle-right" aria-hidden="true"></i></h4>
+                            <h4 class="pull-right"><a href="/promotions">Promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{store_name}}</h4>
                         </div>
                     </script>
                 </div>
