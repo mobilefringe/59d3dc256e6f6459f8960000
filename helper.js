@@ -1,4 +1,7 @@
-// <div class="insta ih-item circle effect19"><a class="ig-image" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/><div class="info"><div class="content"><p>{{{caption_short}}}</p></div></div></a></div>
+var default_image = {
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1496850961000/LogoBox.png",
+}
+
 function get_instagram(url, total, size, callback){
     var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
     var item_rendered = [];
