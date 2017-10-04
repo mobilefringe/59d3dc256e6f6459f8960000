@@ -16,7 +16,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <p id="no_promos">There are no Promotions or Events at this time. Please check back soon.</p>
+            <p id="no_promos" class="hidden_now">There are no Promotions or Events at this time. Please check back soon.</p>
         </div>
     </div>
     <div class="row">
