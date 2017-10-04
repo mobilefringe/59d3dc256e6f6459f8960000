@@ -129,7 +129,7 @@
                                         </ul>        
                                     </li>
                                     <li class="menu_item"><a href="">News</a></li>
-                                    <li class="menu_item"><a href="">Mall Hours</a></li>
+                                    <li class="menu_item"><a href="/hours">Mall Hours</a></li>
                                 </ul>
                             </nav>
                         </div>
