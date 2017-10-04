@@ -185,6 +185,7 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Instagram</h3>
                         <!-- Instagram Feed -->
+                        <div id="instafeed"></div>
                     </div>
                 </div>
             </div>
