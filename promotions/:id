@@ -19,19 +19,20 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
-        <div id="promo_details_container">
-            <script id="promo_details_template" type="x-tmpl-mustache/text">
-                <div class="col-md-6">
-                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="promo_content">
-                        <h2 class="promo_name"> {{name}} </h2>
-                        <h3 class="promo_dates"> {{dates}} </h3>
-                        <p class="promo_desc"> {{description}} </p>
-                    </div>
-                </div>
-            </script>
+        <div class="col-md-12">
+            <div id="promo_details_container">
+                <script id="promo_details_template" type="x-tmpl-mustache/text">
+                        <img src="{{image_url}}"/>
+                        
+                   
+                        <div class="promo_content">
+                            <h2 class="promo_name"> {{name}} </h2>
+                            <h3 class="promo_dates"> {{dates}} </h3>
+                            <p class="promo_desc"> {{description}} </p>
+                        </div>
+                   
+                </script>
+            </div>
         </div>
     </div>
     <div class="grey_line"></div>
