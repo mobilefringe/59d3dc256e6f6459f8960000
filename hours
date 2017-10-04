@@ -56,17 +56,7 @@
             var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
             console.log(holiday_hours)
             renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
-            
-            // var prefix = get_prefix();
-            // var pages_json = prefix + "/pages/thegateway-hours.json"
-            // $.getJSON(pages_json).done(function(data) {
-            //     $('#mm_page_content').html(data.body);
-            // }).fail(function(jqXHR) {
-            //     if (jqXHR.status == 404) {
-            //         $("#404_msg").fadeIn("fast");
-            //     }
-            // });
-            
+
             show_content();
         }
         loadMallDataCached(renderAll); 
