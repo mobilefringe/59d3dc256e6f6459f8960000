@@ -58,6 +58,7 @@
                 }
             });
             if(promos_events.length > 0){
+                promos_events.sortBy(function(o){ return o.end_date });
                 renderPromotions("#promo_container","#promo_template", promos_events);
                 console.log(promos_events)
             } else {
