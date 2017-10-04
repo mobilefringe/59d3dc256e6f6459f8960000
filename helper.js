@@ -1,13 +1,13 @@
 // <div class="insta ih-item circle effect19"><a class="ig-image" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/><div class="info"><div class="content"><p>{{{caption_short}}}</p></div></div></a></div>
 function get_instagram(url, total, size, callback){
-    var html = '<div class="insta_container"><a class="" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
+    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
     var item_rendered = [];
     Mustache.parse(html); 
     log('fetching instagram data from: ' + url);
     $.getJSON(url).done(function(data) {
         var insta_feed = data.social.instagram
         if(insta_feed != null){
-            main_feed = insta_feed.splice(1,12);
+            main_feed = insta_feed.splice(1,9);
             $.each(main_feed, function(i,v){
                 var feed_obj = {}
                 if(v.caption != null){
