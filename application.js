@@ -190,6 +190,12 @@ function renderPromotions(container, template, collection){
             val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
         }
         
+        if(val.description.length > 45){
+            val.description_short = val.description.substring(0, 44) + "...";
+        } else {
+            val.description_short = val.description;
+        }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
