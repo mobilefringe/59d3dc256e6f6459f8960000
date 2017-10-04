@@ -16,11 +16,13 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-6">
-            <div id="promo_container">
-                <script id="promo_template" type="x-tmpl-mustache/text">
-    
-            
-        
+            <h2>Regular Hours</h2>
+            <div id="reg_hours_container">
+                <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hours_div">
+                        <div class="hours_day">{{day}}:</div>
+                        <div class="hours_time">{{h}}</div>
+                    </div>
                 </script>
             </div>
         </div>
