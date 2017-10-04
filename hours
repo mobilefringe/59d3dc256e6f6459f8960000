@@ -50,29 +50,20 @@
             //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
             // }
             
-            var promotions = getPromotionsList();
-            var events = getEventsList();
-            var promos_events = [];
-            $.each(promotions, function(key, val){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    promos_events.push(val);
-                }
-            });
-            $.each(events, function(key, val){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    promos_events.push(val);
-                }
-            });
-            if(promos_events.length > 0){
-                promos_events.sortBy(function(o){ return o.end_date });
-                renderPromotions("#promo_container","#promo_template", promos_events);
-            } else {
-                $('#no_promos').show();
-            }
+            var hours = getPropertyRegularHours();
+            renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
+            renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            
+            // var prefix = get_prefix();
+            // var pages_json = prefix + "/pages/thegateway-hours.json"
+            // $.getJSON(pages_json).done(function(data) {
+            //     $('#mm_page_content').html(data.body);
+            // }).fail(function(jqXHR) {
+            //     if (jqXHR.status == 404) {
+            //         $("#404_msg").fadeIn("fast");
+            //     }
+            // });
             
             show_content();
         }
