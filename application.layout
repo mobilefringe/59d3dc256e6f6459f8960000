@@ -142,7 +142,6 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
-                        <p class=""></p>
                         <div id="hours_mf_container">
                             <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                 {% raw %}
@@ -150,21 +149,17 @@
                                 {% endraw %}
                             </script>
                         </div>
-                        
-                        <p class="new_store_name no_margin">Sat</p>
                         <div id="hours_sat_container">
                             <script id="hours_sat_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class="description no_margin">{{h}}</p>
+                                <p class="">Sat {{h}}</p>
                                 {% endraw %}
                             </script>
                         </div>
-                        
-                        <p class="new_store_name no_margin">Sun</p>
                         <div id="hours_sun_container">
                             <script id="hours_sun_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class="description no_margin">{{h}}</p>
+                                <p class=""> Sun {{h}}</p>
                                 {% endraw %}
                             </script>
                         </div>
