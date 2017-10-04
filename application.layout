@@ -116,8 +116,8 @@
                                     <li class="menu_item">
                                         <a href="">Promos & Events</a>
                                         <ul>
-                                            <li class="dropdown_item"><a href="">Promos</a></li>
-                                            <li class="dropdown_item"><a href="">Events</a></li>
+                                            <li class="dropdown_item"><a href="/promotions">Promotions</a></li>
+                                            <li class="dropdown_item"><a href="/events">Events</a></li>
                                         </ul>    
                                     </li>
                                     <li class="menu_item">
