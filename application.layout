@@ -103,30 +103,30 @@
                         <div class="col-md-10">
                             <nav id="primary_nav">
                                 <ul>
-                                    <li><a href="/">Home</a></li>
-                                    <li>
+                                    <li class="menu_item"><a href="/">Home</a></li>
+                                    <li class="menu_item">
                                         <a href="">Stores</a>
                                         <ul>
-                                            <li><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
                                         </ul>    
                                     </li>
-                                    <li>
+                                    <li class="menu_item">
                                         <a href="">Promos & Events</a>
                                         <ul>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
                                         </ul>    
                                     </li>
-                                    <li>
+                                    <li class="menu_item">
                                         <a href="">Information</a>
                                         <ul>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
-                                            <li><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href=""></a></li>
                                         </ul>        
                                     </li>
-                                    <li><a href="">News</a></li>
-                                    <li><a href="">Mall Hours</a></li>
+                                    <li class="menu_item"><a href="">News</a></li>
+                                    <li class="menu_item"><a href="">Mall Hours</a></li>
                                 </ul>
                             </nav>
                         </div>
