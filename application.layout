@@ -74,6 +74,12 @@
                     <div class="row">
                         <div class="col-md-6 pull-left">
                             <p>Today's Hours</p>
+                            <span id="home_hours_container">
+                                <script id="home_hours_template" type="x-tmpl-mustache/text">
+                                    <span class="open_now">{% raw %}{{open}}{% endraw %}</span> 
+                                    <span class="opacity_hover">UNTIL {% raw %}{{close}}{% endraw %}</span>
+                                </script>
+                            </span>
                             <a href="/hours">View Holiday Hours</a>
                         </div>
                         <div class="col-md-6">
