@@ -73,7 +73,7 @@
                 <div class="content_container">
                     <div class="row">
                         <div class="col-md-6 pull-left">
-                            <p>Today's Hours</p>
+                            <!--<p>Today's Hours</p>-->
                             <span id="home_hours_container">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
                                     <span class="open_now">{% raw %}{{open}}{% endraw %}</span> 
