@@ -53,23 +53,6 @@
             renderPromoDetails('#promo_header_container', '#promo_header_template', promo_details)
             renderPromoDetails('#promo_details_container', '#promo_details_template', promo_details)
             
-            
-            var store_id = promo_details.promotionable_id;
-            var current_promo_id = promo_details.id;
-            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            var store_promotions = [];
-            
-            $.each( promotions , function( key, val ) {
-                if(val.promotionable_id == store_id && val.id != current_promo_id){
-                    store_promotions.push(val);
-                } 
-            });
-            if(store_promotions.length > 0){
-                renderPromoDetails('#additional_promo_title_container', '#additional_promo_title_template', promo_details);
-                renderPromotions('#additional_promos_container', '#additional_promos_template', store_promotions);
-            }
-            
-            
             show_content();
         }
         loadMallDataCached(renderAll); 
