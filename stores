@@ -51,4 +51,25 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div id="store_list_container">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
+                    <div class="store_logo_container" id="{{initial}}">
+                        <a href="/stores/{{slug}}">
+                            <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                            <img class="store_hover" style="{{initial_img}}" src="{{hover_img}}"/>
+                            <div class="store_coming_soon" style="{{coming_soon_store}}">
+                                <div class="new_store">Coming soon</div>
+                            </div>
+                            <div class="store_list_promos">
+                                <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
+                                <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt=""> {{promotion_list}}</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
 </div>
