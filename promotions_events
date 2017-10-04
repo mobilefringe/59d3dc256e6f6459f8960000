@@ -12,8 +12,55 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-md-12">
-        
+        <div id="promo_container">
+            <script id="promo_template" type="x-tmpl-mustache/text">
+                <div class="col-md-4">
+                    <img src="" />
+                    <h2></h2>
+                    <h3></h3>
+                    <p></p>
+                    <a href="" ><p>Read More</p></a>
+            
+                </div>
+            </script>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Promotions Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var events = getEventsList().sortBy(function(o){ return o.end_date });
+            var promos_events = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    promos_events.push(val);
+                }
+            });
+            $.each(events, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    promos_events.push(val);
+                }
+            });
+            if(promos_events.length > 0){
+                renderPromotions("#promos_container","#promos_template", published_promos);
+            } else {
+                $('#no_promos').show();
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
