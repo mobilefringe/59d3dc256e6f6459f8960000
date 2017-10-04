@@ -20,8 +20,8 @@
             <div id="reg_hours_container">
                 <script id="reg_hours_template" type="x-tmpl-mustache/text">
                     <div class="hours_div">
-                        <div class="hours_day">{{day}}:</div>
-                        <div class="hours_time">{{h}}</div>
+                        <span class="hours_day">{{day}}:</span>
+                        <span class="hours_time">{{h}}</span>
                     </div>
                 </script>
             </div>
