@@ -1,5 +1,5 @@
 function init_home_hours(){
-    var hours = getPropertyHours();
+    var hours = getPropertyRegularHours();
     var d = moment();
     var n = moment().day();
     var hours_today = [];
