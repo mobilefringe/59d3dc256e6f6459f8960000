@@ -15,7 +15,7 @@
         <div id="promo_container">
             <script id="promo_template" type="x-tmpl-mustache/text">
                 <div class="col-md-4">
-                    <img src="{{image_url}}" />
+                    <img class="promo_img" src="{{image_url}}" />
                     <h2> {{name}} </h2>
                     <h3> {{dates}} </h3>
                     <p> {{description_short}} </p>
