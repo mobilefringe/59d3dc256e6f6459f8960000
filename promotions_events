@@ -20,7 +20,7 @@
                         <h2 class="promo_name"> {{name}} </h2>
                         <h3 class="promo_dates"> {{dates}} </h3>
                         <p class="promo_desc"> {{description_short}} </p>
-                        <a href="" ><p>Read More</p></a>
+                        <a class="promo_read_more" href="" ><p>Read More</p></a>
                     </div>
                 </div>
             </script>
