@@ -1,0 +1,99 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div id="promo_header_container">
+                    <script id="promo_header_template" type="x-tmpl-mustache/text">
+                        <div class="col-md-6">    
+                            <h1> {{store_name}} Promotion</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="pull-right"><a href="/promotions">Promos & Events</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{store_name}} <i class="fa fa-angle-right" aria-hidden="true"></i></h4>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div id="promo_details_container">
+            <script id="promo_details_template" type="x-tmpl-mustache/text">
+                <div class="col-md-6">
+                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="promo_content">
+                        <h2 class="promo_name"> {{name}} </h2>
+                        <h3 class="promo_dates"> {{dates}} </h3>
+                        <p class="promo_desc"> {{description}} </p>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="grey_line"></div>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <div id="additional_promo_title_container">
+                <script id="additional_promo_title_template" type="x-tmpl-mustache/text">
+                    <h1 class="additional_promos_title">Other {{store_name}} Promotions</h1>
+                </script>
+            </div>
+            <div id="additional_promos_container">
+                <script id="additional_promos_template" type="x-tmpl-mustache/text">
+                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                    <div class="promo_content">
+                        <h2 class="promo_name"> {{name}} </h2>
+                        <h3 class="promo_dates"> {{dates}} </h3>
+                        <p class="promo_desc"> {{description_short}} </p>
+                        <a class="promo_read_more" href="/promotions-and-events/{{slug}}"><p>Read More</p></a>
+                        <div class="grey_line"></div>
+                    </div>
+                </script>
+            </div>
+        </div>          
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Promotions Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            promo_details = getPromotionDetailsBySlug(slug);
+            
+            renderPromoDetails('#promo_header_container', '#promo_header_template', promo_details)
+            renderPromoDetails('#promo_details_container', '#promo_details_template', promo_details)
+            
+            
+            var store_id = promo_details.promotionable_id;
+            var current_promo_id = promo_details.id;
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var store_promotions = [];
+            
+            $.each( promotions , function( key, val ) {
+                if(val.promotionable_id == store_id && val.id != current_promo_id){
+                    store_promotions.push(val);
+                } 
+            });
+            if(store_promotions.length > 0){
+                renderPromoDetails('#additional_promo_title_container', '#additional_promo_title_template', promo_details);
+                renderPromotions('#additional_promos_container', '#additional_promos_template', store_promotions);
+            }
+            
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
