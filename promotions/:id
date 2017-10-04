@@ -35,29 +35,6 @@
             </div>
         </div>
     </div>
-    <div class="grey_line"></div>
-    <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
-            <div id="additional_promo_title_container">
-                <script id="additional_promo_title_template" type="x-tmpl-mustache/text">
-                    <h1 class="additional_promos_title">Other {{store_name}} Promotions</h1>
-                </script>
-            </div>
-            <div id="additional_promos_container">
-                <script id="additional_promos_template" type="x-tmpl-mustache/text">
-                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
-                    <div class="promo_content">
-                        <h2 class="promo_name"> {{name}} </h2>
-                        <h3 class="promo_dates"> {{dates}} </h3>
-                        <p class="promo_desc"> {{description_short}} </p>
-                        <a class="promo_read_more" href="/promotions-and-events/{{slug}}"><p>Read More</p></a>
-                        <div class="grey_line"></div>
-                    </div>
-                </script>
-            </div>
-        </div>          
-    </div>
 </div>
 <script>
     $(document).ready(function(e){
