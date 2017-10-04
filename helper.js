@@ -1,4 +1,8 @@
 function init() {
+    
+}
+
+function show_content() {
     var hours = getPropertyRegularHours();
     var hours_mf = [];
     var hours_sat = [];
