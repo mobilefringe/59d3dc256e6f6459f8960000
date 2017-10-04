@@ -172,7 +172,7 @@
                         </div>
                         <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Menu</h3>
                         <div class="margin_60"></div>
                         <ul class="footer_menu">
