@@ -105,24 +105,25 @@
                                 <ul>
                                     <li class="menu_item"><a href="/">Home</a></li>
                                     <li class="menu_item">
-                                        <a href="">Stores</a>
+                                        <a href="#">Stores</a>
                                         <ul>
-                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href="">Stores</a></li>
+                                            <li class="dropdown_item"><a href="">Map</a></li>
                                         </ul>    
                                     </li>
                                     <li class="menu_item">
                                         <a href="">Promos & Events</a>
                                         <ul>
-                                            <li class="dropdown_item"><a href=""></a></li>
-                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href="">Promos</a></li>
+                                            <li class="dropdown_item"><a href="">Events</a></li>
                                         </ul>    
                                     </li>
                                     <li class="menu_item">
                                         <a href="">Information</a>
                                         <ul>
-                                            <li class="dropdown_item"><a href=""></a></li>
-                                            <li class="dropdown_item"><a href=""></a></li>
-                                            <li class="dropdown_item"><a href=""></a></li>
+                                            <li class="dropdown_item"><a href="">Link 1</a></li>
+                                            <li class="dropdown_item"><a href="">Link 2</a></li>
+                                            <li class="dropdown_item"><a href="">Link 3</a></li>
                                         </ul>        
                                     </li>
                                     <li class="menu_item"><a href="">News</a></li>
