@@ -145,21 +145,27 @@
                         <p class="">Monday – Friday</p>
                         <div id="hours_mf_container">
                             <script id="hours_mf_template" type="x-tmpl-mustache/text">
+                                {% raw %}
                                 <p class="">{{h}}</p>
+                                {% endraw %}
                             </script>
                         </div>
                         
                         <p class="new_store_name no_margin">Saturday</p>
                         <div id="hours_sat_container">
                             <script id="hours_sat_template" type="x-tmpl-mustache/text">
+                                {% raw %}
                                 <p class="description no_margin">{{h}}</p>
+                                {% endraw %}
                             </script>
                         </div>
                         
                         <p class="new_store_name no_margin">Sunday</p>
                         <div id="hours_sun_container">
                             <script id="hours_sun_template" type="x-tmpl-mustache/text">
+                                {% raw %}
                                 <p class="description no_margin">{{h}}</p>
+                                {% endraw %}
                             </script>
                         </div>
                         <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
