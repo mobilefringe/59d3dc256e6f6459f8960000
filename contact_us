@@ -30,7 +30,7 @@
                 <input name="name" id="name" class="form-control" type="text" value="" placeholder="Your Name" required>
                 <input name="email" id="email" class="form-control" type="text" value="" placeholder="Your Email" required>
                 <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
-                <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
                 <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
             </form>
             <br>
