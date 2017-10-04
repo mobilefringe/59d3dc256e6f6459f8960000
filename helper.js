@@ -1,6 +1,6 @@
 // <div class="insta ih-item circle effect19"><a class="ig-image" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/><div class="info"><div class="content"><p>{{{caption_short}}}</p></div></div></a></div>
 function get_instagram(url, total, size, callback){
-    var html = '<div class=""><a class="" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
+    var html = '<div class="insta_container"><a class="" target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
     var item_rendered = [];
     Mustache.parse(html); 
     log('fetching instagram data from: ' + url);
