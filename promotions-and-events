@@ -15,6 +15,11 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
+        <div class="col-md-12">
+            <p id="no_promos">There are no Promotions or Events at this time. Please check back soon.</p>
+        </div>
+    </div>
+    <div class="row">
         <div id="promo_container">
             <script id="promo_template" type="x-tmpl-mustache/text">
                 <div class="col-md-4">
@@ -60,7 +65,6 @@
             if(promos_events.length > 0){
                 promos_events.sortBy(function(o){ return o.end_date });
                 renderPromotions("#promo_container","#promo_template", promos_events);
-                console.log(promos_events)
             } else {
                 $('#no_promos').show();
             }
