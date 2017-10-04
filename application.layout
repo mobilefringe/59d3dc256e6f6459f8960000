@@ -102,7 +102,7 @@
                                 <img class="logo" src="http://assets.codecloudapp.com/sites/59d3dc256e6f6459f8960000/image/png/1507126879000/logo_placeholder.png"/>
                             </a>
                         </div>
-                        <div class="col-md-10">
+                        <div class="nav_container">
                             <nav id="primary_nav">
                                 <ul class="pull-right">
                                     <li class="menu_item"><a href="/">Home</a></li>
