@@ -19,7 +19,7 @@
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
             <div class="directory_btn caps dropdown">
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown button
+                    Categories
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Action</a>
