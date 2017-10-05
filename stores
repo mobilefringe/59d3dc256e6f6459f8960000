@@ -53,7 +53,7 @@
             <hr>
         </div>
     </div>
-    <div class="margin_30"></div>
+    <div class="margin_20"></div>
     <div class="row">
         <div id="store_list_container">
             <script id="store_list_template" type="x-tmpl-mustache/text">
