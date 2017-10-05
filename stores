@@ -90,6 +90,7 @@
             // $('#category_select').prepend('<li class="show_cat_stores" data-id="000" name="All">ALL</li>');
             
             var store_list = getStoresList();
+            console.log(store_list)
             renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             
             show_content();
