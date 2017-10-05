@@ -347,6 +347,12 @@ function renderStoreList(container, template, collection, type){
             val.new_store = "display: none";
         }
         
+        if(val.phone != null || val.phone != ""){
+            val.phone_exist = "display: inline";
+        } else {
+            val.phone_exist = "display: none";
+        }
+        
         if(val.total_published_promos != null){
             val.promotion_exist = "display: inline";
             val.promotion_list = val.total_published_promos;
