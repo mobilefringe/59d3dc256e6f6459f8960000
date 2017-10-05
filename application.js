@@ -347,7 +347,7 @@ function renderStoreList(container, template, collection, type){
             val.new_store = "display: none";
         }
         
-        if(val.phone != null || val.phone != ""){
+        if(val.phone != ""){
             val.phone_exist = "display: inline";
         } else {
             val.phone_exist = "display: none";
