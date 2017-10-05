@@ -62,7 +62,7 @@
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
-        setEndPoint('//dixieoutlet.mallmaverick.com/api/v4/dixieoutlet/all.json');
+        setEndPoint('//thegateway.mallmaverick.com/api/v4/thegateway/all.json');
     </script>
 </head>
 
