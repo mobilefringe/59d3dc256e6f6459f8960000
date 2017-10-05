@@ -20,7 +20,7 @@
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
             <a href="#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="directory_btn caps">
-                    Categories
+                    Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
