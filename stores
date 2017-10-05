@@ -1,4 +1,4 @@
-<div class="inside_banner margin_30">   
+<div class="inside_banner">   
     <div class="content_container">
         <div class="inside_banner_content">
             <div class="row">
@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="content_container">
-    
+    <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
             <div class="directory_btn caps active">Stores</div>
