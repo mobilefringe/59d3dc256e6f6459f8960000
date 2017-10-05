@@ -21,10 +21,10 @@
             <a href="#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="directory_btn caps position_rel">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="category_select">
+                        <script id="category_select_template" type="x-tmpl-mustache/text">
+                            <a class="dropdown-item show_cat_stores" data-id="{{id}}" name="{{name}}" href="#">{{name}}</a>
+                        </script>
                     </div>
                 </div>
             </a>
