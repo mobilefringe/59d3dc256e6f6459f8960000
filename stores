@@ -125,7 +125,6 @@
                     $(".store_hover", this).hide();
                 });
             }
-            
         }
         loadMallData(renderAll); 
     })
