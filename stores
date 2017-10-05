@@ -108,7 +108,7 @@
             
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
             renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<a class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</a>');
+            $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
             
             var store_list = getStoresList();
             console.log(store_list)
