@@ -329,6 +329,7 @@ function renderStoreList(container, template, collection, type){
             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
                 val.store_front_url_abs = default_image.image_url;
             } 
+            // getAssetURL(val.promotionable_id);
             if(val.assets != undefined){
                 var hover_url = val.assets[0].url;
                 val.hover_img = getImageURL(hover_url);
@@ -384,10 +385,10 @@ function renderStoreList(container, template, collection, type){
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
     });
-    
-    $(container).show();
+
     $(container).html(item_rendered.join(''));
 }
+
 function renderStoreDetails(container, template, collection, slug){
     var item_list = [];
     var item_rendered = [];
