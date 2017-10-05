@@ -29,7 +29,7 @@
             <!--    </div>-->
             <!--</a>-->
             
-            <div class="directory_btn caps dropdown show">
+            <div class="directory_btn caps dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </a>
