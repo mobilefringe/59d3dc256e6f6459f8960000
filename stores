@@ -15,7 +15,18 @@
 <div class="content_container">
     <div class="row">
         <div class="col-md-12">
-        
+            <div class="directory_btn">Stores</div>
+            <a href="/map"><div class="directory_btn">Centre Map</div></a>
+            <div class="directory_btn dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
