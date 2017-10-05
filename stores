@@ -20,6 +20,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 hidden_phone">
+            <hr>
             <div class="alpha_list">
                 <!--<a href="#7">#</a>-->
                 <a href="#A">A</a>
@@ -49,6 +50,7 @@
                 <a href="#Y">Y</a>
                 <a href="#Z">Z</a>
             </div>
+            <hr>
         </div>
     </div>
     <div class="row">
