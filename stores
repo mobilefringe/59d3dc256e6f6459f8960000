@@ -36,7 +36,7 @@
             
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
                     <script id="category_select_template" type="x-tmpl-mustache/text">
-                        <a class="dropdown-item show_cat_stores" data-id="{{id}}" name="{{name}}" href="#">{{name}}</a>
+                        <div class="dropdown-item show_cat_stores" data-id="{{id}}" name="{{name}}">{{name}}</div>
                     </script>
                 </div>
             </div>
