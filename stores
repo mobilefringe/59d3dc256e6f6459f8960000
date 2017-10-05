@@ -17,8 +17,8 @@
         <div class="col-md-12">
             <div class="directory_btn caps active">Stores</div>
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
-            <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="directory_btn caps dropdown-toggle" >
+            <a href="#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="directory_btn caps">
             
             
                     <!--<button class="caps dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
