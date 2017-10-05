@@ -61,8 +61,11 @@
                         <a href="/stores/{{slug}}">
                             <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                             <img class="store_hover" style="{{initial_img}}" src="{{hover_img}}"/>
+                            <div class="store_coming_soon" style="{{new_store}}">
+                                <div class="new_store">New Store</div>
+                            </div>
                             <div class="store_coming_soon" style="{{coming_soon_store}}">
-                                <div class="new_store">Coming soon</div>
+                                <div class="new_store">Coming Soon</div>
                             </div>
                             <div class="store_list_promos">
                                 <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
