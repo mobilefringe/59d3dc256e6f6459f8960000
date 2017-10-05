@@ -396,10 +396,10 @@ function renderStoreDetails(container, template, collection, slug){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = default_image.image_url;
+        if((val.store_front_url_abs).indexOf('missing.png') > -1){
+            val.store_logo = default_image.image_url;
         } else {
-            val.alt_store_front_url = getImageURL(val.store_front_url); 
+            val.store_logo = val.store_front_url_abs; 
         }
         
         if(val.is_coming_soon_store != false){
