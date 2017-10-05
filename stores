@@ -29,11 +29,10 @@
             <!--    </div>-->
             <!--</a>-->
             <a class="dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="directory_btn caps dropdown position_rel">
-                
+                <div class="directory_btn caps dropdown position_rel">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </div>
-                </a>
+                </div>
+            </a>
             
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
                     <script id="category_select_template" type="x-tmpl-mustache/text">
