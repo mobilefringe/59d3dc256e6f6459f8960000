@@ -116,7 +116,7 @@
             
             show_content();
             // store_search();
-            // show_cat_stores();
+            show_cat_stores();
             
             var window_width = $( window ).width();
             if (window_width > 769) {
