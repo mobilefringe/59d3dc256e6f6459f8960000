@@ -69,6 +69,7 @@
                                 <div class="new_store">Coming Soon</div>
                             </div>
                             <div class="store_list_promos">
+                                <span> {{phone}} </span>
                                 <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
                                 <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt=""> {{promotion_list}}</span>
                             </div>
