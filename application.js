@@ -388,3 +388,40 @@ function renderStoreList(container, template, collection, type){
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
+function renderStoreDetails(container, template, collection, slug){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    item_list.push(collection);
+    $.each( item_list , function( key, val ) {
+        if ((val.store_front_url).indexOf('missing.png') > -1){
+            val.alt_store_front_url = default_image.image_url;
+        } else {
+            val.alt_store_front_url = getImageURL(val.store_front_url); 
+        }
+        
+        if(val.is_coming_soon_store != false){
+            val.coming_soon_store = "display: block;"
+        } else {
+            val.coming_soon_store = "display: none;"
+        }
+        val.category_list = getCategoriesNamesByStoreSlug(slug);
+        val.map_x_coordinate = val.x_coordinate - 19;
+        val.map_y_coordinate = val.y_coordinate - 58;
+        val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
+        
+        if (val.website != null && val.website.length > 0){
+            val.show = "display:inline-block";
+        }
+        else{
+            val.show = "display:none";
+        }
+        
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    
+    $(container).show();
+    $(container).html(item_rendered.join(''));
+}
