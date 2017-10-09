@@ -72,7 +72,7 @@
             <div class="social_header">
                 <div class="content_container">
                     <div class="row">
-                        <div class="col-md-6 pull-left">
+                        <div class="col-md-6 pull-left hidden_phone">
                             <div class="hours_container">
                                 <span id="home_hours_container" class="">
                                     <script id="home_hours_template" type="x-tmpl-mustache/text">
