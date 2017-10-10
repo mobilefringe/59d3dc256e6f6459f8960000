@@ -34,7 +34,7 @@
             <!--</ul>-->
             
             <div class="dropdown directory_btn">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
