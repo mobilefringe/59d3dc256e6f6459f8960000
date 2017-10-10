@@ -1,6 +1,16 @@
-<center>
-    Blank Website
-</center>
+<div class="home_banner">   
+    <div class="flexslider">
+        <ul class="slides" id="home_banner">
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                <li>
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                        <img alt="banner" src="{{image_url}}" />
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+</div>
 <script>
     $(document).ready(function(e) {
         init(e);
