@@ -154,10 +154,12 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
-                        <div id="hours_mf_container">
+                        <div id="hours_mf_container" class="row">
                             <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <span>Mon – Fri</span><span>{{h}}</span>
+                                <div class="col-md-5">Mon – Fri</div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">{{h}}</div>
                                 {% endraw %}
                             </script>
                         </div>
