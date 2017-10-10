@@ -338,8 +338,20 @@ function renderStoreList(container, template, collection, type){
             }
         }
         
+        if(val.categories != null){
+            // try {
+                val.cat_list = val.categories.join(',')
+            // }
+            // catch(err) {
+            //     console.log(err);
+            // }
+        }
+        
         var current_initial = val.name[0];
-        val.cat_list = val.categories.join(',')
+        if(isInt(current_initial)){
+            current_initial = "7";
+        }
+        
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.initial = "";
             val.show = "display:none;";
