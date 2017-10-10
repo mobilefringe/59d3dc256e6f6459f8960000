@@ -157,7 +157,7 @@
                         <div id="hours_mf_container">
                             <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                 {% raw %}
-                                <p class="center">Mon – Fri {{h}}</p>
+                                <span>Mon – Fri</span><span>{{h}}</span>
                                 {% endraw %}
                             </script>
                         </div>
