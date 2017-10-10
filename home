@@ -32,6 +32,10 @@
             // renderFeatureItems('#feature_container','#feature_template', feature_items);
             
             show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
         }
         loadMallDataCached(renderAll); 
     })
