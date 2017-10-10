@@ -19,11 +19,13 @@
             <div class="directory_btn caps active">Stores</div>
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
             <span class="position_rel">
-            <a class="dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="directory_btn caps dropdown ">
+            <div class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!--<a class="dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                <div class="directory_btn caps dropdown">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </div>
-            </a>
+            <!--</a>-->
+            </div>
             </span>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
                 <script id="category_select_template" type="x-tmpl-mustache/text">
