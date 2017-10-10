@@ -200,7 +200,7 @@
                         <div class="margin_20"></div>
                         <div id="instafeed"></div>
                         <a href="/newsletter">
-                            <div class="footer_btn caps">Join Our Newsletter <span class="btn_icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span></div>
+                            <div class="footer_btn caps">Join Our Newsletter</div>
                         </a>
                     </div>
                 </div>
