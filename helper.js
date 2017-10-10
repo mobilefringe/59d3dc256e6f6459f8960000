@@ -150,8 +150,7 @@ function store_search() {
             $('#search_results_events').hide();
             $('#search_results_promotions').hide();
             $('#close_search').hide();
-        }
-        else{
+        } else {
             $('#close_search').show();
             $('#search_results_stores').html('');
             $('#search_results_events').html('');
