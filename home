@@ -11,10 +11,25 @@
         </ul>
     </div>
 </div>
+<div class="content_container">
+    <div class="row">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">
+            
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function(e) {
         init(e);
         function renderAll (){
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner', banners);
+            // var feature_items = getFeatureList();
+            
+            // renderFeatureItems('#feature_container','#feature_template', feature_items);
             
             show_content();
         }
