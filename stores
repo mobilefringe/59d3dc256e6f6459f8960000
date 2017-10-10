@@ -18,9 +18,11 @@
         <div class="col-md-12 center">
             <div class="directory_btn caps active">Stores</div>
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
-            <a class="dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
                 <div class="directory_btn caps dropdown ">
-                    Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <a class="dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
                 </div>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
