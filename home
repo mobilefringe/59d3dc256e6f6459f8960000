@@ -19,10 +19,11 @@
         <div class="width_50">
             <div id="home_promo_container">
                 <script id="home_promo_template" type="x-tmpl-mustache/text">
-            
-                        <h2 class="promo_name"> {{name}} </h2>
-                        <h3 class="promo_dates"> {{dates}} </h3>
-                        <a class="promo_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
+                    <p class="home_promo_store"> {{store_name}} </p>
+                    <h2 class="home_promo_name"> {{name}} </h2>
+                    <p class="promo_dates"> {{dates}} </p>
+                    <p class="home_promo"> {{short_desc}} </p>
+                    <a class="home_promo_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                 </script>
             </div>
         </div>
