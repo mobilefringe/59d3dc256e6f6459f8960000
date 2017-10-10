@@ -183,7 +183,7 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Menu</h3>
                         <div class="margin_60"></div>
-                        <ul class="footer_menu">
+                        <ul class="footer_menu margin_60">
                             <li><a href="">Map</a></li>
                             <li><a href="">Promos & Events</a></li>
                             <li><a href="">Guest Services</a></li>
