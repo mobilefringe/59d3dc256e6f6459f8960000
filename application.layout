@@ -102,6 +102,16 @@
                                 <img class="logo" src="http://assets.codecloudapp.com/sites/59d3dc256e6f6459f8960000/image/png/1507126879000/logo_placeholder.png"/>
                             </a>
                         </div>
+                        <div class="site_searcher_div">
+                            <label class="top_form_control no_margin">
+                                <i class="custom_i fa fa-search"></i>
+                                <input type="text" placeholder="Search" id="site_search" />
+                                <i id="close_search" class="fa fa-times-circle"></i>
+                            </label>
+                            <div class="site_search_results" id="search_results_stores"></div>
+                            <div class="site_search_results" id="search_results_events"></div>
+                            <div class="site_search_results" id="search_results_promotions"></div>
+                        </div>
                         <div class="nav_container pull-right">
                             <nav id="primary_nav">
                                 <ul class="">
