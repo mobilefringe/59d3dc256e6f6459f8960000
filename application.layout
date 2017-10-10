@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="nav_header">
-                <div class="content_container">
+                <div class="content_container position_rel">
                     <!--<div class="row">-->
                         <div class="logo_container">
                             <a href="/">
