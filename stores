@@ -33,7 +33,7 @@
             <!--    </script>-->
             <!--</ul>-->
             
-            <div class="dropdown">
+            <div class="dropdown directory_btn">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories
                 </button>
