@@ -17,7 +17,7 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
         <div class="width_50">
-            <div class="home_promo_container">
+            <div id="home_promo_container">
                 <script id="home_promo_template" type="x-tmpl-mustache/text">
             
                         <h2 class="promo_name"> {{name}} </h2>
