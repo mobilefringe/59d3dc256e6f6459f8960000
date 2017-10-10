@@ -46,7 +46,7 @@
             
             // renderFeatureItems('#feature_container','#feature_template', feature_items);
             
-            // PROMOS
+            // PROMOS //
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each(promotions, function(key, val){
@@ -57,7 +57,7 @@
                 }
             });
             if(published_promos.length > 0){
-                renderPromotions("#promo_container","#promo_template", published_promos);
+                renderPromotions("#home_promo_container","#home_promo_template", published_promos);
             } else {
                 $('#no_promos').show();
             }
