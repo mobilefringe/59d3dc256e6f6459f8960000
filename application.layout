@@ -176,6 +176,9 @@
                             </script>
                         </div>
                         <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
+                        <a href="/stores">
+                            <div class="footer_btn caps">Go To Directory</div>
+                        </a>
                     </div>
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Menu</h3>
@@ -195,6 +198,9 @@
                         <!-- Instagram Feed -->
                         <div class="margin_20"></div>
                         <div id="instafeed"></div>
+                        <a href="/newsletter">
+                            <div class="footer_btn caps">Join Our Newsletter</div>
+                        </a>
                     </div>
                 </div>
             </div>
