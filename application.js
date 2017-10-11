@@ -306,9 +306,9 @@ function renderPromotions(container, template, collection){
         }
         
         if(val.description.length > 40){
-            val.desc_short = val.description.substring(0, 39) + "...";
+            val.short_desc = val.description.substring(0, 39) + "...";
         } else {
-            val.desc_short = val.description;
+            val.short_desc = val.description;
         }
         
         var rendered = Mustache.render(template_html,val);
