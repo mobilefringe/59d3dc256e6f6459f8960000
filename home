@@ -133,6 +133,7 @@
             
             $('#logo_slider').flexslider({
                 animation: "slide",
+                itemWidth: 200
             });
         }
         loadMallDataCached(renderAll); 
