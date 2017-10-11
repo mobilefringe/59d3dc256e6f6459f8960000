@@ -65,6 +65,19 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
     </div>
+    <div class="vendor_scroll trim_screen span12">
+        <div class="vendor_scroll_list">
+            <ul id="scroller" class="simply-scroll-list" style="width: 3150px;">
+                <script id="scroller_template" type="x-tmpl-mustache/text">
+                    <li>
+                        <a href="/stores/{{slug}}">
+                            <img alt="{{name}} " src="{{image_url}}" height="100">
+                        </a>
+                    </li>
+                </script>
+            </ul> 
+        </div>
+    </div> 
 </div>
 <script>
     $(document).ready(function(e) {
@@ -99,6 +112,11 @@
                 var featured_posts = blog_posts.slice(0, 3);
                 renderPosts("#home_blog_container", "#home_blog_template", featured_posts)
             }
+            
+            // LOGO SCROLL //
+            var stores = getStoresList();
+            renderVendorScroll('#scroller','#scroller_template', stores);
+        
             show_content();
             
             $('.flexslider').flexslider({
