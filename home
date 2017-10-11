@@ -60,10 +60,12 @@
                 }
             });
             if(published_promos.length > 0){
-                renderPromotions("#home_promo_container", "#home_promo_template", published_promos);
+                var featured_promos = published_promos.slice(0, 3);
+                renderPromotions("#home_promo_container", "#home_promo_template", featured_promos);
             } else {
                 $('#no_promos').show();
             }
+            
             show_content();
             
             $('.flexslider').flexslider({
