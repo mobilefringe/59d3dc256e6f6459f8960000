@@ -25,7 +25,7 @@
         init(e);
         function renderAll(){
             var prefix = get_prefix();
-            var pages_json = prefix + "/pages/10dundaseast-leasing.json"
+            var pages_json = prefix + "	/pages/10dundaseast-office-directory.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
