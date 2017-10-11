@@ -43,9 +43,9 @@
                         <p class="home_promo_desc"> {{short_desc}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                     </div>
+                    <a href="/promotions"><p class="home_see_all">See all sales & promotions</p></a>
                 </script>
             </div>
-            <a href="/promotions"><p class="home_see_all">See all sales & promotions</p></a>
         </div>
     </div>
     <div class="">
