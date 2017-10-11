@@ -53,10 +53,8 @@
             <div class="home_promos" id="home_blog_container">
                 <script id="home_blog_template" type="x-tmpl-mustache/text">
                     <div class="margin_30">
-                      
                         <h2 class="home_promo_name"> {{title}} </h2>
                         <p class="home_promo_dates"> {{publish_date}} </p>
-                        <p class="home_promo_desc"> {{short_desc}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                     </div>
                     <a href="/"><p class="home_see_all">See all news articles</p></a>
@@ -97,7 +95,6 @@
             
             // BLOG //
             var blog_posts = getBlogDataBySlug("twinpines-main").posts.reverse();
-            console.log(blog_posts)
             if(blog_posts.length > 0){
                 var featured_posts = blog_posts.slice(0, 3);
                 renderPosts("#home_blog_container", "#home_blog_template", featured_posts)
