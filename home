@@ -67,8 +67,8 @@
     </div>
     <div class="logo_scroll">
         <div class="logo_flexslider">
-            <ul class="slides" id="logo_scroll_container">
-                <script id="logo_scroll_template" type="x-tmpl-mustache/text">
+            <ul class="slides" id="scroll_container">
+                <script id="scroll_template" type="x-tmpl-mustache/text">
                     <li>
                         <a href="{{url}}" {{css}} onclick="{{noLink}}">
                             <img alt="banner" src="{{image_url}}" />
@@ -115,7 +115,7 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
-            renderVendorScroll('#logo_scroll_container','#logo_scroll_template', stores);
+            renderVendorScroll('#scroll_container','#scroll_template', stores);
            
             
             show_content();
