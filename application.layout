@@ -36,7 +36,6 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" rel="stylesheet">
     <link href="/application.css" rel="stylesheet">
-    <link href="/weather.css" rel="stylesheet">
     
     <!--Javascript-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -50,13 +49,9 @@
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="//s3.amazonaws.com/kodekloud/sites/59282acb6e6f647d8d520100/text/javascript/1454104922000/jquery.simpleWeather.min.js"></script>
-
+    
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
-    <!--<script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>-->
     
     <script src="/application.js" type="text/javascript"></script>
     <script src="/helper.js" type="text/javascript"></script>
