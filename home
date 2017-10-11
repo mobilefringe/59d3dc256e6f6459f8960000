@@ -115,7 +115,13 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
-            console.log(stores)
+            var featured_logos = [];
+            $.each(promotions, function(key, val){
+                if(val.show_logo != false){
+                    featured_logos.push(val);
+                }
+            });
+            console.log(featured_logos)
             renderGeneral('#scroll_container','#scroll_template', stores);
            
             
