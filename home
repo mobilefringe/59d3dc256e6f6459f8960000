@@ -123,8 +123,22 @@
                 }
             });
             console.log(featured_logos)
-            renderGeneral('#scroll_container','#scroll_template', featured_logos);
+            renderLogoScroll('#scroll_container','#scroll_template', featured_logos);
            
+            function renderLogoScroll(container, template, collection){
+                var item_list = [];
+                var item_rendered = [];
+                var template_html = $(template).html();
+                Mustache.parse(template_html); 
+                $.each( collection , function( key, val ) {
+                    if(val.show_logo != false){
+                        val.image_url = val.store_front_url_abs;
+                    }
+                    var repo_rendered = Mustache.render(template_html,val);
+                    item_rendered.push(repo_rendered);
+                });
+                $(container).html(item_rendered.join(''));
+            }     
             
             show_content();
             
