@@ -15,16 +15,18 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-md-12">
-            <div id="portfolio_container">
-                <script id="portfolio_template" type="x-tmpl-mustache/text">
+        <div id="portfolio_container">
+            <script id="portfolio_template" type="x-tmpl-mustache/text">
+                <div class="col-md-6">
+            
                     <div class="portfolio_item"> 
                         <a href="{{image_url}" rel="lightbox-gallery" title="{{name}}">
                             <img alt="photo{{id}}" src="{{image_url}}"/>
                         </a>
                     </div>
-                </script>
-           </div>    
+                
+                </div> 
+           </script>
         </div>
     </div>
 </div>
