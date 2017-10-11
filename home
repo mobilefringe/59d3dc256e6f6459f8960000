@@ -55,7 +55,7 @@
                     <div class="margin_30">
                       
                         <h2 class="home_promo_name"> {{title}} </h2>
-                        <p class="home_promo_dates"> {{dates}} </p>
+                        <p class="home_promo_dates"> {{publish_date}} </p>
                         <p class="home_promo_desc"> {{short_desc}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                     </div>
