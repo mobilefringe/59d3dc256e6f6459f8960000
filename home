@@ -133,7 +133,9 @@
             
             $('#logo_slider').flexslider({
                 animation: "slide",
-                itemWidth: 200
+                itemWidth: 200,
+                minItems: 5,
+                maxItems: 5
             });
         }
         loadMallDataCached(renderAll); 
