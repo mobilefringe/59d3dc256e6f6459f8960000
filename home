@@ -22,7 +22,7 @@
                     <p class="home_promo_store"> {{store_name}} </p>
                     <h2 class="home_promo_name"> {{name}} </h2>
                     <p class="home_promo_dates"> {{dates}} </p>
-                    <p class="home_promo"> {{short_desc}} </p>
+                    <p class="home_promo_desc"> {{short_desc}} </p>
                     <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                 </script>
             </div>
