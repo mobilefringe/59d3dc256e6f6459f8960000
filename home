@@ -13,21 +13,21 @@
 </div>
 <div class="content_container">
     <div class="flex_container">
-        <a href="/stores">
+        <!--<a href="/stores">-->
             <div class="width_30">
                 <h2>Shop</h2>    
             </div>
-        </a>
-        <a href="/promotions">
+        <!--</a>-->
+        <!--<a href="/promotions">-->
             <div class="width_30">
                 <h2>Sales & Promotions</h2>
             </div>
-        </a>
-        <a href="">
+        <!--</a>-->
+        <!--<a href="">-->
             <div class="width_30">
                 <h2>Location</h2>
             </div>
-        </a>
+        <!--</a>-->
     </div>
     <div class="flex_container">
         <div class="width_50">
