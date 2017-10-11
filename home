@@ -16,8 +16,8 @@
         <div id="feature_container">
             <script id="feature_template" type="x-tmpl-mustache/text">
                 <div class="width_30">
-                    <a href="{{}}">
-                        <img src="{{}}" alt="{{}}"/>
+                    <a href="{{url}}">
+                        <img src="{{image_url}}" alt="{{name}}"/>
                     </a>
                 </div>
             </script>
@@ -97,6 +97,7 @@
             var feature_items = getRepoDetailsByName("Feature Item Test").images
             console.log(feature_items)
             // renderFeatureItems('#feature_container','#feature_template', feature_items);
+            renderGeneral('#feature_container','#feature_template', feature_items);
             
             // PROMOS //
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
