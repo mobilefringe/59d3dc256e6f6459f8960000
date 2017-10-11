@@ -123,7 +123,7 @@
                 }
             });
             console.log(featured_logos)
-            renderLogoScroll('#scroll_container','#scroll_template', featured_logos);
+            renderLogoScroll('#scroll_container','#scroll_template', stores);
            
             function renderLogoScroll(container, template, collection){
                 var item_list = [];
