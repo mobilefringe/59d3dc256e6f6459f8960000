@@ -50,8 +50,8 @@
     </div>
     <div class="">
         <div class="width_50">
-            <div class="home_promos" id="home_promo_container">
-                <script id="home_promo_template" type="x-tmpl-mustache/text">
+            <div class="home_promos" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
                     <div class="margin_30">
                         <p class="home_promo_store"> {{store_name}} </p>
                         <h2 class="home_promo_name"> {{name}} </h2>
@@ -95,6 +95,8 @@
                 $('#no_promos').show();
             }
             
+            // BLOG //
+            var blog_posts = getBlogDataBySlug("twinpines-main").posts.reverse();
             show_content();
             
             $('.flexslider').flexslider({
