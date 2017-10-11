@@ -13,15 +13,21 @@
 </div>
 <div class="content_container">
     <div class="">
-        <div class="width_30">
-            <h2>Shop</h2>    
-        </div>
-        <div class="width_30">
-            <h2>Sales & Promotions</h2>
-        </div>
-        <div class="width_30">
-            <h2>Location</h2>
-        </div>
+        <a href="/stores">
+            <div class="width_30">
+                <h2>Shop</h2>    
+            </div>
+        </a>
+        <a href="/promotions">
+            <div class="width_30">
+                <h2>Sales & Promotions</h2>
+            </div>
+        </a>
+        <a href="">
+            <div class="width_30">
+                <h2>Location</h2>
+            </div>
+        </a>
     </div>
     <div class="">
         <div class="width_50">
