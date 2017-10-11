@@ -37,7 +37,7 @@
                         <p class="home_promo_desc"> {{short_desc}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                     </div>
-                    <a href="/promotions"><p class="home_see_all">See all sales & promotions</p></a>
+                    <a href="/promotions"><p class="home_see_all">See all sales & promotions <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
                 </script>
             </div>
         </div>
@@ -51,7 +51,7 @@
                         <p class="home_promo_dates"> {{publish_date}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                     </div>
-                    <a href="/"><p class="home_see_all">See all news articles</p></a>
+                    <a href="/"><p class="home_see_all">See all news articles <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
                 </script>
             </div>
         </div>
