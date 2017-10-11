@@ -53,8 +53,8 @@
             <div class="home_promos" id="home_blog_container">
                 <script id="home_blog_template" type="x-tmpl-mustache/text">
                     <div class="margin_30">
-                        <p class="home_promo_store"> {{store_name}} </p>
-                        <h2 class="home_promo_name"> {{name}} </h2>
+                      
+                        <h2 class="home_promo_name"> {{title}} </h2>
                         <p class="home_promo_dates"> {{dates}} </p>
                         <p class="home_promo_desc"> {{short_desc}} </p>
                         <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
@@ -98,7 +98,7 @@
             // BLOG //
             var blog_posts = getBlogDataBySlug("twinpines-main").posts;
             console.log(blog_posts)
-            renderGeneral("#home_blog_container", "#home_blog_template", blog_posts)
+            renderPosts("#home_blog_container", "#home_blog_template", blog_posts)
             show_content();
             
             $('.flexslider').flexslider({
