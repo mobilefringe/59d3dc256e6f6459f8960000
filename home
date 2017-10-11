@@ -116,11 +116,15 @@
             // LOGO SCROLL //
             var stores = getStoresList();
             renderVendorScroll('#scroller','#scroller_template', stores);
-            $("#scroller").simplyScroll();
+           
             
             show_content();
             
             $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            $('.logo_flexslider').flexslider({
                 animation: "slide",
             });
         }
