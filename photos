@@ -18,13 +18,9 @@
         <div id="portfolio_container">
             <script id="portfolio_template" type="x-tmpl-mustache/text">
                 <div class="col-md-6 portfolio_item">
-            
-                    <div class=""> 
-                        <a href="{{image_url}" rel="lightbox-gallery" title="{{name}}">
-                            <img alt="photo{{id}}" src="{{image_url}}"/>
-                        </a>
-                    </div>
-                
+                    <a href="{{image_url}" data-lightbox="{{name}}">
+                        <img alt="photo{{id}}" src="{{image_url}}"/>
+                    </a>
                 </div> 
            </script>
         </div>
