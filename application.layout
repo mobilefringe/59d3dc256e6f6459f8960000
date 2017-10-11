@@ -62,7 +62,7 @@
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
-        setEndPoint('//thegateway.mallmaverick.com/api/v4/thegateway/all.json');
+        setEndPoint('//twinpines.mallmaverick.com/api/v4/twinpines/all.json');
     </script>
 </head>
 
