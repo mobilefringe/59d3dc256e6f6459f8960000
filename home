@@ -34,18 +34,18 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
         <div class="width_50">
-            <div id="home_promo_container">
-                <script id="home_promo_template" type="x-tmpl-mustache/text">
-                    <div class="margin_30">
-                        <p class="home_promo_store"> {{store_name}} </p>
-                        <h2 class="home_promo_name"> {{name}} </h2>
-                        <p class="home_promo_dates"> {{dates}} </p>
-                        <p class="home_promo_desc"> {{short_desc}} </p>
-                        <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
-                    </div>
-                </script>
-            </div>
-            <a href="/promotions"><p class="home_see_all">See all sales & promotions</p></a>
+            <!--<div id="home_promo_container">-->
+            <!--    <script id="home_promo_template" type="x-tmpl-mustache/text">-->
+            <!--        <div class="margin_30">-->
+            <!--            <p class="home_promo_store"> {{store_name}} </p>-->
+            <!--            <h2 class="home_promo_name"> {{name}} </h2>-->
+            <!--            <p class="home_promo_dates"> {{dates}} </p>-->
+            <!--            <p class="home_promo_desc"> {{short_desc}} </p>-->
+            <!--            <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>-->
+            <!--        </div>-->
+            <!--    </script>-->
+            <!--</div>-->
+            <!--<a href="/promotions"><p class="home_see_all">See all sales & promotions</p></a>-->
         </div>
     </div>
     <div class="">
