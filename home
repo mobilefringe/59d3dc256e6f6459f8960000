@@ -12,7 +12,7 @@
     </div>
 </div>
 <div class="content_container">
-    <div class="">
+    <div class="flex_container">
         <a href="/stores">
             <div class="width_30">
                 <h2>Shop</h2>    
@@ -29,7 +29,7 @@
             </div>
         </a>
     </div>
-    <div class="">
+    <div class="flex_container">
         <div class="width_50">
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
