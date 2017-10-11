@@ -119,18 +119,18 @@
                                     <li class="menu_item">
                                         <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul>
-                                            <li class="dropdown_item"><a href="/stores">Stores</a></li>
-                                            <li class="dropdown_item"><a href="/map">Map</a></li>
+                                            <li class="dropdown_item"><a href="/stores">Store Directory</a></li>
+                                            <li class="dropdown_item"><a href="/map">Centre Map</a></li>
+                                            <li class="dropdown_item"><a href="/office_directory">Office Directory</a></li>
                                         </ul>    
                                     </li>
-                                    <li class="menu_item"><a href="/promotions">Promos</a></li>
                                     <li class="menu_item"><a href="/events">Events</a></li>
+                                    <li class="menu_item"><a href="/promotions">Promos</a></li>
                                     <li class="menu_item">
-                                        <a href="#">Information <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <a href="#">Leasing <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul>
-                                            <li class="dropdown_item"><a href="">Link 1</a></li>
-                                            <li class="dropdown_item"><a href="">Link 2</a></li>
-                                            <li class="dropdown_item"><a href="">Link 3</a></li>
+                                            <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
+                                            <li class="dropdown_item"><a href="/leasing_photos">Photos</a></li>
                                         </ul>        
                                     </li>
                                     <li class="menu_item"><a href="">News</a></li>
