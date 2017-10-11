@@ -19,7 +19,7 @@
             <script id="portfolio_template" type="x-tmpl-mustache/text">
                 <div class="col-md-6 portfolio_item">
                     <a href="{{image_url}" data-lightbox="{{name}}">
-                        <img alt="photo{{id}}" src="{{image_url}}"/>
+                        <img alt="photo{{id}}" src="{{image_url}}">
                     </a>
                 </div> 
            </script>
