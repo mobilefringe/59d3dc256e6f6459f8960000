@@ -115,7 +115,6 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
-            log(stores)
             var featured_logos = [];
             $.each(stores, function(key, val){
                 if(val.show_logo != false){
