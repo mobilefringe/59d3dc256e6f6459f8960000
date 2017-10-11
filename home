@@ -122,7 +122,7 @@
                 }
             });
             console.log(featured_logos)
-            renderGeneral('#scroll_container','#scroll_template', stores);
+            renderGeneral('#scroll_container','#scroll_template', featured_logos);
            
             
             show_content();
