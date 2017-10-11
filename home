@@ -65,17 +65,17 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
     </div>
-    <div class="vendor_scroll trim_screen span12">
-        <div class="vendor_scroll_list">
-            <ul id="scroller" class="simply-scroll-list" style="width: 3150px;">
-                <script id="scroller_template" type="x-tmpl-mustache/text">
+    <div class="logo_scroll">
+        <div class="logo_flexslider">
+            <ul class="slides" id="logo_scroll_container">
+                <script id="logo_scroll_template" type="x-tmpl-mustache/text">
                     <li>
-                        <a href="/stores/{{slug}}">
-                            <img alt="{{name}} " src="{{image_url}}" height="100">
+                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                            <img alt="banner" src="{{image_url}}" />
                         </a>
                     </li>
                 </script>
-            </ul> 
+            </ul>
         </div>
     </div> 
 </div>
