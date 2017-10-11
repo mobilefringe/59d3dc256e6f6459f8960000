@@ -270,6 +270,39 @@ function renderHours(container, template, collection, type){
     $(container).html(item_rendered.join(''));
 }
 
+function renderPosts(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    var counter = 1;
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    $.each( collection , function( key, val ) {
+        if (val.image_url.indexOf('missing.png') > -1) {
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/59c082786e6f6462ee1d0000/image/png/1507232968000/Group 10.png";
+        } else {
+            val.post_image = val.image_url;
+        }
+        
+        if(val.body.length > 175){
+            val.description_short = val.body.substring(0, 175) + "...";
+        } else {
+            val.description_short = val.body;
+        }
+        val.description_short = val.description_short.replace("&amp;", "&");
+        
+        val.slug = "posts/" + val.slug;
+        
+        val.twitter_title = val.title + " via @DevonshireMall";
+        
+        val.counter = counter;
+        
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+        counter = counter + 1;
+    });
+    $(container).html(item_rendered.join(''));
+}
+
 function renderPromotions(container, template, collection){
     var item_list = [];
     var item_rendered = [];
