@@ -288,13 +288,11 @@ function renderPosts(container, template, collection){
         } else {
             val.description_short = val.body;
         }
+        
         val.description_short = val.description_short.replace("&amp;", "&");
         
-        val.slug = "posts/" + val.slug;
-        
-        val.twitter_title = val.title + " via @DevonshireMall";
-        
-        val.counter = counter;
+        var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
+        val.publish_date = published_on.format("MMMM Do, YYYY");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
