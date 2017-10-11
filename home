@@ -94,7 +94,8 @@
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner', banners);
             // var feature_items = getFeatureList();
-            
+            var feature_items = getRepoDetailsByName("Feature Item Test").images
+            console.log(feature_iyems)
             // renderFeatureItems('#feature_container','#feature_template', feature_items);
             
             // PROMOS //
