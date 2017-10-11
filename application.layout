@@ -136,8 +136,11 @@
                                     <li class="menu_item">
                                         <a href="">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul>
-                                            <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
-                                            <li class="dropdown_item"><a href="/leasing_photos">Photos</a></li>
+                                            <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>
+                                            <li class="dropdown_item"><a href="/find_us">Find Us</a></li>
+                                            <li class="dropdown_item"><a href="/about_us">About Us</a></li>
+                                            <li class="dropdown_item"><a href="/jobs">Jobs</a></li>
+                                            <li class="dropdown_item"><a href="/tenant_services">Tenant Services</a></li>
                                         </ul> 
                                     </li>
                                     <li class="menu_item"><a href="/hours">Mall Hours</a></li>
