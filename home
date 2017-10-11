@@ -115,6 +115,7 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
+            console.log(stores)
             renderGeneral('#scroll_container','#scroll_template', stores);
            
             
