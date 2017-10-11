@@ -96,7 +96,7 @@
             }
             
             // BLOG //
-            var blog_posts = getBlogDataBySlug("twinpines-main").posts.reverse();
+            var blog_posts = getBlogDataBySlug("twinpines-main").posts;
             show_content();
             
             $('.flexslider').flexslider({
