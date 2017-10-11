@@ -36,10 +36,8 @@
             //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
             // }
             var leasing_photos = getRepoDetailsByName("photos").images;
-            console.log(leasing_photos)
             renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
-            
-
+        
             show_content();
         }
         loadMallDataCached(renderAll); 
