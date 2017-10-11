@@ -122,8 +122,7 @@
                     featured_logos.push(val);
                 }
             });
-            console.log(featured_logos)
-            renderLogoScroll('#scroll_container','#scroll_template', stores);
+            renderLogoScroll('#scroll_container','#scroll_template', featured_logos);
            
             function renderLogoScroll(container, template, collection){
                 var item_list = [];
