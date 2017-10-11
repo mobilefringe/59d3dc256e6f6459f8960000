@@ -16,7 +16,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <div class="portfolio_container">
+            <div id="portfolio_container">
                 <script id="portfolio_template" type="x-tmpl-mustache/text">
                     <div class="portfolio_item"> 
                         <a href="{{alt_url}}" rel="lightbox-gallery" title="{{name}}">
@@ -38,6 +38,7 @@
             //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
             // }
             var leasing_photos = getRepoDetailsByName("photos").photos;
+            renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
             
 
             show_content();
