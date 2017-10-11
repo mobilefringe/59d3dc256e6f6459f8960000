@@ -133,7 +133,13 @@
                                             <li class="dropdown_item"><a href="/leasing_photos">Photos</a></li>
                                         </ul>        
                                     </li>
-                                    <li class="menu_item"><a href="">News</a></li>
+                                    <li class="menu_item">
+                                        <a href="">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <ul>
+                                            <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
+                                            <li class="dropdown_item"><a href="/leasing_photos">Photos</a></li>
+                                        </ul> 
+                                    </li>
                                     <li class="menu_item"><a href="/hours">Mall Hours</a></li>
                                 </ul>
                             </nav>
