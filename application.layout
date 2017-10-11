@@ -130,7 +130,7 @@
                                         <a href="#">Leasing <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul>
                                             <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
-                                            <li class="dropdown_item"><a href="/leasing_photos">Photos</a></li>
+                                            <li class="dropdown_item"><a href="/photos">Photos</a></li>
                                         </ul>        
                                     </li>
                                     <li class="menu_item">
@@ -194,7 +194,9 @@
                         </div>
                         <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
                         <a href="/stores">
-                            <div class="footer_btn caps">Go To Directory</div>
+                            <div class="footer_btn caps">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753120000/directory_btn.png" class="" alt="">
+                            </div>
                         </a>
                     </div>
                     <div class="col-md-4 footer_center">
@@ -217,7 +219,9 @@
                         <div class="margin_20"></div>
                         <div id="instafeed"></div>
                         <a href="/newsletter">
-                            <div class="footer_btn caps">Join Our Newsletter</div>
+                            <div class="footer_btn caps">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753117000/newsletter_btn.png" class="" alt="">
+                            </div>
                         </a>
                     </div>
                 </div>
