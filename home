@@ -124,9 +124,9 @@
                 animation: "slide",
             });
             
-            $('.logo_flexslider').flexslider({
-                animation: "slide",
-            });
+            // $('.logo_flexslider').flexslider({
+            //     animation: "slide",
+            // });
         }
         loadMallDataCached(renderAll); 
     })
