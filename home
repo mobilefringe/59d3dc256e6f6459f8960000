@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="">
+    <div class="flex_container">
         <div class="width_50">
             <div class="home_promos" id="home_blog_container">
                 <script id="home_blog_template" type="x-tmpl-mustache/text">
