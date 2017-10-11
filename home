@@ -41,7 +41,7 @@
                         
                     </script>
                 </div>
-                <a href="/promotions"><p class="home_see_all">See all sales & promotions <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+                <p class="home_see_all"><a href="/promotions">See all sales & promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
             </div>
         </div>
     </div>
