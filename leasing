@@ -15,28 +15,24 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
-        <div id="portfolio_container">
-            <script id="portfolio_template" type="x-tmpl-mustache/text">
-                <div class="col-md-6 portfolio_item">
-                    <a href="{{image_url}}" data-lightbox="{{name}}">
-                        <img alt="photo{{id}}" src="{{image_url}}">
-                    </a>
-                </div> 
-           </script>
-        </div>
+        <div class="col-md-12">
+            <div id="mm_page_content"></div>
+        </div> 
     </div>
 </div>
 <script>
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Promotions Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            var leasing_photos = getRepoDetailsByName("photos").images;
-            renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/10dundaseast-leasing.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
         
             show_content();
         }
