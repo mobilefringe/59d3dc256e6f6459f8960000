@@ -71,6 +71,11 @@ function init() {
     store_search();
     
     get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 12, 'standard_resolution', render_instagram);   
+    
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 }
 
 function show_cat_stores(){
