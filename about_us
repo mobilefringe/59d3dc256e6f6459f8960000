@@ -55,7 +55,7 @@ Toronto, Ontario</p>
         init(e);
         function renderAll(){
             var prefix = get_prefix();
-            var pages_json = prefix + "/pages/10dundaseast-contact-us.json"
+            var pages_json = prefix + "/pages/10dundaseast-about-us.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
@@ -65,26 +65,6 @@ Toronto, Ontario</p>
             }); 
 
             show_content();
-            
-            $('#contact_form').submit(function(e) {
-                values = [];
-                values = JSON.stringify($('#contact_form').serializeArray());
-                e.preventDefault();
-                $.ajax({
-                    url : "/api/v1/contact_us",
-                    type: "POST",
-                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
-                    form_data:values},
-                    success: function(data, textStatus, jqXHR) {
-                        $('#send_contact_success').fadeIn();
-                        $('#contact_form').find("input[type=text], textarea").val("");
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        $('html, body').animate({scrollTop : 0},800);
-                        $('#send_contact_error').fadeIn();
-                    }
-                });
-    		});
         }
         loadMallDataCached(renderAll); 
     });
