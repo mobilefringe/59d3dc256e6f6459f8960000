@@ -1,0 +1,33 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Centre Map</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe width="100%" height="960" style="border:none" src="//www.ng1.angusanywhere.com/tenant/Bentall/Main/default.aspx"></iframe>
+        </div> 
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            
+        
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
