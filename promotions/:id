@@ -25,6 +25,7 @@
                     <h2 class="promo_details_name"> {{name}} </h2>
                     <h3 class="promo_details_dates"> {{dates}} </h3>
                     <img class="promo_details_img" src="{{image_url}}"/>
+                    <hr class="horizontal_div">
                     <p class="promo_details_desc"> {{description}} </p>
                 </script>
             </div>
