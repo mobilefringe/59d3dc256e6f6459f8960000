@@ -17,8 +17,8 @@
     <div class="row">
         <div class="row">
             <div class="col-md-12 center">
-                <div class="directory_btn caps active">Stores</div>
-                <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
+                <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
+                <div class="directory_btn caps active">Centre Map</div>
             </div>
         </div>
         <div class="col-md-12">
