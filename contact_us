@@ -20,6 +20,7 @@
             <p>10 Dundas Street East, Suite 707,<br>
 Toronto, Ontario</p> 
             <h2 class="hidden_phone">Tel: <span class="phone_pad">416.254.7777</span></h2>
+            <h2 class="display_phone"><a href:"tel:416.254.7777">Tel: <span class="phone_pad">416.254.7777</span></a></h2>
             <h2>Fax: <span class="phone_pad">416.254.7777</span></h2>
             <br>
             <h2 class="margin_30">Important Phone Numbers:</h2>
