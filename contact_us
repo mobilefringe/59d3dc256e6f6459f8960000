@@ -19,9 +19,9 @@
             <h2>Management Office</h2>
             <p>10 Dundas Street East, Suite 707,<br>
 Toronto, Ontario</p> 
-            <h2 class="hidden_phone"><span class="phone_pad">Tel: </span>416.254.7777</h2>
-            <h2 class="show_phone"><a href:"tel:416.254.7777"><span class="phone_pad">Tel: </span>416.254.7777</a></h2>
-            <h2><span class="phone_pad">Fax: </span>416.254.7777</h2>
+            <h2 class="hidden_phone"><div class="phone_pad">Tel: </div>416.254.7777</h2>
+            <h2 class="show_phone"><a href:"tel:416.254.7777"><div class="phone_pad">Tel: </div>416.254.7777</a></h2>
+            <h2><div class="phone_pad">Fax: </div>416.254.7777</h2>
             <br>
             <h2 class="margin_30">Important Phone Numbers:</h2>
         </div>
