@@ -25,7 +25,7 @@ Toronto, Ontario</p>
             <br>
             <h2 class="margin_30">Important Phone Numbers:</h2>
             <div id="mm_page_content"></div>
-            <hr class="horizontal_div display_phone">
+            <hr class="horizontal_div show_phone">
         </div>
         <div class="col-md-6 border_left">
             <h2>Contact us with your questions, comments, or for more information.</h2>
