@@ -22,13 +22,10 @@
         <div class="col-md-12">
             <div id="promo_details_container">
                 <script id="promo_details_template" type="x-tmpl-mustache/text">
-                    
-                    <div class="promo_content">
-                        <h2 class="promo_name"> {{name}} </h2>
-                        <h3 class="promo_dates"> {{dates}} </h3>
-                        <img src="{{image_url}}"/>
-                        <p class="promo_desc"> {{description}} </p>
-                    </div>
+                    <h2 class="promo_details_name"> {{name}} </h2>
+                    <h3 class="promo_details_dates"> {{dates}} </h3>
+                    <img class="promo_details_img" src="{{image_url}}"/>
+                    <p class="promo_details_desc"> {{description}} </p>
                 </script>
             </div>
         </div>
