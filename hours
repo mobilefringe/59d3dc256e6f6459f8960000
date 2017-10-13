@@ -27,8 +27,9 @@
             </div>
             <div class="margin_30"></div>
             <p>Please see individual store listing for store hours.</p>
+            <hr class="display_phone">
         </div>
-        <hr class="display_phone">
+        
         <div class="col-md-6">
             <h2>Holiday Hours</h2>
             <div id="holiday_hours_container">
