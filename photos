@@ -30,11 +30,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Promotions Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
-            // }
             var leasing_photos = getRepoDetailsByName("photos").images;
             renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
         
