@@ -25,7 +25,6 @@
         init(e);
         function renderAll(){
             
-        
             show_content();
         }
         loadMallDataCached(renderAll); 
