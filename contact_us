@@ -53,16 +53,15 @@ Toronto, Ontario</p>
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Promotions Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            
-            var hours = getPropertyRegularHours();
-            renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
-            var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
-            renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/10dundaseast-contact-us.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
 
             show_content();
             
