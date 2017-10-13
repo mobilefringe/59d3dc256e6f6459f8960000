@@ -24,6 +24,7 @@ Toronto, Ontario</p>
             <h2><div class="phone_pad">Fax: </div>416.254.7777</h2>
             <br>
             <h2 class="margin_30">Important Phone Numbers:</h2>
+            <div id="mm_page_content"></div>
         </div>
         <div class="col-md-6 border_left">
             <h2>Contact us with your questions, comments, or for more information.</h2>
