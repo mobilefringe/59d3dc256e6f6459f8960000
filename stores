@@ -96,34 +96,26 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Stores Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
             renderGeneral("#category_select", "#category_select_template", categories);
             $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
             
             var store_list = getStoresList();
-            console.log(store_list)
             renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             
             show_content();
-            // store_search();
             show_cat_stores();
             
-            var window_width = $( window ).width();
-            if (window_width > 769) {
-                $(".store_logo_container").hover(function() {
-                    $(".store_img", this).hide();
-                    $(".store_hover", this).show();
-                }, function() {
-                    $(".store_img", this).show();
-                    $(".store_hover", this).hide();
-                });
-            }
+            // var window_width = $( window ).width();
+            // if (window_width > 769) {
+            //     $(".store_logo_container").hover(function() {
+            //         $(".store_img", this).hide();
+            //         $(".store_hover", this).show();
+            //     }, function() {
+            //         $(".store_img", this).show();
+            //         $(".store_hover", this).hide();
+            //     });
+            // }
         }
         loadMallData(renderAll); 
     })
