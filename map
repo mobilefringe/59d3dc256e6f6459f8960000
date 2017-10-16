@@ -77,7 +77,7 @@
     			zoom_OUT_TO_FIT: "NO",
     			container: 'zoom_container'
     		});
-        	show_png_pin(".mapper", "#map_image");
+        	show_png_pin("#storelist_container", "#map_image");
     	
             show_content();
         }
