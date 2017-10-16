@@ -24,7 +24,7 @@
         <div class="col-md-12">
             <select id="storelist_container" class="pull-left storelist_dd">
                 <script id="storelist_template" type="x-tmpl-mustache/text">
-                    <option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+','+stores[i].z_coordinate+'">'+stores[i].name+'</option>
+                    <option value="'+stores[i].x_coordinate+','+stores[i].y_coordinate+','+stores[i].id+','+stores[i].z_coordinate+'"> {{name}} </option>
                 </script>
             </select>
             
