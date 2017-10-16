@@ -492,7 +492,7 @@ function renderStoreDetails(container, template, collection, slug){
                 var categories = getCategoryDetails(cat_ids);
                 cat_list.push(categories);
             });
-            // val.store_categories = cat_list;
+            val.store_categories = cat_list;
         }
         
         if(val.is_coming_soon_store != false){
