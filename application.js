@@ -484,6 +484,16 @@ function renderStoreDetails(container, template, collection, slug){
             val.store_logo = val.store_front_url_abs; 
         }
         
+        var cat_ids = val.categories;
+        var cat_list = [];
+        if (cat_ids.length > 0){
+            $.each(cat_ids, function(key, val){
+                var categories = getCategoryDetails(cat_ids[key]);
+                cat_list.push(categories);
+            });
+            val.categories = cat_list;
+        }
+        
         if(val.is_coming_soon_store != false){
             val.coming_soon_store = "display: block;"
         } else {
