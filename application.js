@@ -492,6 +492,7 @@ function renderStoreDetails(container, template, collection, slug){
             var store_hours = getHoursForStoreSlug(val.slug);
             console.log(store_hours)
         }
+        
         if(val.is_coming_soon_store != false){
             val.coming_soon_store = "display: block;"
         } else {
@@ -513,6 +514,54 @@ function renderStoreDetails(container, template, collection, slug){
     });
     
     $(container).show();
+    $(container).html(item_rendered.join(''));
+}
+
+function renderStoreDetailsHours(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        switch(val.day_of_week) {
+            case 0:
+                val.day = "Sunday";
+                break;
+            case 1:
+                val.day = "Monday";
+                break;
+            case 2:
+                val.day = "Tuesday";
+                break;
+            case 3:
+                val.day = "Wednesday";
+                break;
+            case 4:
+                val.day = "Thursday";
+                break;
+            case 5:
+                val.day = "Friday";
+                break;
+            case 6:
+                val.day = "Saturday";
+                break;
+        }
+        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+        
+        if(val.is_closed == null || val.is_closed == false && val.open_full_day == false){
+            val.hour_string = open_time.format("h:mmA") + " - " + close_time.format("h:mmA");
+        }       
+        if(val.is_closed == true){
+            val.hour_string = "Closed";
+        } 
+        if(val.open_full_day == true){
+            val.hour_string = "Open 24 hours";
+        }     
+
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
     $(container).html(item_rendered.join(''));
 }
 
