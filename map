@@ -15,14 +15,29 @@
 <div class="content_container">
     <div class="margin_30"></div>
     <div class="row">
-        <div class="row">
-            <div class="col-md-12 center">
-                <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
-                <div class="directory_btn caps active">Centre Map</div>
-            </div>
+        <div class="col-md-12 center">
+            <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
+            <div class="directory_btn caps active">Centre Map</div>
         </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
+            <select id="storelist_container" class="pull-left storelist_dd">
+                <option disabled selected>Select a Store</option>
+            </select>
             
+            <div id="zControls" class="pull-right">
+                <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
+                <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+            </div>
+            
+            <div id="map" class="panzoom-elements" style=""><img src=""></div>
+    
+            <div id="zoom_container">
+                <img id="png_map" class="png_map" alt="center map" src="" width="2240" height="943"/>
+    
+                <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>    
+            </div>
         </div> 
     </div>
 </div>
