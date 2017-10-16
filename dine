@@ -90,17 +90,6 @@
             renderStoreList('#store_list_container','#store_list_template', restaurants, "stores");
             
             show_content();
-            
-            // var window_width = $( window ).width();
-            // if (window_width > 769) {
-            //     $(".store_logo_container").hover(function() {
-            //         $(".store_img", this).hide();
-            //         $(".store_hover", this).show();
-            //     }, function() {
-            //         $(".store_img", this).show();
-            //         $(".store_hover", this).hide();
-            //     });
-            // }
         }
         loadMallData(renderAll); 
     })
