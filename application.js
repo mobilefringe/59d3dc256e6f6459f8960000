@@ -485,14 +485,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         if(val.categories != null){
-            var cat_ids = val.categories;
-            var cat_list = [];
-            $.each(cat_ids, function(key, val){
-                var categories = getCategoryDetails(cat_ids);
-                var cat_name = categories.name;
-                cat_list.push(cat_name);
-            });
-            val.store_categories = cat_list;
+            val.store_categories = getCategoriesNamesByStoreSlug(val.slug);
         }
         
         if(val.is_coming_soon_store != false){
