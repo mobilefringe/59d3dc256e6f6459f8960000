@@ -161,7 +161,7 @@ function show_png_pin(trigger, map){
 			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coord + ',' + y_coord + '">\
 				<div>\
 					<div class="text">\
-					<strong>'+ selectedOptionName + '</strong>\
+					'+ selectedOptionName + '\
 				</div>\
 				<img src="//codecloud.cdn.speedyrails.net/sites/584ed7876e6f643ecd000000/image/png/1497039299000/map_marker.png" width="40px" height="59px" alt="marker" />\
 				</div>\
