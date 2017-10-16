@@ -139,7 +139,7 @@ function show_png_pin(trigger, map){
     $(trigger).bind("change", function(e) {
         e.preventDefault()
         
-        var selectedOption = $("select.mapper").val().split(",");
+        var selectedOption = $("#storelist_container").val().split(",");
         console.log(selectedOption)
         var selectedOptionName = $(".mapper option:selected").text();
         
