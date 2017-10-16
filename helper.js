@@ -141,7 +141,7 @@ function show_png_pin(trigger, map){
         
         var selectedOption = $("#storelist_container").val().split(",");
         console.log(selectedOption)
-        var selectedOptionName = $(".mapper option:selected").text();
+        var selectedOptionName = $("#storelist_container option:selected").text();
         
         var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
         // coords = $(selectedOption).attr('data-value').split(",");
