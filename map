@@ -48,6 +48,7 @@
         init(e);
         function renderAll(){
             var stores = getStoresList();
+            console.log(stores)
             renderStoreList("#storelist_container", "#storelist_template", stores);
         
             show_content();
