@@ -50,7 +50,7 @@
             var stores = getStoresList();
             console.log(stores)
             renderStoreList("#storelist_container", "#storelist_template", stores);
-        
+            $("#storelist_container").append("<option disabled selected>Select a Store</option>")
             show_content();
         }
         loadMallDataCached(renderAll); 
