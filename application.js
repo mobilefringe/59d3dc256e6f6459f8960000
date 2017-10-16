@@ -488,8 +488,8 @@ function renderStoreDetails(container, template, collection, slug){
             var cat_ids = val.categories;
             var cat_list = [];
             $.each(cat_ids, function(key, val){
-                console.log(cat_ids);
                 var categories = getCategoryDetails(cat_ids);
+                console.log(categories)
                 cat_list.push(categories);
             });
             val.store_categories = cat_list;
