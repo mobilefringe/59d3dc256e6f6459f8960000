@@ -488,6 +488,10 @@ function renderStoreDetails(container, template, collection, slug){
             val.store_categories = getCategoriesNamesByStoreSlug(val.slug);
         }
         
+        if(val.store_hours != null){
+            var store_hours = getHoursForStoreSlug(val.slug);
+            console.log(store_hours)
+        }
         if(val.is_coming_soon_store != false){
             val.coming_soon_store = "display: block;"
         } else {
