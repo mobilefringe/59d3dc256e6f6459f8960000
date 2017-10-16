@@ -140,6 +140,7 @@ function show_png_pin(trigger, map){
         e.preventDefault()
         
         var selectedOption = $("select.mapper").val().split(",");
+        console.log(selectedOption)
         var selectedOptionName = $(".mapper option:selected").text();
         
         var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
