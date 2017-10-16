@@ -194,7 +194,6 @@
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753120000/directory_btn.png" class="" alt="">
                             </div>
                         </a>
-                        <hr class="horizontal_div show_phone">
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4 footer_center">
@@ -210,8 +209,8 @@
                             <li><a href="">Leasing</a></li>
                         </ul>  
                         <div class="margin_60"></div>
-                        <hr class="horizontal_div show_phone">
                     </div>
+                    <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Instagram</h3>
                         <!-- Instagram Feed -->
