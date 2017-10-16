@@ -19,7 +19,7 @@
             <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
             <div class="directory_btn caps active">Centre Map</div>
         </div>
-        <div class="col-md-12 center show_phone">
+        <div class="col-sm-12 center show_phone">
             <a href="/stores"><div class="directory_btn caps ">Back to Directory</div></a>
         </div>
     </div>
