@@ -101,7 +101,7 @@
             // renderGeneral("#category_select", "#category_select_template", categories);
             // $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
             var restaurants = getStoresListByCategoryID(2538);
-            console.log(store_list)
+       
             renderStoreList('#store_list_container','#store_list_template', restaurants, "stores");
             
             show_content();
