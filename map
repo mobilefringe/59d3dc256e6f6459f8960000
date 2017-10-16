@@ -22,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <select id="storelist_container" class="pull-left storelist_dd">
+            <select id="storelist_container" class="">
                 <script id="storelist_template" type="x-tmpl-mustache/text">
                     <option value="{{x_coordinate}},{{y_coordinate}},{{id}},{{z_coordinate}}"> {{name}} </option>
                 </script>
