@@ -58,7 +58,27 @@
             var stores = getStoresList();
             console.log(stores)
             renderStoreList("#storelist_container", "#storelist_template", stores);
-            $("#storelist_container").prepend("<option disabled selected>Select a Store</option>")
+            $("#storelist_container").prepend("<option disabled selected>Select a Store</option>");
+            
+            $("#map_image").attr("src", getPNGMapURL())
+    		$('#map_image').smoothZoom({
+    		    width: 840,
+                height: 500,
+    		    initial_ZOOM: 0,
+    			zoom_MIN: 0,
+    			zoom_MAX: 250,
+    			responsive: true,
+    		    responsive_maintain_ratio: true,
+    			zoom_BUTTONS_SHOW : 'YES',
+    			pan_BUTTONS_SHOW : 'NO',
+    			pan_LIMIT_BOUNDARY : 'NO',
+    			button_SIZE: 34,
+    			button_ALIGN: "top right",
+    			zoom_OUT_TO_FIT: "NO",
+    			container: 'zoom_container'
+    		});
+        	show_png_pin(".mapper", "#map_image");
+    	
             show_content();
         }
         loadMallDataCached(renderAll); 
