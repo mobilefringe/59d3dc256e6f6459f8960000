@@ -484,14 +484,15 @@ function renderStoreDetails(container, template, collection, slug){
             val.store_logo = val.store_front_url_abs; 
         }
         
-        var cat_ids = val.categories;
-        var cat_list = [];
-        if (cat_ids.length > 0){
+        if(val.categories != null){
+            var cat_ids = val.categories;
+            var cat_list = [];
             $.each(cat_ids, function(key, val){
+                console.log(cat_ids);
                 var categories = getCategoryDetails(cat_ids[key]);
                 cat_list.push(categories);
             });
-            val.store_categories = cat_list;
+            // val.store_categories = cat_list;
         }
         
         if(val.is_coming_soon_store != false){
