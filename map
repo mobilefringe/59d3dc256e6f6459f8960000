@@ -20,6 +20,7 @@
             <div class="directory_btn caps active">Centre Map</div>
         </div>
     </div>
+    <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
             <select id="storelist_container" class="">
