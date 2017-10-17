@@ -109,11 +109,11 @@
             }
             
             // BLOG //
-            var blog_posts = getBlogDataBySlug("twinpines-main").posts.reverse();
-            if(blog_posts.length > 0){
-                var featured_posts = blog_posts.slice(0, 3);
-                renderPosts("#home_blog_container", "#home_blog_template", featured_posts)
-            }
+            // var blog_posts = getBlogDataBySlug("twinpines-main").posts.reverse();
+            // if(blog_posts.length > 0){
+            //     var featured_posts = blog_posts.slice(0, 3);
+            //     renderPosts("#home_blog_container", "#home_blog_template", featured_posts)
+            // }
             
             // LOGO SCROLL //
             var stores = getStoresList();
