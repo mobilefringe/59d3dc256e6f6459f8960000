@@ -85,6 +85,11 @@
             
             show_content();
             jobs_filter();
+            
+            $(".filter_jobs").click(function() {
+                $(this).addClass("active");
+                $(".filter_jobs").removeClass("active")
+            })
         }
         loadMallDataCached(renderAll); 
     });
