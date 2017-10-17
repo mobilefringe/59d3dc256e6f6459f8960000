@@ -24,22 +24,24 @@
             </div>
         </div>
     </div>
-            <div class="position_realtive show_phone">
-                <div class="row">
-                    <div class="col-xs-9 no_padding">
-                        <h3 id="current_filter">ALL</h3>
-                    </div>
-                    <div class="col-xs-3 no_padding">
-                        <a href="#" id="filter_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Filter</a>
-                        <ul id="filter_nav" class="dropdown-menu" aria-labelledby="filter_dd">
-                            <li class="active_filter filter_jobs" data-id="all">All</li>
-                            <li class="filter_jobs" data-id="Full Time">Full-Time</li>
-                            <li class="filter_jobs" data-id="Part Time">Part-Time</li>
-                            <li class="filter_jobs" data-id="Seasonal">Seasonal</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="position_realtive show_phone">-->
+            <!--    <div class="row">-->
+            <!--        <div class="col-xs-9 no_padding">-->
+            <!--            <h3 id="current_filter">ALL</h3>-->
+            <!--        </div>-->
+            <!--        <div class="col-xs-3 no_padding">-->
+            <!--            <a href="#" id="filter_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Filter</a>-->
+            <!--            <ul id="filter_nav" class="dropdown-menu" aria-labelledby="filter_dd">-->
+            <!--                <li class="active_filter filter_jobs" data-id="all">All</li>-->
+            <!--                <li class="filter_jobs" data-id="Full Time">Full-Time</li>-->
+            <!--                <li class="filter_jobs" data-id="Part Time">Part-Time</li>-->
+            <!--                <li class="filter_jobs" data-id="Seasonal">Seasonal</li>-->
+            <!--            </ul>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+    <div class="row">
+        <div class="col-md-12">
             <div id="jobs_container">
                 <script id="jobs_template" type="x-tmpl-mustache/text">
                     <div class="row filter_row" data-job-type="{{job_type}}">
