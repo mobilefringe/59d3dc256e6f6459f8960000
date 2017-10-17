@@ -16,12 +16,14 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <ul class="jobs_filter hidden_phone">
-                <li class="active_filter filter_jobs" data-id="all">ALl</li>
-                <li class="filter_jobs" data-id="Full Time">Full-Time</li>
-                <li class="filter_jobs" data-id="Part Time">Part-Time</li>
-                <li class="filter_jobs" data-id="Seasonal">Seasonal</li>
-            </ul>
+            <div class="jobs_filter hidden_phone">
+                <div class="directory_btn caps active filter_jobs" data-id="all"> All </div>
+                <div class="directory_btn caps filter_jobs" data-id="Full Time"> Full Time </div>
+                <div class="directory_btn caps filter_jobs" data-id="Part Time"> Part Time </div>
+                <div class="directory_btn caps filter_jobs" data-id="Seasonal"> Seasonal </div>
+            </div>
+        </div>
+    </div>
             <div class="position_realtive show_phone">
                 <div class="row">
                     <div class="col-xs-9 no_padding">
