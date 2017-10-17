@@ -221,8 +221,13 @@
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Twitter</h3>
                         <div class="margin_20"></div>
-                        <a class="twitter-timeline" data-height="250" data-theme="light" data-link-color="#009688" href="https://twitter.com/10DundasEast?ref_src=twsrc%5Etfw">Tweets by 10DundasEast</a> 
+                        <!--<a class="twitter-timeline" data-height="250" data-theme="light" data-link-color="#009688" href="https://twitter.com/10DundasEast?ref_src=twsrc%5Etfw">Tweets by 10DundasEast</a> -->
+                        <!--<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+                        
+                        <a class="twitter-grid" href="https://twitter.com/10DundasEast?ref_src=twsrc%5Etfw">Tweets by 10DundasEast</a>
                         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        
+                        
                         <a href="/newsletter">
                             <div class="footer_btn caps">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753117000/newsletter_btn.png" class="" alt="">
