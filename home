@@ -81,8 +81,9 @@
     <!--        <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508261370000/feature2.png" class="" alt="">-->
     <!--    </div>-->
     <!--</div>-->
-    <div id="instafeed"></div>
-    
+    <div class="instafeed_container">
+        <div id="instafeed"></div> 
+    </div>
     <div class="logo_scroll">
         <!--<div id="logo_slider" class="flexslider">-->
         <!--    <ul class="slides" id="scroll_container">-->
