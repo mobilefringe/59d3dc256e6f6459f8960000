@@ -28,6 +28,25 @@
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1507665662000/635.jpeg" class="" alt="">
         </div>
         <div class="width_50">
+            <!--<div class="home_promos">-->
+            <!--    <div id="home_promo_container">-->
+            <!--        <script id="home_promo_template" type="x-tmpl-mustache/text">-->
+            <!--            <div class="margin_30">-->
+            <!--                <p class="home_promo_store"> {{store_name}} </p>-->
+            <!--                <h2 class="home_promo_name"> {{name}} </h2>-->
+            <!--                <p class="home_promo_dates"> {{dates}} </p>-->
+            <!--                <p class="home_promo_desc"> {{short_desc}} </p>-->
+            <!--                <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>-->
+            <!--            </div>-->
+                        
+            <!--        </script>-->
+            <!--    </div>-->
+            <!--    <p class="home_see_all"><a href="/promotions">See all sales & promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="flex_container">
+        <div class="width_50">
             <div class="home_promos">
                 <div id="home_promo_container">
                     <script id="home_promo_template" type="x-tmpl-mustache/text">
@@ -42,23 +61,6 @@
                     </script>
                 </div>
                 <p class="home_see_all"><a href="/promotions">See all sales & promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
-            </div>
-        </div>
-    </div>
-    <div class="flex_container">
-        <div class="width_50">
-            <div class="home_promos">
-                <div id="home_blog_container">
-                    <script id="home_blog_template" type="x-tmpl-mustache/text">
-                        <div class="margin_30">
-                            <h2 class="home_promo_name"> {{title}} </h2>
-                            <p class="home_promo_dates"> {{publish_date}} </p>
-                            <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
-                        </div>
-                        
-                    </script>
-                </div>
-                <p class="home_see_all"><a href="/">See all news articles</a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
             </div>
         </div>
         <div class="width_50">
