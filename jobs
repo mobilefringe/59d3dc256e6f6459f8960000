@@ -46,7 +46,7 @@
                 <script id="jobs_template" type="x-tmpl-mustache/text">
                     <div class="row filter_row" data-job-type="{{job_type}}">
                         <div class="col-md-4">
-                            <h3 class="jobs_store_name"><a href="/stores/{{store_slug}}">{{store_name}}</a></h3>
+                            <h4 class="jobs_store_name"><a href="/stores/{{store_slug}}">{{store_name}}</a></h4>
                         </div>
                         <div class="col-md-5 mobile_padding">
                             <h4 class="jobs_name"><a href="/jobs/{{slug}}">{{name}} <i class="fa fa-arrow-right arrow_custom show_phone"></i></a></h4>
