@@ -84,6 +84,31 @@ function init() {
     });
 }
 
+function jobs_filter(){
+    $('.filter_jobs').click(function(e){
+        $('#no_jobs_in_filter').text("")
+        var filter_id = $(this).attr('data-id');
+        $('.active_filter').removeClass('active_filter');
+        $(this).addClass('active_filter');
+        $('#current_filter').text($(this).text());
+        var rows = $('.filter_row');
+        if (filter_id == "all"){
+            rows.show();
+        } else{
+            rows.hide();
+            $.each(rows, function(i, val){
+                var filter_array = val.getAttribute('data-job-type').split('/');
+                if ($.inArray(filter_id, filter_array) >= 0){
+                    $(val).show();
+                }
+            });
+        }
+        if($('.filter_row:hidden').length == rows.length){
+            $('#no_jobs_in_filter').text("There are currently no " + filter_id + " jobs available, please check back again later.")
+        }
+    });
+}
+
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
