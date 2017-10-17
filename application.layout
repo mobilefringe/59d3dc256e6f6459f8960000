@@ -107,6 +107,12 @@
                             <div class="site_search_results" id="search_results_events"></div>
                             <div class="site_search_results" id="search_results_promotions"></div>
                         </div>
+                        <div id="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div class="nav_container pull-right">
                             <nav id="primary_nav">
                                 <ul class="">
