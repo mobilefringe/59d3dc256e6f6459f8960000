@@ -58,6 +58,7 @@
     
     <script>
         setEndPoint('//10dundaseast.mallmaverick.com/api/v4/10dundaseast/all.json');
+        setEndPoint('//dixieoutlet.mallmaverick.com/api/v4/dixieoutlet/all.json');
     </script>
 </head>
 
