@@ -16,7 +16,47 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            
+            <ul class="jobs_filter hidden_phone">
+                <li class="active_filter filter_jobs" data-id="all">ALl</li>
+                <li class="filter_jobs" data-id="Full Time">Full-Time</li>
+                <li class="filter_jobs" data-id="Part Time">Part-Time</li>
+                <li class="filter_jobs" data-id="Seasonal">Seasonal</li>
+            </ul>
+            <div class="position_realtive show_phone">
+                <div class="row">
+                    <div class="col-xs-9 no_padding">
+                        <h3 id="current_filter">ALL</h3>
+                    </div>
+                    <div class="col-xs-3 no_padding">
+                        <a href="#" id="filter_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Filter</a>
+                        <ul id="filter_nav" class="dropdown-menu" aria-labelledby="filter_dd">
+                            <li class="active_filter filter_jobs" data-id="all">All</li>
+                            <li class="filter_jobs" data-id="Full Time">Full-Time</li>
+                            <li class="filter_jobs" data-id="Part Time">Part-Time</li>
+                            <li class="filter_jobs" data-id="Seasonal">Seasonal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="jobs_container">
+                <script id="jobs_template" type="x-tmpl-mustache/text">
+                    <div class="row filter_row" data-job-type="{{job_type}}">
+                        <div class="col-md-4">
+                            <h3 class="jobs_store_name"><a href="/stores/{{store_slug}}">{{store_name}}</a></h3>
+                        </div>
+                        <div class="col-md-5 mobile_padding">
+                            <h3 class="jobs_name"><a href="/jobs/{{slug}}">{{name}} <i class="fa fa-arrow-right arrow_custom show_phone"></i></a></h3>
+                        </div>
+                        <div class="col-md-3 hidden_phone">
+                            <h3 class="jobs_publish_date text-left"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <h3 id="no_jobs_in_filter"></h3>
+            <div class="col-md-12">
+                <h3 id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</h3>
+            </div>
         </div>
     </div>
 </div>
@@ -24,9 +64,23 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var jobs = getJobsList().sortBy(function(o){ return o.name});
+            var published_jobs = [];
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_jobs.push(val);
+                } 
+            });
+            if(published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', published_jobs);
+            } else {
+                $('#no_jobs').show()
+            }
             
-
             show_content();
+            jobs_filter();
         }
         loadMallDataCached(renderAll); 
     });
