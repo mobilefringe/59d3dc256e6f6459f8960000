@@ -68,6 +68,12 @@ function render_instagram(data){
     $('#instafeed').html(data)
 }
 function init() {
+    $('#menu-icon').click(function(){
+		$(this).toggleClass('open');
+		$('#mobile_nav').slideToggle();
+		$('body').toggleClass('no_scroll');
+	});
+	
     store_search();
     
     get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 12, 'standard_resolution', render_instagram);   
