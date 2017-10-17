@@ -82,17 +82,17 @@
         </div>
     </div>
     <div class="logo_scroll">
-        <div id="logo_slider" class="flexslider">
-            <ul class="slides" id="scroll_container">
-                <script id="scroll_template" type="x-tmpl-mustache/text">
-                    <li>
-                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                            <img alt="banner" src="{{image_url}}" />
-                        </a>
-                    </li>
-                </script>
-            </ul>
-        </div>
+        <!--<div id="logo_slider" class="flexslider">-->
+        <!--    <ul class="slides" id="scroll_container">-->
+        <!--        <script id="scroll_template" type="x-tmpl-mustache/text">-->
+        <!--            <li>-->
+        <!--                <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+        <!--                    <img alt="banner" src="{{image_url}}" />-->
+        <!--                </a>-->
+        <!--            </li>-->
+        <!--        </script>-->
+        <!--    </ul>-->
+        <!--</div>-->
     </div> 
 </div>
 <script>
