@@ -91,6 +91,7 @@
             
             // RESTAURANTS //
             var restaurants = getStoresListByCategoryID(2538);
+            console.log(restaurants)
             renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");
             
             // PROMOS //
