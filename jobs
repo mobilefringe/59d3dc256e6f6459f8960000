@@ -43,9 +43,11 @@
                 </script>
             </div>
             <h3 id="no_jobs_in_filter"></h3>
-            <div class="col-md-12">
-                <h3 id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</h3>
-            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</h3>
         </div>
     </div>
 </div>
