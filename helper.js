@@ -70,7 +70,7 @@ function render_instagram(data){
 function init() {
     $('#menu-icon').click(function(){
 		$(this).toggleClass('open');
-		$('#mobile_nav').slideToggle();
+		$('.nav_container').toggle();
 		$('body').toggleClass('no_scroll');
 	});
 	
