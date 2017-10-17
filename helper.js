@@ -59,10 +59,6 @@ function isInt(value) {
     return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
 }
 
-function render_instagram_single(data){
-    $('.instafeed_single').html(data)
-}
-
 function render_instagram(data){
     $('#instafeed').html(data)
 }
