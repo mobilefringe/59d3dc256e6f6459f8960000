@@ -16,7 +16,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <div class="jobs_filter hidden_phone">
+            <div class="jobs_filter center hidden_phone">
                 <div class="directory_btn caps active filter_jobs" data-id="all"> All </div>
                 <div class="directory_btn caps filter_jobs" data-id="Full Time"> Full Time </div>
                 <div class="directory_btn caps filter_jobs" data-id="Part Time"> Part Time </div>
