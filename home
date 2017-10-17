@@ -32,8 +32,8 @@
                 <div id="home_dine_container">
                     <script id="home_dine_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
-                            <h2 class="home_promo_name"> {{title}} </h2>
-                            <p class="home_promo_dates"> {{publish_date}} </p>
+                            <h2 class="home_promo_name"> {{name}} </h2>
+                            <p class="home_promo_dates"> {{phone}} | Level {{z_coordinate}} </p>
                             <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
