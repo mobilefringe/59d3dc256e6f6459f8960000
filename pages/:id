@@ -2,12 +2,10 @@
     <div class="content_container">
         <div class="inside_banner_content">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h1 id="mm_page_title"></h1>
                 </div>
-                <div class="col-md-6">
-                    <h4 class="pull-right">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></h4>
-                </div>
+                
             </div>
         </div>
     </div>
