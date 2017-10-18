@@ -173,13 +173,8 @@
                             <div id="hours_mf_container">
                                 <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                     {% raw %}
-                                    <table>
-                                        <tr>
-                                            <td>Mon – Fri</td>
-                                            <td></td>
-                                            <td>{{h}}</td>
-                                        <tr>
-                                    <table>
+                                    <div> Mon – Fri</div>
+                                    <div>{{h}}</div>
                                     {% endraw %}
                                 </script>
                             </div>
