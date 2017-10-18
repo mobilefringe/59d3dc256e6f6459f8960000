@@ -143,6 +143,7 @@ function renderHomeHours(container, template, collection){
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
             val.open = "Open Today";
             val.hours = open_time.format("h a") + " - " + close_time.format("h a");
+            val.open_now = "Open Now  <i class="fa fa-circle" aria-hidden="true"></i> "
         } else {
             val.open = "Closed Today";
             val.hours = "";
