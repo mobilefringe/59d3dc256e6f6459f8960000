@@ -63,6 +63,11 @@ function init() {
 	
     store_search();
     
+    $("#mobile_search").click(function() {
+        $(".site_search").show();
+        $(this).hide();
+    });
+    
     get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 12, 'standard_resolution', render_instagram);   
     
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
@@ -73,6 +78,7 @@ function init() {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+    
 }
 
 function jobs_filter(){
