@@ -143,11 +143,11 @@ function renderHomeHours(container, template, collection){
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
             val.open = "Open Today";
             val.hours = open_time.format("h a") + " - " + close_time.format("h a");
-            val.open_now = "Open Now" + <i class="fa fa-circle" aria-hidden="true"></i>
+            val.open_now = "Open Now"
         } else {
             val.open = "Closed Today";
             val.hours = "";
-            val.open_now = "Closed" + <i class="fa fa-circle" aria-hidden="true"></i>
+            val.open_now = "Closed"
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
