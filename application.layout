@@ -166,7 +166,7 @@
         <div class="footer_nav">
             <div class="content_container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
                         <div class="footer_hours">
@@ -203,7 +203,7 @@
                         </a>
                     </div>
                     <hr class="horizontal_div show_phone">
-                    <div class="col-md-4 footer_center">
+                    <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Menu</h3>
                         <div class="margin_60"></div>
                         <ul class="footer_menu footer_menu_left">
@@ -220,7 +220,7 @@
                         <div class="margin_60 hidden_phone"></div>
                     </div>
                     <hr class="horizontal_div show_phone">
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Twitter</h3>
                         <div class="margin_20"></div>
                         <div class="twitter_container">
