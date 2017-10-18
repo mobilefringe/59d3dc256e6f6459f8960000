@@ -175,8 +175,6 @@
                                     <div class="todays_hours">{% raw %} {{open_now}} <i id="open_now" class="fa fa-circle" style="color: {{open_color}}" aria-hidden="true"></i> {% endraw %}</div>
                                 </script>
                             </div>
-                             
-                         
                             <div id="hours_mf_container">
                                 <script id="hours_mf_template" type="x-tmpl-mustache/text">
                                     {% raw %}
@@ -202,7 +200,7 @@
                                 </script>
                             </div>
                         </div>
-                        <h5 class="caps center"><a href="/hours">View Full Hours</a></h5>
+                        <h5 class="caps view_hours"><a href="/hours">View Full Hours</a></h5>
                         <a href="/stores">
                             <div class="footer_btn caps">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753120000/directory_btn.png" class="" alt="">
