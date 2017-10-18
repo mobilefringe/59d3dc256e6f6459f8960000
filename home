@@ -89,6 +89,21 @@
         <div id="instafeed"></div> 
     </div>
     <div class="logo_scroll">
+        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; ">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; overflow: hidden;">
+            <div><img u="image" alt="amazon" src="../img/logo/amazon.jpg" /></div>
         <!--<div id="logo_slider" class="flexslider">-->
         <!--    <ul class="slides" id="scroll_container">-->
         <!--        <script id="scroll_template" type="x-tmpl-mustache/text">-->
@@ -167,12 +182,26 @@
                 animation: "slide",
             });
             
-            $('#logo_slider').flexslider({
-                animation: "slide",
-                itemWidth: 200,
-                minItems: 5,
-                maxItems: 5
-            });
+            var logo_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,                                 
+                $AutoPlayInterval: 0,                            
+                $PauseOnHover: 4,                               
+                $ArrowKeyNavigation: true,   			            
+                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideDuration: 3000,                                
+                $MinDragOffsetToSlide: 20,                          
+                $SlideWidth: 140,                                   
+                // $SlideHeight: 100,                               
+                $SlideSpacing: 0, 					                
+                $DisplayPieces: 7,                                 
+                $ParkingPosition: 0,                              
+                $UISearchMode: 1,                                  
+                $PlayOrientation: 1,                                
+                $DragOrientation: 1                               
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", logo_options);
         }
         loadMallDataCached(renderAll); 
     })
