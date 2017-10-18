@@ -92,7 +92,7 @@
         <div id="slider_container">
 
             <!-- Slides Container -->
-            <div id="logo_container" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; overflow: hidden;">
+            <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
                     <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
                 </script>
