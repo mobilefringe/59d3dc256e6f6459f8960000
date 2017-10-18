@@ -101,7 +101,7 @@
                                 <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png"/>
                             </a>
                         </div>
-                        <div class="mobile_search hidden_now">
+                        <div id="mobile_search hidden_now">
                             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508362897000/mobile_search.png" class="" alt="">
                         </div>
                         <div id="menu-icon">
