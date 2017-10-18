@@ -168,7 +168,7 @@
                 $MinDragOffsetToSlide: 20,                          
                 $SlideWidth: 200,                                   
                 // $SlideHeight: 100,                               
-                $SlideSpacing: 0, 					                
+                $SlideSpacing: 10, 					                
                 $DisplayPieces: 7,                                 
                 $ParkingPosition: 0,                              
                 $UISearchMode: 1,                                  
