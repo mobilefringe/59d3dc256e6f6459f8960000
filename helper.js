@@ -73,14 +73,6 @@ function init() {
     
     get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 12, 'standard_resolution', render_instagram);   
     
-    function ScaleSlider(logo_slider) {
-        var bodyWidth = document.body.clientWidth;
-        if (bodyWidth)
-            logo_slider.$SetScaleWidth(Math.min(bodyWidth, 980));
-        else
-            window.setTimeout(ScaleSlider, 30);
-    }
-
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
         $(window).bind('resize', ScaleSlider);
     }
