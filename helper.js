@@ -71,6 +71,7 @@ function init() {
         $(".site_search").hide();
         $("#mobile_search").show();
     });
+    
     get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 12, 'standard_resolution', render_instagram);   
     
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
