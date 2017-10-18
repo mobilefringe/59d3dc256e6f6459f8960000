@@ -168,7 +168,7 @@
                 <div class="row">
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
-                        <div class="margin_60"></div>
+                        <div class="margin_60 hidden_phone"></div>
                         <div class="footer_hours">
                             <div id="home_hours_container_footer" class="">
                                 <script id="home_hours_template_footer" type="x-tmpl-mustache/text">
