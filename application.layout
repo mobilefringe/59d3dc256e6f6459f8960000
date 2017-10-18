@@ -170,12 +170,11 @@
                         <h3 class="footer_nav_title caps">Mall Hours</h3>
                         <div class="margin_60"></div>
                         <div class="footer_hours">
-                            
-                                <span id="home_hours_container_footer" class="">
-                                    <script id="home_hours_template_footer" type="x-tmpl-mustache/text">
-                                        <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>
-                                    </script>
-                                </span>
+                            <div id="home_hours_container_footer" class="">
+                                <script id="home_hours_template_footer" type="x-tmpl-mustache/text">
+                                    <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>
+                                </script>
+                            </div>
                              
                          
                             <div id="hours_mf_container">
