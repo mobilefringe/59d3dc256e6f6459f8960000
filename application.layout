@@ -172,7 +172,7 @@
                         <div class="footer_hours">
                             <div id="home_hours_container_footer" class="">
                                 <script id="home_hours_template_footer" type="x-tmpl-mustache/text">
-                                    <span class="todays_hours">{% raw %} {{open_now}} <i id="open_now" class="fa fa-circle" style="color: {{open_color}}" aria-hidden="true"></i> {% endraw %}</span>
+                                    <div class="todays_hours">{% raw %} {{open_now}} <i id="open_now" class="fa fa-circle" style="color: {{open_color}}" aria-hidden="true"></i> {% endraw %}</div>
                                 </script>
                             </div>
                              
