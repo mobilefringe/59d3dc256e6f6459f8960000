@@ -110,10 +110,11 @@ function jobs_filter(){
 
 function ScaleSlider(logo_slider) {
     var bodyWidth = document.body.clientWidth;
-    if (bodyWidth)
+    if (bodyWidth){
         logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
-    else
+    } else{
         window.setTimeout(ScaleSlider, 30);
+    }
 }
     
 function show_cat_stores(){
