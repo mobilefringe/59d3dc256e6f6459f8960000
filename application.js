@@ -144,10 +144,12 @@ function renderHomeHours(container, template, collection){
             val.open = "Open Today";
             val.hours = open_time.format("h a") + " - " + close_time.format("h a");
             val.open_now = "Open Now"
+            val.open_color = "#6dd304"
         } else {
             val.open = "Closed Today";
             val.hours = "";
             val.open_now = "Closed"
+            val.open_color = "#ac0a22"
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
