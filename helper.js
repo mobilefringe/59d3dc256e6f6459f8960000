@@ -112,7 +112,7 @@ function ScaleSlider(logo_slider) {
     var bodyWidth = document.body.clientWidth;
     if (bodyWidth){
         logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
-    } else{
+    } else {
         window.setTimeout(ScaleSlider, 30);
     }
 }
