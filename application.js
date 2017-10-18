@@ -147,6 +147,7 @@ function renderHomeHours(container, template, collection){
         } else {
             val.open = "Closed Today";
             val.hours = "";
+            val.open_now = "Closed  <i class="fa fa-circle" aria-hidden="true"></i> "
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
