@@ -177,7 +177,7 @@
                 $DragOrientation: 1                               
             };
 
-            var jssor_slider1 = new $JssorSlider$("slider1_container", logo_options);
+            var jssor_slider1 = new $JssorSlider$("slider_container", logo_options);
         }
         loadMallDataCached(renderAll); 
     })
