@@ -89,7 +89,7 @@
         <div id="instafeed"></div> 
     </div>
     <div class="logo_scroll">
-        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; ">
+        <div id="slider_container">
 
             <!-- Slides Container -->
             <div id="logo_container" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; overflow: hidden;">
@@ -135,7 +135,6 @@
 
             // LOGO SCROLL //
             var stores = getStoresList();
-            console.log(stores)
             renderLogoScroll('#logo_container','#logo_template', stores);
            
             function renderLogoScroll(container, template, collection){
