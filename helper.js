@@ -34,14 +34,6 @@ function get_instagram(url, total, size, callback){
             main_feed = insta_feed.splice(0,5);
             $.each(main_feed, function(i,v){
                 var feed_obj = {}
-                // if(v.caption != null){
-                //     if(v.caption.text.length > 100){
-                //         feed_obj.caption_short = v.caption.text.substring(0,99) + "...";
-                //     }
-                //     // feed_obj.caption = v.caption.text
-                // } else {
-                //     feed_obj.caption = ""
-                // }
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
                 if (i < total){
@@ -60,8 +52,9 @@ function isInt(value) {
 }
 
 function render_instagram(data){
-    $('#instafeed').html(data)
+    $('#instafeed').html(data);
 }
+
 function init() {
     $('#menu-icon').click(function(){
 		$(this).toggleClass('open');
@@ -93,7 +86,7 @@ function jobs_filter(){
         var rows = $('.filter_row');
         if (filter_id == "all"){
             rows.show();
-        } else{
+        } else {
             rows.hide();
             $.each(rows, function(i, val){
                 var filter_array = val.getAttribute('data-job-type').split('/');
