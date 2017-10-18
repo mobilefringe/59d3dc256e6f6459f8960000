@@ -111,7 +111,7 @@ function jobs_filter(){
 function ScaleSlider(logo_slider) {
     var bodyWidth = document.body.clientWidth;
     if (bodyWidth)
-        logo_slider.$SetScaleWidth(Math.min(bodyWidth, 980));
+        logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
     else
         window.setTimeout(ScaleSlider, 30);
 }
