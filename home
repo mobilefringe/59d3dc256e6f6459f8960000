@@ -136,7 +136,7 @@
             // LOGO SCROLL //
             var stores = getStoresList();
             console.log(stores)
-            renderLogoScroll('#scroll_container','#scroll_template', stores);
+            renderLogoScroll('#logo_container','#logo_template', stores);
            
             function renderLogoScroll(container, template, collection){
                 var item_list = [];
