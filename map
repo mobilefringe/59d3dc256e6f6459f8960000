@@ -19,8 +19,8 @@
             <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
             <div class="directory_btn caps active">Centre Map</div>
         </div>
-        <div class="col-sm-12 center show_phone">
-            <a href="/stores"><div class="directory_btn caps "><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>
+        <div class="col-sm-12 center">
+            <a href="/stores"><div class="directory_btn caps show_phone"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>
         </div>
     </div>
     <div class="margin_30"></div>
