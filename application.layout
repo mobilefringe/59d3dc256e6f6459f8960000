@@ -151,7 +151,6 @@
                                         <li class="dropdown_item"><a href="/tenant_services">Tenant Services</a></li>
                                     </ul> 
                                 </li>
-                                
                             </ul>
                         </nav>
                     </div>
@@ -203,7 +202,7 @@
                         <h5 class="caps view_hours"><a href="/hours">View Full Hours</a></h5>
                         <a href="/stores">
                             <div class="footer_btn caps">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753120000/directory_btn.png" class="" alt="">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753120000/directory_btn.png">
                             </div>
                         </a>
                     </div>
@@ -247,7 +246,7 @@
                     <div class="col-md-10 offset-md-2">
                         <a href="/">
                             <img class="show_phone logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png"/>
-                            </a>
+                        </a>
                             
                         <p>© 2017 10 Dundas East. All rights reserved. <a href="/pages/10dundaseast-privacy-policy">Privacy Policy</a> | <a href="">Terms & Conditions</a>. Powered by <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
                     </div>
