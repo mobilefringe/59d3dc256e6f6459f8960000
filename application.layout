@@ -221,7 +221,12 @@
                             <li><a href="">Jobs</a></li>
                             <li><a href="">Leasing</a></li>
                         </ul>  
-                        <div class="margin_60 hidden_phone"></div>
+                        <a href="/newsletter">
+                            <div class="footer_btn caps">
+                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753117000/newsletter_btn.png">
+                            </div>
+                        </a>
+                        <!--<div class="margin_60 hidden_phone"></div>-->
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4 footer_center">
@@ -231,11 +236,7 @@
                         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                         
-                        <!--<a href="/newsletter">-->
-                        <!--    <div class="footer_btn caps">-->
-                        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753117000/newsletter_btn.png" class="" alt="">-->
-                        <!--    </div>-->
-                        <!--</a>-->
+                        
                     </div>
                 </div>
             </div>
