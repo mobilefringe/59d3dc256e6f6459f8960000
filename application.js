@@ -563,7 +563,6 @@ function renderStoreDetails(container, template, collection, slug){
         
         if(val.store_hours != null){
             var store_hours = getHoursForStoreSlug(val.slug);
-            console.log(store_hours)
         }
         
         if(val.is_coming_soon_store != false){
@@ -585,8 +584,6 @@ function renderStoreDetails(container, template, collection, slug){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
