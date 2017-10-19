@@ -87,7 +87,9 @@
     <!--</div>-->
     <div class="instafeed_container">
         <div id="instafeed"></div> 
-        <div class="mobile_insta"></div>
+        <div class="mobile_insta">
+            <h3>Follow us on instagram</h3>
+        </div>
     </div>
     <div class="logo_scroll">
         <div id="slider_container">
