@@ -88,15 +88,6 @@ function render_instagram(data){
     $('#instafeed').html(data);
 }
 
-// function ScaleSlider(logo_slider) {
-//     var bodyWidth = document.body.clientWidth;
-//     if (bodyWidth){
-//         logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
-//     } else {
-//         window.setTimeout(ScaleSlider, 30);
-//     }
-// }
-    
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
