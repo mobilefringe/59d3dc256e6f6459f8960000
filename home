@@ -162,8 +162,6 @@
             };
 
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
-            
-            ScaleSlider(logo_slider);
         }
         loadMallDataCached(renderAll); 
     })
