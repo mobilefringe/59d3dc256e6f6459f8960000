@@ -345,16 +345,14 @@ function renderJobDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = default_image;
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
-        }
-        else{
+            // if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
+            //     val.image_url = default_image;
+            // } else {
+            //     val.image_url = store_details.store_front_url_abs;
+            // }
+        } else {
             val.store_name = "10 Dundas East;
-            val.image_url = default_image;
+            // val.image_url = default_image;
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -362,10 +360,10 @@ function renderJobDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
