@@ -30,7 +30,7 @@
             <form action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
                 <label for="fieldEmail" style="display:none"> subscribe email </label>
                 <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
-                <div class="checkbox footer_text" style="width:300px">
+                <div class="checkbox footer_text">
                     <span>
                     <label for="agree_terms" style="display:none">Agree Terms</label>
                     <input type="checkbox" class="info_check" id="agree_terms" required>&nbsp;I agree to receive emails from 10 Dundas East
