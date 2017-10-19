@@ -35,7 +35,7 @@
                     <input type="checkbox" class="info_check" id="agree_terms" required>
                     I agree to receive emails from 10 Dundas East
                 </label>
-
+                <br>
                 <button class="contact_btn" data-i18n="general.submit">Submit</button>
                 <br>
             </form>
