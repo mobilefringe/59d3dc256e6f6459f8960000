@@ -44,11 +44,7 @@ function init() {
     });
     
     get_instagram("//10dundaseast.mallmaverick.com/api/v2/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
-    
-    // if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-    //     $(window).bind('resize', ScaleSlider);
-    // }
-            
+ 
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
