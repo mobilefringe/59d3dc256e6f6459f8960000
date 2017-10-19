@@ -17,13 +17,24 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Sign Up to E-Connect10n</h2>
-            
             <div class="margin_30 hidden_phone"></div>
+            <p class="">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
             <hr class="horizontal_div show_phone">
-            
         </div> 
         <div class="col-md-6">
-        
+            
+            <form action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
+                <label for="fieldEmail" style="display:none"> subscribe email </label>
+                <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
+                <div class="checkbox footer_text" style="width:300px">
+                    <span>
+                    <label for="agree_terms" style="display:none">Agree Terms</label>
+                    <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from 10 Dundas East
+                    </span>
+                </div>
+                <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
+                <br>
+            </form>
         </div>
     </div>
 </div>
