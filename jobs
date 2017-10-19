@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="margin_30"></div>
+    <div class="margin_30 hidden_phone"></div>
     <div class="row">
         <div class="col-md-12">
             <div id="jobs_container">
