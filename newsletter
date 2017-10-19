@@ -28,16 +28,14 @@
         <div class="col-md-6">
             
             <form action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
-                <label for="fieldEmail" style="display:none"> subscribe email </label>
+                <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Your Email" required/> 
-                <div class="checkbox footer_text">
-                    <span>
-                        <label for="agree_terms">
-                            <input type="checkbox" class="info_check" id="agree_terms" required>
-                            I agree to receive emails from 10 Dundas East
-                        </label>
-                    </span>
-                </div>
+                
+                <label for="agree_terms">
+                    <input type="checkbox" class="info_check" id="agree_terms" required>
+                    I agree to receive emails from 10 Dundas East
+                </label>
+
                 <button class="contact_btn" data-i18n="general.submit">Submit</button>
                 <br>
             </form>
