@@ -15,8 +15,12 @@
 <div class="content_container margin_30">
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <h2>Sign Up to E-Connect10n</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
             <div class="margin_30 hidden_phone"></div>
             <p class="">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
             <hr class="horizontal_div show_phone">
