@@ -29,7 +29,7 @@
             
             <form action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
                 <label for="fieldEmail" style="display:none"> subscribe email </label>
-                <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
+                <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 <div class="checkbox footer_text">
                     <span>
                         <label for="agree_terms" style="display:none">Agree Terms</label>
