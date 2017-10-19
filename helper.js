@@ -2,27 +2,6 @@ var default_image = {
     "image_url" : "//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507148207000/default.png",
 }
 
-function getAssetURL(id){
-    var store_id = id;
-    var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
-    var store_front_image_url = "";    
-    $.ajax({
-        url: store_assets,
-        dataType: 'json',
-        async: false,
-        success: function(data) {
-            if(data.store_files.length > 0){
-                store_front_image_url = data.store_files[0].url;
-            }
-        },
-        error: function (data){
-            store_front_image_url = "";
-        }
-    });
-    
-    return store_front_image_url;
-}
-
 function get_instagram(url, total, size, callback){
     var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
     var item_rendered = [];
@@ -50,9 +29,7 @@ function isInt(value) {
     return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
 }
 
-function render_instagram(data){
-    $('#instafeed').html(data);
-}
+
 
 function init() {
     $('#menu-icon').click(function(){
@@ -74,15 +51,14 @@ function init() {
     
     get_instagram("//10dundaseast.mallmaverick.com/api/v2/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
     
-    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        $(window).bind('resize', ScaleSlider);
-    }
+    // if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+    //     $(window).bind('resize', ScaleSlider);
+    // }
             
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
-    
 }
 
 function jobs_filter(){
@@ -110,14 +86,18 @@ function jobs_filter(){
     });
 }
 
-function ScaleSlider(logo_slider) {
-    var bodyWidth = document.body.clientWidth;
-    if (bodyWidth){
-        logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
-    } else {
-        window.setTimeout(ScaleSlider, 30);
-    }
+function render_instagram(data){
+    $('#instafeed').html(data);
 }
+
+// function ScaleSlider(logo_slider) {
+//     var bodyWidth = document.body.clientWidth;
+//     if (bodyWidth){
+//         logo_slider.$SetScaleWidth(Math.min(bodyWidth, 1150));
+//     } else {
+//         window.setTimeout(ScaleSlider, 30);
+//     }
+// }
     
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
