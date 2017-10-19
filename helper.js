@@ -72,7 +72,7 @@ function init() {
         $("#mobile_search").show();
     });
     
-    get_instagram("//thegateway.mallmaverick.com/api/v3/thegateway/social.json", 5, 'standard_resolution', render_instagram);   
+    get_instagram("//10dundaseast.mallmaverick.com/api/v4/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
     
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
         $(window).bind('resize', ScaleSlider);
