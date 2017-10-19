@@ -38,7 +38,7 @@
                         </label>
                     </span>
                 </div>
-                <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
+                <button class="contact_btn" data-i18n="general.submit">Submit</button>
                 <br>
             </form>
         </div>
