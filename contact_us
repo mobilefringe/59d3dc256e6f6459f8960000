@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="content_container margin_30">
-    <div class="margin_30"></div>
+    <div class="margin_30 hidden_phone"></div>
     <div class="row">
         <div class="col-md-6">
             <h2>Management Office</h2>
