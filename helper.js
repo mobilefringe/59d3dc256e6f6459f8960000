@@ -25,12 +25,6 @@ function get_instagram(url, total, size, callback){
     });
 }
 
-function isInt(value) {
-    return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
-}
-
-
-
 function init() {
     $('#menu-icon').click(function(){
 		$(this).toggleClass('open');
@@ -59,6 +53,10 @@ function init() {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+}
+
+function isInt(value) {
+    return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
 }
 
 function jobs_filter(){
