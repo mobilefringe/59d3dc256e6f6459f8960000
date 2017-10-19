@@ -1,5 +1,5 @@
 var default_image = {
-    "image_url" : "//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507148207000/default.png",
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1508432729000/10dundas_default.jpg",
 }
 
 function get_instagram(url, total, size, callback){
