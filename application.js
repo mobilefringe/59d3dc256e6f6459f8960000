@@ -350,7 +350,7 @@ function renderJobDetails(container, template, collection){
             //     val.image_url = store_details.store_front_url_abs;
             // }
         } else {
-            val.store_name = "10 Dundas East;
+            val.store_name = "10 Dundas East";
             // val.image_url = default_image;
         }
         
