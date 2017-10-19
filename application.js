@@ -485,22 +485,10 @@ function renderStoreList(container, template, collection, type){
             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
                 val.store_front_url_abs = default_image.image_url;
             } 
-            // getAssetURL(val.promotionable_id);
-            if(val.assets != undefined){
-                var hover_url = val.assets[0].url;
-                val.hover_img = getImageURL(hover_url);
-            } else {
-                val.hover_img = val.store_front_url_abs;
-            }
         }
         
         if(val.categories != null){
-            // try {
-                val.cat_list = val.categories.join(',')
-            // }
-            // catch(err) {
-            //     console.log(err);
-            // }
+            val.cat_list = val.categories.join(',')
         }
         
         var current_initial = val.name[0];
