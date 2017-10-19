@@ -346,15 +346,15 @@ function renderJobDetails(container, template, collection){
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.image_url = default_image;
             }
             else{
                 val.image_url = store_details.store_front_url_abs;
             }
         }
         else{
-            val.store_name = "Dixie Outlet";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.store_name = "10 Dundas East;
+            val.image_url = default_image;
         }
         
         var show_date = moment(val.show_on_web_date);
