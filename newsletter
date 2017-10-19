@@ -20,8 +20,11 @@
             
             <div class="margin_30 hidden_phone"></div>
             <hr class="horizontal_div show_phone">
-            <div id="mm_page_content"></div>
+            
         </div> 
+        <div class="col-md-6">
+        
+        </div>
     </div>
 </div>
 <script>
