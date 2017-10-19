@@ -63,7 +63,9 @@ Toronto, Ontario</p>
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-
+            
+            $.validate();
+            
             show_content();
             
             $('#contact_form').submit(function(e) {
