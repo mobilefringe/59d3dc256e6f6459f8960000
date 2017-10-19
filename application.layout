@@ -145,7 +145,7 @@
                                         </ul>        
                                     </li>
                                     <li class="menu_item">
-                                        <a href="">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                        <a href="#">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul>
                                             <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>
                                             <li class="dropdown_item"><a href="/find_us">Find Us</a></li>
