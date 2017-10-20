@@ -54,7 +54,7 @@ function init() {
         e.preventDefault();
         var id = $(this).attr("href");
         $('html, body').animate({
-            scrollTop: $(id).offset().top -50
+            scrollTop: $(id).offset().top -25
         }, 1500);
     });
 }
