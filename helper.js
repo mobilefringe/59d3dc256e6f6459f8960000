@@ -49,6 +49,14 @@ function init() {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+    
+    $(".alpha_list a").click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(id).offset().top -75
+        }, 1500);
+    });
 }
 
 function isInt(value) {
