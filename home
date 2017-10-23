@@ -154,7 +154,7 @@
                 $SlideDuration: 3000,                                
                 $MinDragOffsetToSlide: 20,                          
                 $SlideWidth: 160,                                                                  
-                $SlideSpacing: 30, 					                
+                $SlideSpacing: 50, 					                
                 $DisplayPieces: 7,                                 
                 $ParkingPosition: 0,                              
                 $UISearchMode: 1,                                  
