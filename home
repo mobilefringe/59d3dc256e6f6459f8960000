@@ -153,7 +153,7 @@
                 $SlideEasing: $JssorEasing$.$EaseLinear,          
                 $SlideDuration: 3000,                                
                 $MinDragOffsetToSlide: 20,                          
-                $SlideWidth: 200,                                                                  
+                $SlideWidth: 180,                                                                  
                 $SlideSpacing: 0, 					                
                 $DisplayPieces: 7,                                 
                 $ParkingPosition: 0,                              
