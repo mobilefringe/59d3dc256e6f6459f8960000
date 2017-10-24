@@ -404,9 +404,9 @@ function renderPromotions(container, template, collection){
             val.image_url = default_image;
         }
         
-        if(val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = default_image;
-        }
+        // if(val.image_url.indexOf('missing.png') > 0){
+        //     val.image_url  = default_image;
+        // }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
