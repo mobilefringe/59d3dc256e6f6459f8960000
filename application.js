@@ -401,7 +401,11 @@ function renderPromotions(container, template, collection){
             }
         } else {
             val.store_name = "10 Dundas East";
-            val.image_url = default_image.image_url;
+            if(val.promo_image_url_abs != null || val.promo_image_url_abs.indexOf('missing.png') > 1){
+                val.image_url = val.promo_image_url_abs
+            } else {
+                val.image_url = default_image.image_url;
+            }
         }
         
         // if(val.image_url.indexOf('missing.png') > 0){
