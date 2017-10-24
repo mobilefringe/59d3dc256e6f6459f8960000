@@ -74,9 +74,10 @@ function renderEventDetails(container, template, collection){
     Mustache.parse(template_html); 
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        val.image_url = getImageURL(val.event_image_url);
+        val.image_url = val.event_image_url_abs;
+        val.logo  = default_image.image_url;
         if(val.image_url.indexOf('missing.png') > 0){
-            val.image_show = "display:none";
+            val.image_url  = val.logo;
         }
         
         var show_date = moment(val.show_on_web_date);
