@@ -396,7 +396,6 @@ function renderPromotions(container, template, collection){
             val.store_name = store_details.name;
             if(val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.image_url = store_details.store_front_url_abs;
-                
             } else {
                 val.image_url = val.promo_image_url_abs;
             }
@@ -408,11 +407,7 @@ function renderPromotions(container, template, collection){
                 val.image_url = default_image.image_url;
             }
         }
-        
-        // if(val.image_url.indexOf('missing.png') > 0){
-        //     val.image_url  = default_image;
-        // }
-        
+
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
@@ -452,14 +447,14 @@ function renderPromoDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
-            if(val.promo_image_url_abs != null){
-                val.image_url = val.promo_image_url_abs
-            } else {
+            if(val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.image_url = store_details.store_front_url_abs;
+            } else {
+                val.image_url = val.promo_image_url_abs;
             }
         } else {
             val.store_name = mall_name;
-            if(val.promo_image_url_abs != null || val.promo_image_url_abs.indexOf('missing.png') > 1){
+            if(val.promo_image_url_abs.indexOf('missing.png') > 0){
                 val.image_url = val.promo_image_url_abs
             } else {
                 val.image_url = default_image.image_url;
