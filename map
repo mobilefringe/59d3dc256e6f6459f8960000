@@ -26,22 +26,38 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <select id="storelist_container" class="">
-                <script id="storelist_template" type="x-tmpl-mustache/text">
-                    <option value="{{x_coordinate}},{{y_coordinate}},{{id}},{{z_coordinate}}"> {{name}} </option>
-                </script>
-            </select>
+            <div id="mappedin-map"></div>
+            <main data-venue="<your venue here>" data-key="<probably externalId, or skip>" data-header="<your header size in px>" id="mappedin-app"></main> 
+         
+         <!--   <select id="storelist_container" class="">-->
+         <!--       <script id="storelist_template" type="x-tmpl-mustache/text">-->
+         <!--           <option value="{{x_coordinate}},{{y_coordinate}},{{id}},{{z_coordinate}}"> {{name}} </option>-->
+         <!--       </script>-->
+         <!--   </select>-->
             
-            <div id="parent_div">
-		        <div id="zoom_container">
-			        <img alt="Store Directory Map" id="map_image" src=""/>
-			        <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>
-		        </div>
-	        </div>
+         <!--   <div id="parent_div">-->
+		       <!-- <div id="zoom_container">-->
+			      <!--  <img alt="Store Directory Map" id="map_image" src=""/>-->
+			      <!--  <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>-->
+		       <!-- </div>-->
+	        <!--</div>-->
         </div> 
     </div>
 </div>
-<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>
+<!--<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>-->
+<script type="text/javascript">
+    window.mappedin = {
+        miKey: {
+            id: '<your credentials>',
+            key: '<your credentials>'
+        },
+        searchKey: {
+            id: '<your credentials>',
+            secret: '<your credentials>'
+        }
+    };
+</script>
+<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>
 <script>
     $(document).ready(function(e){
         init(e);
