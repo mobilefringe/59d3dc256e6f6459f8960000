@@ -84,8 +84,7 @@ function renderEventDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         
@@ -192,7 +191,6 @@ function renderHours(container, template, collection, type){
                 case 6:
                     val.day = "Saturday";
                     break;
-                
             }
             if (val.open_time && val.close_time && val.is_closed == false){
                 var open_time = moment(val.open_time).tz(getPropertyTimeZone());
