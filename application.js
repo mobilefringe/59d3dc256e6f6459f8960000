@@ -458,7 +458,11 @@ function renderPromoDetails(container, template, collection){
             }
         } else {
             val.store_name = mall_name;
-            val.image_url = default_image;
+            if(val.promo_image_url_abs != null || val.promo_image_url_abs.indexOf('missing.png') > 1){
+                val.image_url = val.promo_image_url_abs
+            } else {
+                val.image_url = default_image.image_url;
+            }
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
