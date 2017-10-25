@@ -267,7 +267,7 @@ function submit_contest(slug) {
     contest_data.last_name = $('#last_name').val();
     contest_data.email = $('#email').val();
     contest_data.phone = $('#phone_number').val();
-    contest_data.
+    contest_data.mailing_address = $('#mailing_address').val();
     contest_data.city = $('#city').val();
     contest_data.postal_code = $('#postal_code').val();
     contest_data.birthday = $('#birthday').val();
