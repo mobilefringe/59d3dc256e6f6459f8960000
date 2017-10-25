@@ -172,6 +172,9 @@
                         <p class="center caps">10 Dundas East</p>
                         <a href="/find_us"><p class="center">10 Dundas Street East Suite 707,</br>
                         Toronto, ON M5B 2G9</p></a>
+                        <div>
+                            <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508949768000/bental-logo2.png" alt="Bentall Kennedy Logo"
+                        </div>
                         <!--<div class="footer_hours">-->
                         <!--    <div id="home_hours_container_footer" class="">-->
                         <!--        <script id="home_hours_template_footer" type="x-tmpl-mustache/text">-->
