@@ -42,8 +42,8 @@
                 </div>
                 <div class="row ">
                     <div class="col-md-4 margin_30">
-                        <label for="postal_code">Zip Code</label> 
-                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
+                        <label for="city">City</label><br />
+                        <input class="form-control" id="city" name="contest[city]" type="text" placeholder="City"/>
                     </div>
                     <div class="col-md-4 margin_30">
                         <label for="postal_code">Postal Code*</label><br />
