@@ -41,6 +41,12 @@
                     </div>
                 </div>
                 <div class="row ">
+                    <div class="col-md-12 margin_30">
+                        <label for="mailing_address">Street Address</label><br />
+                        <input class="form-control" id="mailing_address" name="contest[mailing_address]" type="text" placeholder="Street Address"/>
+                    </div>
+                </div>
+                <div class="row ">
                     <div class="col-md-4 margin_30">
                         <label for="city">City</label><br />
                         <input class="form-control" id="city" name="contest[city]" type="text" placeholder="City"/>
