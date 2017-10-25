@@ -48,9 +48,9 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var stores = getStoresList();
-            renderStoreList("#storelist_container", "#storelist_template", stores);
-            $("#storelist_container").prepend("<option disabled selected>Select a Store</option>");
+            // var stores = getStoresList();
+            // renderStoreList("#storelist_container", "#storelist_template", stores);
+            // $("#storelist_container").prepend("<option disabled selected>Select a Store</option>");
             
             show_content();
         }
