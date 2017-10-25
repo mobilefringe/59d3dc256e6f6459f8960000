@@ -128,9 +128,9 @@
             }
         
             $('#contest_form').submit(function(e){
-                e.preventDefault();
-                $('#contest_btn').prop('disabled', true);
                 if($('#enterVerify').val() == $('#verifyNumHidden').val()){
+                    e.preventDefault();
+                    $('#contest_btn').prop('disabled', true);
                     submit_contest(slug);
                 } else {
                     alert("Please Enter Correct Verification Number");
