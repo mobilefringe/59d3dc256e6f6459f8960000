@@ -58,15 +58,15 @@
                         <div class="row ">
                             <div class="col-md-4 margin_30">
                                 <label for="city">City</label><br />
-                                <input class="form-control" id="city" name="contest[city]" type="text" placeholder="City"/>
+                                <input class="form-control" id="city" name="contest[city]" type="text" placeholder="City" tab-index="6"/>
                             </div>
                             <div class="col-md-4 margin_30">
                                 <label for="postal_code">Postal Code*</label><br />
-                                <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" placeholder="Postal Code" required data-validation="required"/>
+                                <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" placeholder="Postal Code" required data-validation="required" tab-index="7"/>
                             </div>
                             <div class="col-md-4 margin_30">
                                 <label for="birthday">Date of Birth*</label><br />
-                                <input class="form-control" id="birthday" name="contest[birthday]" type="text" placeholder= "yyyy-mm-dd" required data-validation="required"/>
+                                <input class="form-control" id="birthday" name="contest[birthday]" type="text" placeholder= "yyyy-mm-dd" required data-validation="required" tab-index="8"/>
                                 
                             </div>
                         </div>
@@ -74,18 +74,18 @@
                             <div class="col-md-4 margin_30">
                                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
                                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
-                                <input class="form-control" id="enterVerify" name="enterVerify" type="text" required data-validation="required" />
+                                <input class="form-control" id="enterVerify" name="enterVerify" type="text" required data-validation="required" tab-index="9" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 margin_30">
                                 <label class="cbox_label">
-                                    <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
+                                    <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tab-index="10"/> 
                                     I agree to receive newsletters from {{property_name}}.
                                 </label>
                                 <br/><br/>
                                 <label for="agree_terms">
-                                    <input type="checkbox" class="info_check" id="agree_terms" required data-validation="required"/>
+                                    <input type="checkbox" class="info_check" id="agree_terms" required data-validation="required" tab-index="11"/>
                                     I agree to the <a href = "/rules_regulations">Contest Rules & Regulations</a>
                                 </label>
                                 <br/><br/>
