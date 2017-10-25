@@ -282,10 +282,10 @@ function submit_contest(slug) {
         type: "POST",
         data : contest_entry,
         success: function(data){
-            $('html').scrollTop();
             $('#succes_msg').show();
             $('.contest_btn').prop('disabled', false);
             $('#contest_form').trigger('reset');
+            $('html, body').animate({scrollTop : 0},800);
         },
         error: function (data){
             alert('An error occured while processing your request. Please try again later!')
