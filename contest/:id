@@ -23,7 +23,7 @@
             <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
             <div id="contest_details_container">
                 <script id="contest_details_template" type="x-tmpl-mustache/text">
-                    <img src="{{alt_photo_url}}" class="margin_30 center-block" style="{{promo_image}}" />
+                    <img src="{{alt_photo_url}}" class="margin_30 center-block contest_img" style="{{promo_image}}" />
                     <div class="details_desc margin_30">{{{description}}}</div>
                     
                     <form id="contest_form">
