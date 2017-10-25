@@ -169,7 +169,7 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Location</h3>
                         <div class="margin_60 hidden_phone"></div>
-                        <p class="center">10 DUNDAS EAST</p>
+                        <p class="center caps">10 Dundas East</p>
                         <p class="center">10 Dundas Street East Suite 707</p>
                         <p class="center">Toronto, Ontario</p>
                         <!--<div class="footer_hours">-->
