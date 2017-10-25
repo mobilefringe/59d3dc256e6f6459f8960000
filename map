@@ -28,23 +28,9 @@
         <div class="col-md-12">
             <div id="mappedin-map"></div>
             <main data-venue="10 Dundas East" data-key="cwKTJ7lHEWz0fpLY" data-header="300" id="mappedin-app"></main> 
-         
-         <!--   <select id="storelist_container" class="">-->
-         <!--       <script id="storelist_template" type="x-tmpl-mustache/text">-->
-         <!--           <option value="{{x_coordinate}},{{y_coordinate}},{{id}},{{z_coordinate}}"> {{name}} </option>-->
-         <!--       </script>-->
-         <!--   </select>-->
-            
-         <!--   <div id="parent_div">-->
-		       <!-- <div id="zoom_container">-->
-			      <!--  <img alt="Store Directory Map" id="map_image" src=""/>-->
-			      <!--  <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>-->
-		       <!-- </div>-->
-	        <!--</div>-->
         </div> 
     </div>
 </div>
-<!--<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script>-->
 <script type="text/javascript">
     window.mappedin = {
         miKey: {
@@ -66,25 +52,6 @@
             renderStoreList("#storelist_container", "#storelist_template", stores);
             $("#storelist_container").prepend("<option disabled selected>Select a Store</option>");
             
-    //         $("#map_image").attr("src", getPNGMapURL())
-    // 		$('#map_image').smoothZoom({
-    // 		  //  width: 840,
-    //             height: 500,
-    // 		    initial_ZOOM: 0,
-    // 			zoom_MIN: 0,
-    // 			zoom_MAX: 250,
-    // 			responsive: true,
-    // 		    responsive_maintain_ratio: true,
-    // 			zoom_BUTTONS_SHOW : 'YES',
-    // 			pan_BUTTONS_SHOW : 'NO',
-    // 			pan_LIMIT_BOUNDARY : 'NO',
-    // 			button_SIZE: 34,
-    // 			button_ALIGN: "top right",
-    // 			zoom_OUT_TO_FIT: "NO",
-    // 			container: 'zoom_container'
-    // 		});
-    //     	show_png_pin("#storelist_container", "#map_image");
-    	
             show_content();
         }
         loadMallDataCached(renderAll); 
