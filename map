@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-md-12">
             <div id="mappedin-map"></div>
-            <main data-venue="<your venue here>" data-key="<probably externalId, or skip>" data-header="<your header size in px>" id="mappedin-app"></main> 
+            <main data-venue="10 Dundas East" data-key="" data-header="300" id="mappedin-app"></main> 
          
          <!--   <select id="storelist_container" class="">-->
          <!--       <script id="storelist_template" type="x-tmpl-mustache/text">-->
