@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-4 margin_30">
                         <label for="postal_code">Postal Code*</label><br />
-                <input id="postal_code" name="contest[postal_code]" type="text" placeholder="Postal Code" required data-validation="required"/>
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" placeholder="Postal Code" required data-validation="required"/>
                     </div>
                     <div class="col-md-4 margin_30">
                         <label for="birthday">Date of Birth*</label><br />
