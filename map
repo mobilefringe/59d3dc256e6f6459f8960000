@@ -31,7 +31,7 @@
         </div> 
     </div>
 </div>
-<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>
+
 <script type="text/javascript">
     window.mappedin = {
         miKey: {
@@ -44,7 +44,7 @@
         }
     };
 </script>
-
+<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>
 <script>
     $(document).ready(function(e){
         init(e);
