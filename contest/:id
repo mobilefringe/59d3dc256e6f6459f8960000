@@ -2,8 +2,8 @@
     <div class="content_container">
         <div class="inside_banner_content">
             <div class="row">
-                <div id="promo_header_container">
-                    <script id="promo_header_template" type="x-tmpl-mustache/text">
+                <div id="contest_header_container">
+                    <script id="contest_header_template" type="x-tmpl-mustache/text">
                         <div class="col-md-8">    
                             <h1>{{name}}</h1>
                         </div>
