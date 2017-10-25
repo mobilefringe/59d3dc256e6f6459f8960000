@@ -48,8 +48,8 @@
 <script type="text/javascript">
     window.mappedin = {
         miKey: {
-            id: '<your credentials>',
-            key: '<your credentials>'
+            id: 'NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M',
+            key: 'cwKTJ7lHEWz0fpLY'
         },
         searchKey: {
             id: '<your credentials>',
