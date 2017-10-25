@@ -1,0 +1,96 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Leasing</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Leasing <i class="fa fa-angle-right" aria-hidden="true"></i> Leasing</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                <div class="row ">
+                    <div class="col-md-6 margin_30">
+                        <label for="first_name">First Name *</label>  
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"  />
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="last_name">Last Name *</label>  
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" />
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 margin_30">
+                        <label for="email">Email *</label> 
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="phone_number">Phone Number</label>  
+                        <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 margin_30">
+                        <label for="postal_code">Zip Code</label> 
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
+                    </div>
+                    <div class="col-md-2 margin_30">
+                        <label for="age">Age</label> 
+                        <input class="form-control" id="age" name="contest[age]" type="text"  />
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="gender">Gender</label>  
+                        <select class="form-control" id="gender" name="contest[gender]">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 margin_30">
+                        <label class="cbox_label">
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
+                            I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
+                        </label>
+                        <br/><br/>
+                        <p>For more details about personal privacy, please read our <a href="/pages/orchardtown-privacy-policy" target="_blank">Privacy Policy.</a></p>
+                        <br/><br/>
+                        <button class="newsletter_btn animated_btn text-center" id="contest_btn">Submit</button>
+                        <br /><br />
+                        <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
+                    </div>
+                </div>
+            </form>
+        </div> 
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/10dundaseast-leasing.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+        
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
