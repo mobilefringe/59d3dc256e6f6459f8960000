@@ -20,7 +20,7 @@
                 <script id="contest_details_template" type="x-tmpl-mustache/text">
                     <img src="{{alt_photo_url}}" class="details_image" style="{{promo_image}}" />
                     <p class="bold">{{name}}</p>
-                    <div class="details_desc margin_30">{{{rich_description}}}</div>
+                    <div class="details_desc margin_30">{{{description}}}</div>
                     
                     <form id="contest_form">
                         <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
