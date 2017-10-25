@@ -170,8 +170,8 @@
                         <h3 class="footer_nav_title caps">Location</h3>
                         <div class="margin_60 hidden_phone"></div>
                         <div class="margin_30 center">
-                            <p class="center caps">10 Dundas East</p>
-                            <a href="/find_us"><p class="center">10 Dundas Street East Suite 707,</br>Toronto, ON M5B 2G9</p></a>
+                            <p class="caps">10 Dundas East</p>
+                            <a href="/find_us"><p class="">10 Dundas Street East Suite 707,</br>Toronto, ON M5B 2G9</p></a>
                         </div>
                         <div class="margin_60 center">
                             <a href="//www.bentallkennedy.com" target="_blank">
