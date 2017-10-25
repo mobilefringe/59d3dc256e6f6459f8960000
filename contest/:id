@@ -23,11 +23,11 @@
                 <div class="row ">
                     <div class="col-md-6 margin_30">
                         <label for="first_name">First Name *</label>  
-                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"  />
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"/>
                     </div>
                     <div class="col-md-6 margin_30">
                         <label for="last_name">Last Name *</label>  
-                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" />
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required"/>
                     </div>
                 </div>
                 <div class="row ">
@@ -36,8 +36,8 @@
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                     </div>
                     <div class="col-md-6 margin_30">
-                        <label for="phone_number">Phone Number</label>  
-                        <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
+                        <label for="phone_number">Phone Number *</label>  
+                        <input class="form-control" id="phone_number" name="contest[phone]" type="text" required data-validation="required"/>
                     </div>
                 </div>
                 <div class="row ">
@@ -45,16 +45,14 @@
                         <label for="postal_code">Zip Code</label> 
                         <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
                     </div>
-                    <div class="col-md-2 margin_30">
+                    <div class="col-md-4 margin_30">
                         <label for="age">Age</label> 
                         <input class="form-control" id="age" name="contest[age]" type="text"  />
                     </div>
-                    <div class="col-md-6 margin_30">
-                        <label for="gender">Gender</label>  
-                        <select class="form-control" id="gender" name="contest[gender]">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                    <div class="col-md-4 margin_30">
+                        <label for="birthday">Date of Birth*</label><br />
+                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" placeholder= "yyyy-mm-dd" required data-validation="required"/>
+                        
                     </div>
                 </div>
                 <div class="row">
