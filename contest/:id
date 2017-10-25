@@ -89,7 +89,7 @@
                                     I agree to the <a href = "/rules_regulations">Contest Rules & Regulations</a>
                                 </label>
                                 <br/><br/>
-                                <button class="contact_btn" id="contest_btn">Submit</button>
+                                <button class="contact_btn" id="contest_btn" tab-index="12">Submit</button>
                                 <br /><br />
                                 <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
                             </div>
