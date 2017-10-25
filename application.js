@@ -288,6 +288,40 @@ function renderHours(container, template, collection, type){
     $(container).html(item_rendered.join(''));
 }
 
+function renderPopup(){
+    var popup = getPopups()[0];
+    if(popup != undefined){
+        if($.cookie("popup_viewed") != "true"){
+            $.cookie("popup_viewed", "true", { expires: 1 });
+            $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            $('.custom_popup').show()
+        }
+        $('.close_popup, .custom_backdrop').click(function(){
+            $(".modal-backdrop").remove();
+	        $(".custom_popup").remove();
+        });
+        if(popup.contest.id != null){
+            $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+            $('.custom_text').text(popup.description1);
+            $('.p_name').text(popup.name);
+        } else {
+            $('.popup_form_div').css('visibility', 'hidden');
+            $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
+        }
+        $('#form_popup').submit(function(){
+            $('#cm-name').val($('#FNAME').val() + " " + $('#LNAME').val());
+            if($('#popup_agree').is(':checked') == false){
+                alert("Please agree to receive emails.");
+                $('#popup_agree').focus();
+                return false;
+            }
+        });
+        $('.close_popup').click(function(){
+            $('.custom_popup').fadeOut();
+        });
+    }
+}
+        
 function renderPosts(container, template, collection){
     var item_list = [];
     var item_rendered = [];
