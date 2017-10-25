@@ -70,6 +70,13 @@
                                 
                             </div>
                         </div>
+                        <div class="row ">
+                            <div class="col-md-6 margin_30">
+                                <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+                                <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                                <input type="text" id="enterVerify" name="enterVerify" />
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12 margin_30">
                                 <label class="cbox_label">
