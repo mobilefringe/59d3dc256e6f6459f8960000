@@ -130,7 +130,7 @@
             $('#contest_form').submit(function(e){
                 e.preventDefault();
                 $('#contest_btn').prop('disabled', true);
-                if($('#enterVerify').val() == $('#verifyNumHidden').val(){
+                if($('#enterVerify').val() == $('#verifyNumHidden').val()){
                     // submit_contest(slug);
                     Console.log("Contest Submitted!")
                 } else {
