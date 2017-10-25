@@ -84,10 +84,10 @@
                                     I agree to receive newsletters from {{property_name}}.
                                 </label>
                                 <br/><br/>
-                                <label for="agree_terms" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/rules_regulations"><u>rules & regulations</u></a>. 
-              
-                                // <p>For more details about personal privacy, please read our <a href="/pages/orchardtown-privacy-policy" target="_blank">Privacy Policy.</a></p>
+                                <label for="agree_terms" style="display:none">
+                                    <input type="checkbox" class="info_check" id="agree_terms" required/>
+                                    I agree to the <a href = "/rules_regulations">Contest Rules & Regulations</a>
+                                </label>
                                 <br/><br/>
                                 <button class="contact_btn" id="contest_btn">Submit</button>
                                 <br /><br />
