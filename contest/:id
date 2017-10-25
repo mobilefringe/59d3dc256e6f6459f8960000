@@ -79,7 +79,7 @@
                                 <br/><br/>
                                 <p>For more details about personal privacy, please read our <a href="/pages/orchardtown-privacy-policy" target="_blank">Privacy Policy.</a></p>
                                 <br/><br/>
-                                <button class="newsletter_btn animated_btn text-center" id="contest_btn">Submit</button>
+                                <button class="contact_btn" id="contest_btn">Submit</button>
                                 <br /><br />
                                 <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
                             </div>
