@@ -32,27 +32,27 @@
                         <div class="row ">
                             <div class="col-md-6 margin_30">
                                 <label for="first_name">First Name *</label>  
-                                <input class="form-control" id="first_name" name="contest[first_name]" type="text" placeholder="First Name" required data-validation="required"/>
+                                <input class="form-control" id="first_name" name="contest[first_name]" type="text" placeholder="First Name" required data-validation="required" tab-index="1"/>
                             </div>
                             <div class="col-md-6 margin_30">
                                 <label for="last_name">Last Name *</label>  
-                                <input class="form-control" id="last_name" name="contest[last_name]" type="text" placeholder="Last Name" required data-validation="required"/>
+                                <input class="form-control" id="last_name" name="contest[last_name]" type="text" placeholder="Last Name" required data-validation="required" tab-index="2"/>
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-md-6 margin_30">
                                 <label for="email">Email *</label> 
-                                <input class="form-control" id="email" name="contest[email]" type="email" placeholder="Email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
+                                <input class="form-control" id="email" name="contest[email]" type="email" placeholder="Email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" tab-index="3"/>
                             </div>
                             <div class="col-md-6 margin_30">
                                 <label for="phone_number">Phone Number *</label>  
-                                <input class="form-control" id="phone_number" name="contest[phone]" type="text" placeholder="Phone Number" required data-validation="required"/>
+                                <input class="form-control" id="phone_number" name="contest[phone]" type="text" placeholder="Phone Number" required data-validation="required" tab-index="4"/>
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-md-12 margin_30">
                                 <label for="mailing_address">Street Address</label><br />
-                                <input class="form-control" id="mailing_address" name="contest[mailing_address]" type="text" placeholder="Street Address"/>
+                                <input class="form-control" id="mailing_address" name="contest[mailing_address]" type="text" placeholder="Street Address" tab-index="5"/>
                             </div>
                         </div>
                         <div class="row ">
