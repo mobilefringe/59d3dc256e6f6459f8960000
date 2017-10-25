@@ -128,8 +128,9 @@
             }
         
             $('#contest_form').submit(function(e){
+                e.preventDefault();
                 if($('#enterVerify').val() == $('#verifyNumHidden').val()){
-                    e.preventDefault();
+                    
                     $('#contest_btn').prop('disabled', true);
                     submit_contest(slug);
                 } else {
