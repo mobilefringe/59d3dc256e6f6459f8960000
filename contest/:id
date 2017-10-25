@@ -131,7 +131,8 @@
                 e.preventDefault();
                 $('#contest_btn').prop('disabled', true);
                 if($('#enterVerify').val() == $('#verifyNumHidden').val(){
-                    submit_contest(slug);
+                    // submit_contest(slug);
+                    Console.log("Contest Submitted!")
                 } else {
                     alert("Please Enter Correct Verification Number");
                     randomgen();
