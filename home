@@ -35,7 +35,7 @@
                             <input type="checkbox" id="popup_agree" />
                             I agree to receive emails from 10 Dundas East.
                         </label>
-                        <button type="submit" class="popup_submit">Submit</button>	
+                        <button type="submit" class="popup_submit contact_btn">Submit</button>	
                     </form>	
                 </section>
             </div>
