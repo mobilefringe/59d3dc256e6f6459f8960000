@@ -270,7 +270,7 @@ function submit_contest(slug) {
     contest_data.
     contest_data.city = $('#city').val();
     contest_data.postal_code = $('#postal_code').val();
-    contest_data.birthday = $('#').val();
+    contest_data.birthday = $('#birthday').val();
     contest_data.newsletter = $('#newsletter_signup').prop("checked");
     contest_entry.contest = contest_data;
     
