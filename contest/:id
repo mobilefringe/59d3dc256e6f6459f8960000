@@ -85,7 +85,7 @@
                                 </label>
                                 <br/><br/>
                                 <label for="agree_terms">
-                                    <input type="checkbox" class="info_check" id="agree_terms" required/>
+                                    <input type="checkbox" class="info_check" id="agree_terms" required data-validation="required"/>
                                     I agree to the <a href = "/rules_regulations">Contest Rules & Regulations</a>
                                 </label>
                                 <br/><br/>
