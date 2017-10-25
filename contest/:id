@@ -32,17 +32,17 @@
                         <div class="row ">
                             <div class="col-md-6 margin_30">
                                 <label for="first_name">First Name *</label>  
-                                <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"/>
+                                <input class="form-control" id="first_name" name="contest[first_name]" type="text" placeholder="First Name" required data-validation="required"/>
                             </div>
                             <div class="col-md-6 margin_30">
                                 <label for="last_name">Last Name *</label>  
-                                <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required"/>
+                                <input class="form-control" id="last_name" name="contest[last_name]" type="text" placeholder="Last Name" required data-validation="required"/>
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-md-6 margin_30">
                                 <label for="email">Email *</label> 
-                                <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
+                                <input class="form-control" id="email" name="contest[email]" type="email" placeholder="Email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
                             </div>
                             <div class="col-md-6 margin_30">
                                 <label for="phone_number">Phone Number *</label>  
