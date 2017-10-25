@@ -259,3 +259,34 @@ function store_search() {
         }
     });
 }
+
+function submit_contest(slug) {
+    var contest_entry = {};
+    var contest_data = {};
+    contest_data.first_name = $('#first_name').val();
+    contest_data.last_name = $('#last_name').val();
+    contest_data.email = $('#email').val();
+    contest_data.phone = $('#phone_number').val();
+    contest_data.postal_code = $('#postal_code').val();
+    contest_data.age = $('#age').val();
+    contest_data.gender = $('#gender').val();
+    contest_data.newsletter = $('#newsletter_signup').prop("checked");
+    contest_entry.contest = contest_data;
+    
+    var propertyDetails = getPropertyDetails();
+    var host = propertyDetails.mm_host.replace("http:", "");
+    var action = host + "/contests/" + slug + "/create_js_entry"
+    $.ajax({
+        url : action,
+        type: "POST",
+        data : contest_entry,
+        success: function(data){
+           $('#succes_msg').show();
+           $('.contest_btn').prop('disabled', false);
+           $('#contest_form').trigger('reset');
+        },
+        error: function (data){
+            alert('An error occured while processing your request. Please try again later!')
+        }
+    });
+}
