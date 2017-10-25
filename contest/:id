@@ -136,6 +136,7 @@
                 } else {
                     alert("Please Enter Correct Verification Number");
                     randomgen();
+                    $('#enterVerify').focus();
                 }
             });
         }
