@@ -179,38 +179,6 @@
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508949768000/bental-logo2.png" alt="Bentall Kennedy Logo">
                             </a>
                         </div>
-                        <!--<div class="footer_hours">-->
-                        <!--    <div id="home_hours_container_footer" class="">-->
-                        <!--        <script id="home_hours_template_footer" type="x-tmpl-mustache/text">-->
-                        <!--            <div class="todays_hours">{% raw %} {{open_now}} <i id="open_now" class="fa fa-circle" style="color: {{open_color}}" aria-hidden="true"></i> {% endraw %}</div>-->
-                        <!--        </script>-->
-                        <!--    </div>-->
-                        <!--    <div id="hours_mf_container">-->
-                        <!--        <script id="hours_mf_template" type="x-tmpl-mustache/text">-->
-                        <!--            {% raw %}-->
-                        <!--            <div class="weekday"> Mon – Fri</div>-->
-                        <!--            <div class="hours">{{h}}</div>-->
-                        <!--            {% endraw %}-->
-                        <!--        </script>-->
-                        <!--    </div>-->
-                        <!--    <div id="hours_sat_container">-->
-                        <!--        <script id="hours_sat_template" type="x-tmpl-mustache/text">-->
-                        <!--            {% raw %}-->
-                        <!--            <div class="weekday">Sat</div>-->
-                        <!--            <div class="hours">{{h}}</div>-->
-                        <!--            {% endraw %}-->
-                        <!--        </script>-->
-                        <!--    </div>-->
-                        <!--    <div id="hours_sun_container">-->
-                        <!--        <script id="hours_sun_template" type="x-tmpl-mustache/text">-->
-                        <!--            {% raw %}-->
-                        <!--            <div class="weekday">Sun</div>-->
-                        <!--            <div class="hours">{{h}}</div>-->
-                        <!--            {% endraw %}-->
-                        <!--        </script>-->
-                        <!--    </div>-->
-                        <!--</div>-->
-                        <!--<h5 class="caps view_hours"><a href="/hours">View Full Hours</a></h5>-->
                         <a href="http://www.10dundaseast.com/contests/10dundaseast-enter-to-win--3">
                             <div class="footer_btn contest_btn caps">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508966812000/contest_btn.png">
