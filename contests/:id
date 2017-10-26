@@ -85,18 +85,16 @@
                                     I agree to receive newsletters from {{property_name}}.
                                 </label>
                                 <br/><br/>
-                                <label for="agree_terms">
+                                <label for="agree_terms" class="contest_agree">
                                     <input type="checkbox" class="info_check" id="agree_terms" required data-validation="required" tab-index="11"/>
                                     I agree to the <a href = "/rules_regulations">Contest Rules & Regulations</a>
                                 </label>
                                 <br/><br/>
                                 <button class="contact_btn" id="contest_btn" tab-index="12">Submit</button>
                                 <br /><br />
-                                
                             </div>
                         </div>
                     </form>
-                    
                 </script>
             </div>
         </div> 
