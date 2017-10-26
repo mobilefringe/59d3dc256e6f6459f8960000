@@ -24,6 +24,11 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var repo = getRepoDetailsByName("Contact Us Banner");
+            if (repo != undefined) {
+                var banner = getImageURL(repo.images[0].photo_url);
+                $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            }
             
             show_content();
         }
