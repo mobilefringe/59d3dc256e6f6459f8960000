@@ -26,7 +26,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <div class="position_rel" style="height: 800px">
+            <div class="map_container">
                 <div id="mappedin-map"></div>
                 <main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> 
             </div>
