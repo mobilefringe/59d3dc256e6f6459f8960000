@@ -49,16 +49,42 @@
     </div>
     <span class="close_popup">CLOSE</span>
 </div>
+<!--<div class="home_banner">   -->
+<!--    <div class="flexslider">-->
+<!--        <ul class="slides" id="home_banner">-->
+<!--            <script id="banner_template" type="x-tmpl-mustache/text">-->
+<!--                <li>-->
+<!--                    <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+<!--                        <div class="banner_img" style="background-image: url({{image_url}});"-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="home_banner">   
     <div class="flexslider">
-        <ul class="slides" id="home_banner">
-            <script id="banner_template" type="x-tmpl-mustache/text">
-                <li>
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_img" style="background-image: url({{image_url}});"
-                    </a>
-                </li>
-            </script>
+        <ul class="slides">
+            <li>
+                <a href="{{url}}">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509033478000/DiningBanner.jpg');"
+                </a>
+            </li>
+            <li>
+                <a href="{{url}}">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509033478000/Fitness.jpg');"
+                </a>
+            </li>
+            <li>
+                <a href="{{url}}">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509033478000/Fashion.jpg');"
+                </a>
+            </li>
+            <li>
+                <a href="{{url}}">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509033478000/Cinema.jpg');"
+                </a>
+            </li>
         </ul>
     </div>
 </div>
