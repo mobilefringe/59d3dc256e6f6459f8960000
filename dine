@@ -86,7 +86,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var repo = getRepoDetailsByName("Events Banner");
+            var repo = getRepoDetailsByName("Dining Banner");
             if (repo != undefined) {
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
