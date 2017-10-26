@@ -96,8 +96,8 @@
 </div>
 <div class="content_container">
     <div class="flex_container">
-        <div id="feature_container">
-            <script id="feature_template" type="x-tmpl-mustache/text">
+        <div id="single_feature_container">
+            <script id="single_feature_template" type="x-tmpl-mustache/text">
                 <div class="width_50">
                     <img src="{{image_url}}" alt="Promotional Image">
                 </div>
@@ -123,27 +123,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="flex_container">-->
-    <!--    <div class="width_50">-->
-    <!--        <div class="home_promos">-->
-    <!--            <div id="home_promo_container">-->
-    <!--                <script id="home_promo_template" type="x-tmpl-mustache/text">-->
-    <!--                    <div class="margin_30">-->
-    <!--                        <p class="home_promo_store"> {{store_name}} </p>-->
-    <!--                        <h2 class="home_promo_name"> {{name}} </h2>-->
-    <!--                        <p class="home_promo_dates"> {{dates}} </p>-->
-    <!--                        <p class="home_promo_desc"> {{short_desc}} </p>-->
-    <!--                        <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>-->
-    <!--                    </div>-->
-    <!--                </script>-->
-    <!--            </div>-->
-    <!--            <p class="home_see_all"><a href="/promotions">See all sales & promotions</a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <div class="width_50">-->
-    <!--        <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508261370000/feature2.png" class="" alt="">-->
-    <!--    </div>-->
-    <!--</div>-->
     <div class="instafeed_container">
         <div id="instafeed"></div> 
     </div>
@@ -169,11 +148,12 @@
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner', banners);
             
-            var all_feature_items = getFeatureList();
-            var three_items = all_feature_items.slice(0, 3);
-            console.log(feature_items)
-            renderFeatureItems('#feature_container','#feature_template', three_items);
-            renderFeatureItems('#feature_container','#feature_template', three_items);
+            // var all_feature_items = getFeatureList();
+            // var three_items = all_feature_items.slice(0, 3);
+            // var single_item = all_feature_itmes.slice(3, 5);
+            // console.log(feature_items)
+            // renderFeatureItems('#feature_container','#feature_template', three_items);
+            // renderFeatureItems('#single_feature_container','#single_feature_template', single_item);
 
             // RESTAURANTS //
             var restaurants = getStoresListByCategoryID(2538);
