@@ -170,11 +170,11 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Location</h3>
                         <div class="margin_60 hidden_phone"></div>
-                        <div class="margin_60 footer_address">
+                        <div class="footer_address">
                             <p class="caps">10 Dundas East</p>
                             <a href="/find_us"><p class="">10 Dundas Street East Suite 707,</br>Toronto, ON M5B 2G9</p></a>
                         </div>
-                        <div class="margin_60 footer_logo">
+                        <div class="footer_logo">
                             <a href="//www.bentallkennedy.com" target="_blank">
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508949768000/bental-logo2.png" alt="Bentall Kennedy Logo">
                             </a>
