@@ -96,6 +96,14 @@
 </div>
 <div class="content_container">
     <div class="flex_container">
+        <div id="feature_container">
+            <script id="feature_template" type="x-tmpl-mustache/text">
+                <div class="width_50">
+                    <img src="{{image_url}}" alt="Promotional Image">
+                </div>
+            </script>
+        </div>
+        
         <div class="width_50">
             <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1508261351000/feature1.png" class="" alt="">
         </div>
@@ -160,33 +168,17 @@
             
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner', banners);
-            // var feature_items = getFeatureList();
-            // var feature_items = getRepoDetailsByName("Feature Item Test").images
-            // console.log(feature_items)
-            // // renderFeatureItems('#feature_container','#feature_template', feature_items);
-            // renderGeneral('#feature_container','#feature_template', feature_items);
             
+            var all_feature_items = getFeatureList();
+            var three_items = all_feature_items.slice(0, 3);
+            console.log(feature_items)
+            renderFeatureItems('#feature_container','#feature_template', three_items);
+            renderFeatureItems('#feature_container','#feature_template', three_items);
+
             // RESTAURANTS //
             var restaurants = getStoresListByCategoryID(2538);
             renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");
             
-            // PROMOS //
-            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            var published_promos = [];
-            $.each(promotions, function(key, val){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    published_promos.push(val);
-                }
-            });
-            if(published_promos.length > 0){
-                var featured_promos = published_promos.slice(0, 3);
-                renderPromotions("#home_promo_container", "#home_promo_template", featured_promos);
-            } else {
-                $('#no_promos').show();
-            }
-
             // LOGO SCROLL //
             var stores = getStoresList();
             renderLogoScroll('#logo_container','#logo_template', stores);
