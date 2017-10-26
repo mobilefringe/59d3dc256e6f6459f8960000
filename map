@@ -54,10 +54,7 @@
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
-            // var stores = getStoresList();
-            // renderStoreList("#storelist_container", "#storelist_template", stores);
-            // $("#storelist_container").prepend("<option disabled selected>Select a Store</option>");
-            
+
             show_content();
         }
         loadMallDataCached(renderAll); 
