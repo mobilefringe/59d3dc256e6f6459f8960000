@@ -55,6 +55,12 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var repo = getRepoDetailsByName("Contact Us Banner");
+            if (repo != undefined) {
+                var banner = getImageURL(repo.images[0].photo_url);
+                $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            }
+            
             var jobs = getJobsList().sortBy(function(o){ return o.name});
             var published_jobs = [];
             $.each( jobs , function( key, val ){
