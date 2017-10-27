@@ -46,7 +46,7 @@ var searchOptions = {
 	secret: ""
 }
 
-var mapView.colors = {
+var colorOptions = {
 	hover: 009688,
 	select: 009688,
 	text: 0x000000,
@@ -59,7 +59,8 @@ var mapView.colors = {
 var options = {
 	mapview: mapviewOptions,
 	venue: venueOptions,
-	search: searchOptions
+	search: searchOptions,
+	colors: colorOptions
 }
 
 function onPolygonClicked (polygonId) {
