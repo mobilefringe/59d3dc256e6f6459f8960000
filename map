@@ -26,7 +26,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <!--<div class="map_container">-->
+            <div class="map_container">
                 <div id="mapView"></div>
                 <select id="mapList" ></select>
 
@@ -35,7 +35,7 @@
 
                 <!--<div id="mappedin-map"></div>-->
                 <!--<main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> -->
-            <!--</div>-->
+            </div>
         </div> 
     </div>
 </div>
