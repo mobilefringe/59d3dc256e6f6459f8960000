@@ -34,15 +34,6 @@ function init() {
 	
     store_search();
     
-    // $("#mobile_search").click(function() {
-    //     $(".site_search").show();
-    //     $(this).hide();
-    // });
-    // $("#close_search_mobile").click(function() {
-    //     $(".site_search").hide();
-    //     $("#mobile_search").show();
-    // });
-    
     get_instagram("//10dundaseast.mallmaverick.com/api/v2/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
  
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
