@@ -50,7 +50,7 @@ var searchOptions = {
 var options = {
 	mapview: mapviewOptions,
 	venue: venueOptions,
-	search: searchOptions,
+// 	search: searchOptions,
 }
 
 function onPolygonClicked (polygonId) {
