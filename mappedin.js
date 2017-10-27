@@ -47,13 +47,14 @@ var searchOptions = {
 }
 
 var mapView.colors = {
-	hover: #009688,
+	hover: 009688,
 	select: 009688,
 	text: 0x000000,
 	path: 0xff834c,
 	pathPulse: 0xffffff,
 	textSelect: 0xffffff
 }
+
 // Combined all of them to use Mappedin.initalize
 var options = {
 	mapview: mapviewOptions,
