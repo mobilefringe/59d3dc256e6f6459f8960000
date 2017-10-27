@@ -15,8 +15,8 @@ var div = document.getElementById( 'mapView' );
 // options for Mappedin.getVenue
 // You will need to customize this with the data provided by Mappedin. Ask your representative if you don't have a key, secret, and slug.
 var venueOptions = {
-	clientId: "<Your API Key Here>",
-	clientSecret: "<Your API Secret Here>",
+	clientId: "NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M",
+	clientSecret: "cwKTJ7lHEWz0fpLY",
 	perspective: "Website",
 	things: {
 		venue: ['slug', 'name'],
@@ -24,7 +24,7 @@ var venueOptions = {
 		categories: ['name'],
 		maps: ['name', 'elevation', 'shortName']
 	},
-	venue: "<Your venue slug here>"
+	venue: "10-dundas"
 };
 
 // Options for the MapView constructor
