@@ -119,18 +119,18 @@ function drawRandomPath() {
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
-function init() {
+// function init() {
 
-	Mappedin.initialize(options, div).then(function (data) {
-		mapView = data.mapview
-		venue = data.venue
-		search = data.search
-		analytics = data.analytics
+// 	Mappedin.initialize(options, div).then(function (data) {
+// 		mapView = data.mapview
+// 		venue = data.venue
+// 		search = data.search
+// 		analytics = data.analytics
 
-	},function (error) {
-		window.alert("Mappedin " + error)
-	})
-}
+// 	},function (error) {
+// 		window.alert("Mappedin " + error)
+// 	})
+// }
 
 function onDataLoaded() {
 
@@ -202,7 +202,7 @@ function onDataLoaded() {
 // 	})
 // } else {
 	// Otherwise, just init
-	init();
+// 	init();
 // }
 
 mapList.addEventListener("change", changeMap)
