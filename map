@@ -64,7 +64,16 @@
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
-
+            
+            Mappedin.initialize(options, div).then(function (data) {
+            	mapView = data.mapview
+            	venue = data.venue
+            	search = data.search
+            
+            },function (error) {
+            	window.alert("Mappedin " + error)
+            });
+            
             show_content();
         }
         loadMallDataCached(renderAll); 
