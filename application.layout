@@ -179,17 +179,14 @@
                                 <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509131165000/bentallkennedy_pink.png" alt="Bentall Kennedy Logo">
                             </a>
                         </div>
-                        <!--<a href="/contests/10dundaseast-contest--2">-->
-                        <!--    <div class="footer_btn contest_btn caps">-->
-                        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509026377000/contest_btn.png">-->
-                        <!--    </div>-->
-                        <!--</a>-->
-                        <div class="footer_btn">
-                            <div class="footer_btn_text caps">Enter Our Contest</div>
-                            <div class="footer_btn_icon">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509132077000/contest_icon.png" class="" alt="">
+                        <a href="/contests/10dundaseast-contest--2">
+                            <div class="footer_btn">
+                                <div class="footer_btn_text caps">Enter Our Contest</div>
+                                <div class="footer_btn_icon">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509132077000/contest_icon.png" class="" alt="">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                             
                     </div>
                     <hr class="horizontal_div show_phone">
@@ -208,9 +205,11 @@
                             <li><a href="/leasing">Leasing</a></li>
                         </ul>  
                         <a href="/newsletter">
-                            
-                            <div class="footer_btn caps">                        
-                                <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509026377000/newsletter_btn.png">
+                            <div class="footer_btn">
+                                <div class="footer_btn_text caps">Enter Our Contest</div>
+                                <div class="footer_btn_icon">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1509133199000/newsletter_icon.png" class="" alt="">
+                                </div>
                             </div>
                         </a>
                     </div>
