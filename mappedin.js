@@ -42,17 +42,8 @@ var mapviewOptions = {
 
 // Options for search
 var searchOptions = {
-	key: "",
-	secret: ""
-}
-
-var colorOptions = {
-	hover: 009688,
-	select: 009688,
-	text: 0x000000,
-	path: 0xff834c,
-	pathPulse: 0xffffff,
-	textSelect: 0xffffff
+	key: "ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE",
+	secret: "TIc9sMNtVrme4hik"
 }
 
 // Combined all of them to use Mappedin.initalize
@@ -60,7 +51,6 @@ var options = {
 	mapview: mapviewOptions,
 	venue: venueOptions,
 	search: searchOptions,
-	colors: colorOptions
 }
 
 function onPolygonClicked (polygonId) {
