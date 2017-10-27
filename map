@@ -27,34 +27,25 @@
     <div class="row">
         <div class="col-md-12">
             <div class="map_container">
-                <div id="mapView"></div>
-                <select id="mapList" ></select>
-
-  
-
-
-                <!--<div id="mappedin-map"></div>-->
-                <!--<main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> -->
+                <div id="mappedin-map"></div>
+                <main data-venue="10-dundas" data-key="" data-header="0" id="mappedin-app"></main> 
             </div>
         </div> 
     </div>
 </div>
-<script src="https://d1p5cqqchvbqmy.cloudfront.net/websdk/v1.21.1/mappedin.js"></script>
-  <script src="/mappedin.js"></script>
-  
-<!--<script type="text/javascript">-->
-<!--    window.mappedin = {-->
-<!--        miKey: {-->
-<!--            id: 'NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M',-->
-<!--            key: 'cwKTJ7lHEWz0fpLY'-->
-<!--        },-->
-<!--        searchKey: {-->
-<!--            id: 'ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE',-->
-<!--            secret: 'TIc9sMNtVrme4hik'-->
-<!--        }-->
-<!--    };-->
-<!--</script>-->
-<!--<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+    window.mappedin = {
+        miKey: {
+            id: 'NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M',
+            key: 'cwKTJ7lHEWz0fpLY'
+        },
+        searchKey: {
+            id: 'ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE',
+            secret: 'TIc9sMNtVrme4hik'
+        }
+    };
+</script>
+<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>
 <script>
     $(document).ready(function(e){
         init(e);
@@ -64,15 +55,6 @@
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
-            
-            Mappedin.initialize(options, div).then(function (data) {
-            	mapView = data.mapview
-            	venue = data.venue
-            	search = data.search
-            
-            },function (error) {
-            	window.alert("Mappedin " + error)
-            });
             
             show_content();
         }
