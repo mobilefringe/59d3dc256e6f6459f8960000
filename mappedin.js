@@ -229,4 +229,4 @@ function onDataLoaded() {
 // 	init();
 // }
 
-mapList.addEventListener("change", changeMap)
+// mapList.addEventListener("change", changeMap)
