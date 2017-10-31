@@ -121,12 +121,12 @@ function getRandomInArray(array) {
 // }
 
 function hightlightStore(name) {
-    var store_details_name = name;
+    var store_details_name = name.toLowerCase();
     var locations = polygonedLocations;
 
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
-	   if(val.name == store_details_name){
+	   if((val.name).toLowerCase() == store_details_name){
 	       store_details_location.push(val);
 	   } 
 	});
