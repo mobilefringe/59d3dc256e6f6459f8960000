@@ -1,57 +1,57 @@
-var mapView
-var venue
-var search
-var analytics
+// var mapView
+// var venue
+// var search
+// var analytics
 
-// For the demo animation
-var polygonedLocations = []
+// // For the demo animation
+// var polygonedLocations = []
 
-// Track which polygon belongs to which location
-var locationsByPolygon = {}
+// // Track which polygon belongs to which location
+// var locationsByPolygon = {}
 
-var mapList = document.getElementById("mapList")
-var div = document.getElementById( 'mapView' );
+// var mapList = document.getElementById("mapList")
+// var div = document.getElementById( 'mapView' );
 
-// options for Mappedin.getVenue
-// You will need to customize this with the data provided by Mappedin. Ask your representative if you don't have a key, secret, and slug.
-var venueOptions = {
-	clientId: "NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M",
-	clientSecret: "cwKTJ7lHEWz0fpLY",
-	perspective: "Website",
-	things: {
-		venue: ['slug', 'name'],
-		locations: ['name', 'type', 'description', 'icon', 'logo', 'sortOrder'],
-		categories: ['name'],
-		maps: ['name', 'elevation', 'shortName']
-	},
-	venue: "10-dundas"
-};
+// // options for Mappedin.getVenue
+// // You will need to customize this with the data provided by Mappedin. Ask your representative if you don't have a key, secret, and slug.
+// var venueOptions = {
+// 	clientId: "NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M",
+// 	clientSecret: "cwKTJ7lHEWz0fpLY",
+// 	perspective: "Website",
+// 	things: {
+// 		venue: ['slug', 'name'],
+// 		locations: ['name', 'type', 'description', 'icon', 'logo', 'sortOrder'],
+// 		categories: ['name'],
+// 		maps: ['name', 'elevation', 'shortName']
+// 	},
+// 	venue: "10-dundas"
+// };
 
-// Options for the MapView constructor
-var mapviewOptions = {
-	antialias: "AUTO",
-	mode: Mappedin.modes.TEST,
-	onFirstMapLoaded: function () {
-		console.log("First map fully loaded. No more pop in.");
-	},
-	onDataLoaded: function() {
-		console.log("3D data loaded, map usable. Could hide loading screen here, but things will be popping in. Now you can do things that interact with the 3D scene")
-		onDataLoaded()
-	}
-};
+// // Options for the MapView constructor
+// var mapviewOptions = {
+// 	antialias: "AUTO",
+// 	mode: Mappedin.modes.TEST,
+// 	onFirstMapLoaded: function () {
+// 		console.log("First map fully loaded. No more pop in.");
+// 	},
+// 	onDataLoaded: function() {
+// 		console.log("3D data loaded, map usable. Could hide loading screen here, but things will be popping in. Now you can do things that interact with the 3D scene")
+// 		onDataLoaded()
+// 	}
+// };
 
-// Options for search
-var searchOptions = {
-	key: "ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE",
-	secret: "TIc9sMNtVrme4hik"
-}
+// // Options for search
+// var searchOptions = {
+// 	key: "ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE",
+// 	secret: "TIc9sMNtVrme4hik"
+// }
 
-// Combined all of them to use Mappedin.initalize
-var options = {
-	mapview: mapviewOptions,
-	venue: venueOptions,
-	search: searchOptions,
-}
+// // Combined all of them to use Mappedin.initalize
+// var options = {
+// 	mapview: mapviewOptions,
+// 	venue: venueOptions,
+// 	search: searchOptions,
+// }
 
 function onPolygonClicked (polygonId) {
 	mapView.clearAllPolygonColors()
