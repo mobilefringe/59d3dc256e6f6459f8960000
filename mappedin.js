@@ -94,7 +94,7 @@ function drawRandomPath() {
 	var startLocation = getRandomInArray(polygonedLocations)
 	console.log(startLocation)
 	var startPolygon = getRandomInArray(startLocation.polygons)
-	console.log (startPolygon)
+	console.log(startPolygon)
 	var startNode = getRandomInArray(startPolygon.entrances)
 
 	var endLocation = getRandomInArray(polygonedLocations)
