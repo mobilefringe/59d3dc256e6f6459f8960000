@@ -131,6 +131,7 @@ function hightlightStore(name) {
 	   } 
 	});
 	console.log(store_details_location)
+	
 // 	var startLocation = getRandomInArray(polygonedLocations)
 // 	var startPolygon = getRandomInArray(startLocation.polygons)
 // 	var startNode = getRandomInArray(startPolygon.entrances)
@@ -145,11 +146,11 @@ function hightlightStore(name) {
 // 			return
 // 		}
 
-		mapView.clearAllPolygonColors()
-		setMap(startPolygon.map)
+// 		mapView.clearAllPolygonColors()
+// 		setMap(startPolygon.map)
 
-		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
-		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
+// 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
+// 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
 
 // 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
 
