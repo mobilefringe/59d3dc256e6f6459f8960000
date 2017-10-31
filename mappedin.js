@@ -90,35 +90,35 @@ function getRandomInArray(array) {
 }
 
 // Draws a random path, highlighting the locations and focusing on the path and polygons
-function drawRandomPath() {
-	var startLocation = getRandomInArray(polygonedLocations)
-	console.log(startLocation)
-	var startPolygon = getRandomInArray(startLocation.polygons)
-	console.log(startPolygon)
-	var startNode = getRandomInArray(startPolygon.entrances)
+// function drawRandomPath() {
+// 	var startLocation = getRandomInArray(polygonedLocations)
+// 	console.log(startLocation)
+// 	var startPolygon = getRandomInArray(startLocation.polygons)
+// 	console.log(startPolygon)
+// 	var startNode = getRandomInArray(startPolygon.entrances)
 
-	var endLocation = getRandomInArray(polygonedLocations)
-	var endPolygon = getRandomInArray(endLocation.polygons)
-	var endNode = getRandomInArray(endPolygon.entrances)
+// 	var endLocation = getRandomInArray(polygonedLocations)
+// 	var endPolygon = getRandomInArray(endLocation.polygons)
+// 	var endNode = getRandomInArray(endPolygon.entrances)
 
-	startNode.directionsTo(endNode, null, function(error, directions) {
-		if (error || directions.path.length == 0) {
-			drawRandomPath()
-			return
-		}
+// 	startNode.directionsTo(endNode, null, function(error, directions) {
+// 		if (error || directions.path.length == 0) {
+// 			drawRandomPath()
+// 			return
+// 		}
 
-		mapView.clearAllPolygonColors()
-		setMap(startPolygon.map)
+// 		mapView.clearAllPolygonColors()
+// 		setMap(startPolygon.map)
 
-		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
-		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
+// 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
+// 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
 
-		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
+// 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
 
-		mapView.removeAllPaths()
-		mapView.drawPath(directions.path)
-	})
-}
+// 		mapView.removeAllPaths()
+// 		mapView.drawPath(directions.path)
+// 	})
+// }
 
 function hightlightStore(name) {
     var store_details_name = name;
