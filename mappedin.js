@@ -172,8 +172,8 @@ function onDataLoaded() {
 	}
 
 	// Shows off the pathing
-	// drawRandomPath()
-	// window.setInterval(drawRandomPath, 9000)
+	drawRandomPath()
+	window.setInterval(drawRandomPath, 9000)
 
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
