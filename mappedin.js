@@ -124,7 +124,7 @@ function hightlightStore(name) {
     var locations = polygonedLocations;
     console.log(locations)
     
-    var store_details_location = {};
+    var store_details_location = [];
 	$.each( locations , function( key, val ) {
 	   if(val.name === store_details_name){
 	       store_details_location.push(val);
@@ -132,7 +132,7 @@ function hightlightStore(name) {
 	});
 	console.log(store_details_location)
 	
-	var startLocation = store_details_location
+	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons
 	console.log(startPolygon)
 // 	var startNode = startPolygon.entrances
