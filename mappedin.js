@@ -210,10 +210,10 @@ function onDataLoaded() {
 	}
 
 	// Shows off the pathing
-    // 	drawRandomPath()
-    // 	window.setInterval(drawRandomPath, 9000)
-    var name = "Cineplex Cinemas Yonge-Dundas and VIP";
-            hightlightStore(name);
+    	drawRandomPath()
+    	window.setInterval(drawRandomPath, 9000)
+    // var name = "Cineplex Cinemas Yonge-Dundas and VIP";
+    //         hightlightStore(name);
             
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
