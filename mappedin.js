@@ -172,7 +172,7 @@ function onDataLoaded() {
 		if (location.polygons.length > 0) {
 			polygonedLocations.push(location)
 		}
-
+        console.log(polygonedLocations)
 		var locationPolygons = location.polygons;
 		for (var k = 0, kLen = locationPolygons.length; k < kLen; ++k) {
 			var polygon = locationPolygons[k];
