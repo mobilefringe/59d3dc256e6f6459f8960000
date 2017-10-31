@@ -135,11 +135,11 @@ function hightlightStore(name) {
 	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons[0]
 	console.log(startPolygon.id)
-// 	var startNode = startPolygon.entrances
+	var startNode = startPolygon.entrances
 
-// 	var endLocation = getRandomInArray(polygonedLocations)
-// 	var endPolygon = getRandomInArray(endLocation.polygons)
-// 	var endNode = getRandomInArray(endPolygon.entrances)
+	var endLocation = getRandomInArray(polygonedLocations)
+	var endPolygon = getRandomInArray(endLocation.polygons)
+	var endNode = getRandomInArray(endPolygon.entrances)
 
 	startNode.directionsTo(endNode, null, function(error, directions) {
 		if (error || directions.path.length == 0) {
