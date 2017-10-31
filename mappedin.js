@@ -148,7 +148,7 @@ function hightlightStore(name) {
 // 			return
 // 		}
 
-		mapView.clearAllPolygonColors()
+// 		mapView.clearAllPolygonColors()
 		setMap(startPolygon.map)
 
 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
