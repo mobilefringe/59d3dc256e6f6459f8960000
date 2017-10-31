@@ -118,7 +118,9 @@ function getRandomInArray(array) {
 // 	})
 // }
 
-function hightlightStore() {
+function hightlightStore(name) {
+    var store_details_name = name;
+    console.log(name)
 	var startLocation = getRandomInArray(polygonedLocations)
 	var startPolygon = getRandomInArray(startLocation.polygons)
 	var startNode = getRandomInArray(startPolygon.entrances)
