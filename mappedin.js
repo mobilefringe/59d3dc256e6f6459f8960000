@@ -132,9 +132,9 @@ function hightlightStore(name) {
 	});
 	console.log(store_details_location)
 	
-// 	var startLocation = getRandomInArray(polygonedLocations)
-// 	var startPolygon = getRandomInArray(startLocation.polygons)
-// 	var startNode = getRandomInArray(startPolygon.entrances)
+	var startLocation = store_details_location
+	var startPolygon = startLocation.polygons
+// 	var startNode = startPolygon.entrances
 
 // 	var endLocation = getRandomInArray(polygonedLocations)
 // 	var endPolygon = getRandomInArray(endLocation.polygons)
@@ -149,7 +149,7 @@ function hightlightStore(name) {
 // 		mapView.clearAllPolygonColors()
 // 		setMap(startPolygon.map)
 
-// 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
+		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
 // 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
 
 // 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
