@@ -179,19 +179,19 @@ function onDataLoaded() {
 			}
 		}
 	}
-// 	var maps = venue.maps;
-// 	for (var m = 0, mLen = maps.length; m < mLen; ++m) {
-// 		var map = maps[m];
-// 		var mapId = map.id;
-// 		var item = document.createElement("option")
-// 		item.text = map.shortName
-// 		item.value = map.id
-// 		item.id = map.id
-// 		if (mapId == mapView.currentMap) {
-// 			item.selected = true
-// 		}
-// 		mapList.add(item)
-// 	}
+	var maps = venue.maps;
+	for (var m = 0, mLen = maps.length; m < mLen; ++m) {
+		var map = maps[m];
+		var mapId = map.id;
+		var item = document.createElement("option")
+		item.text = map.shortName
+		item.value = map.id
+		item.id = map.id
+		if (mapId == mapView.currentMap) {
+			item.selected = true
+		}
+		mapList.add(item)
+	}
 
 	// Shows off the pathing
     // 	drawRandomPath()
@@ -229,4 +229,4 @@ function onDataLoaded() {
 // 	init();
 // }
 
-// mapList.addEventListener("change", changeMap)
+mapList.addEventListener("change", changeMap)
