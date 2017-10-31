@@ -124,10 +124,10 @@ function hightlightStore(name) {
     var locations = polygonedLocations;
     console.log(locations)
     
-    var store_details_location = {};
+    var store_details_location = [];
 	$.each( locations , function( key, val ) {
 	   if(val.name === store_details_name){
-	       store_details_location == locations.val;
+	       store_details_location.push(val);
 	   } 
 	});
 	console.log(store_details_location)
