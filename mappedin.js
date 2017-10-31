@@ -118,9 +118,11 @@ function getRandomInArray(array) {
 // 	})
 // }
 
-function hightlightStore(name) {
+function hightlightStore(name, polygonedLocations) {
     var store_details_name = name;
     console.log(name)
+    var locations = polygonedLocations;
+    console.log(locations)
 	var startLocation = getRandomInArray(polygonedLocations)
 	var startPolygon = getRandomInArray(startLocation.polygons)
 	var startNode = getRandomInArray(startPolygon.entrances)
@@ -174,7 +176,6 @@ function onDataLoaded() {
 		if (location.polygons.length > 0) {
 			polygonedLocations.push(location)
 		}
-        console.log(polygonedLocations)
 		var locationPolygons = location.polygons;
 		for (var k = 0, kLen = locationPolygons.length; k < kLen; ++k) {
 			var polygon = locationPolygons[k];
