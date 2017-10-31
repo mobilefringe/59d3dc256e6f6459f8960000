@@ -124,10 +124,10 @@ function hightlightStore(name) {
     var locations = polygonedLocations;
     console.log(locations)
     
-    var store_details_location = [];
+    var store_details_location = {};
 	$.each( locations , function( key, val ) {
 	   if(val.name === store_details_name){
-	       store_details_location.push(val);
+	       store_details_location == val;
 	   } 
 	});
 	console.log(store_details_location)
@@ -141,11 +141,11 @@ function hightlightStore(name) {
 	var endPolygon = getRandomInArray(endLocation.polygons)
 	var endNode = getRandomInArray(endPolygon.entrances)
 
-	startNode.directionsTo(endNode, null, function(error, directions) {
-		if (error || directions.path.length == 0) {
-			drawRandomPath()
-			return
-		}
+// 	startNode.directionsTo(endNode, null, function(error, directions) {
+// 		if (error || directions.path.length == 0) {
+// 			drawRandomPath()
+// 			return
+// 		}
 
 // 		mapView.clearAllPolygonColors()
 // 		setMap(startPolygon.map)
@@ -157,7 +157,7 @@ function hightlightStore(name) {
 
 // 		mapView.removeAllPaths()
 // 		mapView.drawPath(directions.path)
-	})
+// 	})
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
