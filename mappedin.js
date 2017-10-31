@@ -92,9 +92,9 @@ function getRandomInArray(array) {
 // Draws a random path, highlighting the locations and focusing on the path and polygons
 function drawRandomPath() {
 	var startLocation = getRandomInArray(polygonedLocations)
-	console.log("Draw" + startLocation)
+	console.log(startLocation)
 	var startPolygon = getRandomInArray(startLocation.polygons)
-	console.log("Draw" + startPolygon)
+	console.log startPolygon)
 	var startNode = getRandomInArray(startPolygon.entrances)
 
 	var endLocation = getRandomInArray(polygonedLocations)
