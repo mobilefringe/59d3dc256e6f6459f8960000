@@ -132,33 +132,12 @@ function hightlightStore(name) {
 	});
 
 	var startLocation = store_details_location[0];
-	console.log(startLocation)
-	var startPolygon = startLocation.polygons[0]
-	console.log(startPolygon)
-	var startNode = startPolygon.entrances[0]
-	console.log(startNode)
+	var startPolygon = startLocation.polygons[0];
+	var startNode = startPolygon.entrances[0];
 
-// 	var endLocation = startLocation
-// 	var endPolygon = startPolygon
-// 	var endNode = startNode
+	setMap(startPolygon.map)
 
-// 	startNode.directionsTo(endNode, null, function(error, directions) {
-// 		if (error || directions.path.length == 0) {
-// 			drawRandomPath()
-// 			return
-// 		}
-
-// 		mapView.clearAllPolygonColors()
-		setMap(startPolygon.map)
-
-		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
-// 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
-
-// 		mapView.focusOnPath(directions.path, [startPolygon], true, 2000)
-
-// 		mapView.removeAllPaths()
-// 		mapView.drawPath(directions.path)
-// 	})
+	mapView.setPolygonColor(startPolygon.id, mapView.colors.path);
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
