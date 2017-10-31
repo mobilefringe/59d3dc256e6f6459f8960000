@@ -124,6 +124,7 @@ function hightlightStore(name) {
     var store_details_name = name;
     console.log(store_details_name)
     var locations = polygonedLocations;
+    console.log(locations)
 
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
