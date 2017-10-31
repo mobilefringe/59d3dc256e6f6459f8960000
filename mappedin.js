@@ -36,7 +36,10 @@ var mapviewOptions = {
 	},
 	onDataLoaded: function() {
 		console.log("3D data loaded, map usable. Could hide loading screen here, but things will be popping in. Now you can do things that interact with the 3D scene")
-		onDataLoaded()
+		onDataLoaded();
+		
+		var name = "Cineplex Cinemas Yonge-Dundas and VIP";
+            hightlightStore(name);
 	}
 };
 
