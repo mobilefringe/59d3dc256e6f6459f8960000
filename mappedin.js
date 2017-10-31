@@ -120,10 +120,8 @@ function getRandomInArray(array) {
 
 function hightlightStore(name) {
     var store_details_name = name;
-    console.log(name)
     var locations = polygonedLocations;
-    console.log(locations)
-    
+
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
 	   if(val.name === store_details_name){
@@ -137,9 +135,9 @@ function hightlightStore(name) {
 	console.log(startPolygon)
 	var startNode = startPolygon.entrances
 
-	var endLocation = getRandomInArray(polygonedLocations)
-	var endPolygon = getRandomInArray(endLocation.polygons)
-	var endNode = getRandomInArray(endPolygon.entrances)
+// 	var endLocation = getRandomInArray(polygonedLocations)
+// 	var endPolygon = getRandomInArray(endLocation.polygons)
+// 	var endNode = getRandomInArray(endPolygon.entrances)
 
 // 	startNode.directionsTo(endNode, null, function(error, directions) {
 // 		if (error || directions.path.length == 0) {
