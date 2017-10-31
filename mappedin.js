@@ -173,11 +173,9 @@ function initMappedin() {
 }
 
 function onDataLoaded() {
-
 	mapView.onPolygonClicked = onPolygonClicked
 	mapView.onNothingClicked = onNothingClicked
 	var locations = venue.locations;
-	console.log(locations)
 	for (var j = 0, jLen = locations.length; j < jLen; ++j) {
 		var location = locations[j];
 
