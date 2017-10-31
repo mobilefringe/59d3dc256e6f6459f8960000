@@ -153,7 +153,7 @@ function hightlightStore(name) {
 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
 // 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
 
-// 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
+		mapView.focusOnPath([startPolygon], true, 2000)
 
 // 		mapView.removeAllPaths()
 // 		mapView.drawPath(directions.path)
