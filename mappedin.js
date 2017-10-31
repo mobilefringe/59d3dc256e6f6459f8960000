@@ -157,7 +157,7 @@ function hightlightStore(name) {
 
 // 		mapView.removeAllPaths()
 // 		mapView.drawPath(directions.path)
-// 	})
+	})
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
