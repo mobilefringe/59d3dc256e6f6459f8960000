@@ -118,6 +118,34 @@ function drawRandomPath() {
 	})
 }
 
+function hightlightStore() {
+	var startLocation = getRandomInArray(polygonedLocations)
+	var startPolygon = getRandomInArray(startLocation.polygons)
+	var startNode = getRandomInArray(startPolygon.entrances)
+
+	var endLocation = getRandomInArray(polygonedLocations)
+	var endPolygon = getRandomInArray(endLocation.polygons)
+	var endNode = getRandomInArray(endPolygon.entrances)
+
+	startNode.directionsTo(endNode, null, function(error, directions) {
+		if (error || directions.path.length == 0) {
+			drawRandomPath()
+			return
+		}
+
+		mapView.clearAllPolygonColors()
+		setMap(startPolygon.map)
+
+		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
+		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
+
+		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
+
+		mapView.removeAllPaths()
+		mapView.drawPath(directions.path)
+	})
+}
+
 // This is your main function. It talks to the mappedin API and sets everything up for you
 // function init() {
 
