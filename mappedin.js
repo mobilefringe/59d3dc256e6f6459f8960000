@@ -134,7 +134,7 @@ function hightlightStore(name) {
 	
 	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons[0]
-	console.log(startPolygon.id)
+	console.log(startPolygon)
 	var startNode = startPolygon.entrances
 
 	var endLocation = getRandomInArray(polygonedLocations)
