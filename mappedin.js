@@ -10,7 +10,6 @@ var polygonedLocations = []
 var locationsByPolygon = {}
 
 var mapList = document.getElementById("mapList")
-console.log(mapList)
 var div = document.getElementById( 'mapView' );
 
 // options for Mappedin.getVenue
@@ -51,7 +50,7 @@ var searchOptions = {
 var options = {
 	mapview: mapviewOptions,
 	venue: venueOptions,
-// 	search: searchOptions,
+	search: searchOptions,
 }
 
 function onPolygonClicked (polygonId) {
