@@ -127,9 +127,10 @@ function hightlightStore(name) {
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
         var location_name = (val.name).toLowerCase();
-	   if(location_name == store_details_name){
-	       store_details_location.push(val);
-	   } 
+        console.log(location_name)
+	    if(location_name == store_details_name){
+	        store_details_location.push(val);
+        } 
 	});
 
 	var startLocation = store_details_location[0];
