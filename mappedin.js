@@ -130,8 +130,7 @@ function hightlightStore(name) {
 	       store_details_location.push(val);
 	   } 
 	});
-	console.log(store_details_location)
-	
+
 	var startLocation = store_details_location[0];
 	console.log(startLocation)
 	var startPolygon = startLocation.polygons[0]
