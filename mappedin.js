@@ -10,6 +10,7 @@ var polygonedLocations = []
 var locationsByPolygon = {}
 
 var mapList = document.getElementById("mapList")
+console.log(mapList)
 var div = document.getElementById( 'mapView' );
 
 // options for Mappedin.getVenue
