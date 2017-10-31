@@ -37,9 +37,6 @@ var mapviewOptions = {
 	onDataLoaded: function() {
 		console.log("3D data loaded, map usable. Could hide loading screen here, but things will be popping in. Now you can do things that interact with the 3D scene")
 		onDataLoaded();
-		
-		var name = "Cineplex Cinemas Yonge-Dundas and VIP";
-            hightlightStore(name);
 	}
 };
 
@@ -215,7 +212,9 @@ function onDataLoaded() {
 	// Shows off the pathing
     // 	drawRandomPath()
     // 	window.setInterval(drawRandomPath, 9000)
-
+    var name = "Cineplex Cinemas Yonge-Dundas and VIP";
+            hightlightStore(name);
+            
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
 	})
