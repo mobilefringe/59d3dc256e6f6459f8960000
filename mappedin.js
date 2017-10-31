@@ -138,15 +138,15 @@ function hightlightStore(name) {
 	var startNode = startPolygon.entrances[0]
 	console.log(startNode)
 
-	var endLocation = startLocation
-	var endPolygon = startPolygon
-	var endNode = startNode
+// 	var endLocation = startLocation
+// 	var endPolygon = startPolygon
+// 	var endNode = startNode
 
-	startNode.directionsTo(endNode, null, function(error, directions) {
-		if (error || directions.path.length == 0) {
-			drawRandomPath()
-			return
-		}
+// 	startNode.directionsTo(endNode, null, function(error, directions) {
+// 		if (error || directions.path.length == 0) {
+// 			drawRandomPath()
+// 			return
+// 		}
 
 		mapView.clearAllPolygonColors()
 		setMap(startPolygon.map)
@@ -158,7 +158,7 @@ function hightlightStore(name) {
 
 // 		mapView.removeAllPaths()
 // 		mapView.drawPath(directions.path)
-	})
+// 	})
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
