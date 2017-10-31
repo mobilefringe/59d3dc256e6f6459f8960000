@@ -123,15 +123,15 @@ function hightlightStore() {
 	var startPolygon = getRandomInArray(startLocation.polygons)
 	var startNode = getRandomInArray(startPolygon.entrances)
 
-	var endLocation = getRandomInArray(polygonedLocations)
-	var endPolygon = getRandomInArray(endLocation.polygons)
-	var endNode = getRandomInArray(endPolygon.entrances)
+// 	var endLocation = getRandomInArray(polygonedLocations)
+// 	var endPolygon = getRandomInArray(endLocation.polygons)
+// 	var endNode = getRandomInArray(endPolygon.entrances)
 
-	startNode.directionsTo(endNode, null, function(error, directions) {
-		if (error || directions.path.length == 0) {
-			drawRandomPath()
-			return
-		}
+// 	startNode.directionsTo(endNode, null, function(error, directions) {
+// 		if (error || directions.path.length == 0) {
+// 			drawRandomPath()
+// 			return
+// 		}
 
 		mapView.clearAllPolygonColors()
 		setMap(startPolygon.map)
@@ -139,11 +139,11 @@ function hightlightStore() {
 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
 
-		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
+// 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
 
-		mapView.removeAllPaths()
-		mapView.drawPath(directions.path)
-	})
+// 		mapView.removeAllPaths()
+// 		mapView.drawPath(directions.path)
+// 	})
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
@@ -201,8 +201,8 @@ function onDataLoaded() {
 	}
 
 	// Shows off the pathing
-// 	drawRandomPath()
-// 	window.setInterval(drawRandomPath, 9000)
+    // 	drawRandomPath()
+    // 	window.setInterval(drawRandomPath, 9000)
 
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
