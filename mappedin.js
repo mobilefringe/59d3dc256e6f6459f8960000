@@ -137,6 +137,7 @@ function onDataLoaded() {
 	mapView.onPolygonClicked = onPolygonClicked
 	mapView.onNothingClicked = onNothingClicked
 	var locations = venue.locations;
+	console.log(locations)
 	for (var j = 0, jLen = locations.length; j < jLen; ++j) {
 		var location = locations[j];
 
@@ -172,8 +173,8 @@ function onDataLoaded() {
 	}
 
 	// Shows off the pathing
-	drawRandomPath()
-	window.setInterval(drawRandomPath, 9000)
+// 	drawRandomPath()
+// 	window.setInterval(drawRandomPath, 9000)
 
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
