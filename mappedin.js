@@ -122,9 +122,7 @@ function getRandomInArray(array) {
 
 function hightlightStore(name) {
     var store_details_name = name;
-    console.log(store_details_name)
     var locations = polygonedLocations;
-    console.log(locations)
 
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
@@ -196,9 +194,7 @@ function onDataLoaded() {
 	// Shows off the pathing
     // 	drawRandomPath()
     // 	window.setInterval(drawRandomPath, 9000)
-    // var name = "Cineplex Cinemas Yonge-Dundas and VIP";
-    //         hightlightStore(name);
-            
+
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
 	})
