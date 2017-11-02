@@ -134,7 +134,6 @@ function hightlightStore(name) {
 	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons[0];
 	var startNode = startPolygon.entrances[0];
-    console.log(startNode)
 	setMap(startPolygon.map)
 
 	mapView.setPolygonColor(startPolygon.id, mapView.colors.path);
