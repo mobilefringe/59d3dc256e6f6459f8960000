@@ -135,7 +135,7 @@ function hightlightStore(name) {
 	console.log(startLocation)
 	var startPolygon = startLocation.polygons[0];
 	console.log(startPolygon)
-	var startNode = startPolygon.entrances[1];
+	var startNode = startPolygon.entrances;
     console.log(startNode)
 	setMap(startPolygon.map)
 
