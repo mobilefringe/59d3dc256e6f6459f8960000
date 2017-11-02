@@ -123,11 +123,9 @@ function getRandomInArray(array) {
 function hightlightStore(name) {
     var store_details_name = name.toLowerCase();
     var locations = polygonedLocations;
-    console.log(locations)
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
         var location_name = (val.name).toLowerCase();
-        console.log(location_name)
 	    if(location_name == store_details_name){
 	        store_details_location.push(val);
         } 
@@ -135,7 +133,7 @@ function hightlightStore(name) {
 
 	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons[0];
-	var startNode = startPolygon.entrances[0];
+	var startNode = startPolygon.entrances[1];
 
 	setMap(startPolygon.map)
 
