@@ -131,7 +131,7 @@ function hightlightStore(name) {
         } 
 	});
 
-	var startLocation = store_details_location[0];
+	var startLocation = store_details_location;
 	console.log(startLocation)
 	var startPolygon = startLocation.polygons[1];
 	console.log(startPolygon)
