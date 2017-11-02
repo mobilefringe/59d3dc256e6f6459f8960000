@@ -132,6 +132,7 @@ function hightlightStore(name) {
 	});
 
 	var startLocation = store_details_location[0];
+	console.log(startLocation)
 	var startPolygon = startLocation.polygons[1];
 	console.log(startPolygon)
 	var startNode = startPolygon.entrances[1];
