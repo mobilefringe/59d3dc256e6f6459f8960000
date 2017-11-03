@@ -50,6 +50,8 @@ function init() {
             scrollTop: $(id).offset().top -25
         }, 1500);
     });
+    
+    initMappedin();
 }
 
 function isInt(value) {
