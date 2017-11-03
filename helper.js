@@ -1,30 +1,3 @@
-var default_image = {
-    "image_url" : "//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1508432729000/10dundas_default.jpg",
-}
-
-function get_instagram(url, total, size, callback){
-    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
-    var item_rendered = [];
-    Mustache.parse(html); 
-    log('fetching instagram data from: ' + url);
-    $.getJSON(url).done(function(data) {
-        var insta_feed = data.social.instagram
-        if(insta_feed != null){
-            main_feed = insta_feed.splice(0,5);
-            $.each(main_feed, function(i,v){
-                var feed_obj = {}
-                feed_obj.image = v.images[size].url
-                feed_obj.link = v.link
-                if (i < total){
-                    var ig_rendered =  Mustache.render(html,feed_obj);
-                    item_rendered.push(ig_rendered.trim());
-                }
-            })
-            callback(item_rendered.join(''))
-        }
-    });
-}
-
 function init() {
     $('<div class="loader_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
     
@@ -50,8 +23,61 @@ function init() {
             scrollTop: $(id).offset().top -25
         }, 1500);
     });
+}
+
+function show_content() {
+    $("#content").fadeIn();
+    $(".loader_backdrop").remove();
     
-    initMappedin();
+    var today_hours = getTodaysHours();
+    renderHomeHours('#home_hours_container', '#home_hours_template', today_hours);
+    renderHomeHours('#home_hours_container_footer', '#home_hours_template_footer', today_hours)
+    
+    var hours = getPropertyRegularHours();
+    var hours_mf = [];
+    var hours_sat = [];
+    var hours_sun = [];
+    $.each(hours, function(key, val){
+        if (val.day_of_week == 1 && val.is_holiday == false){
+            hours_mf.push(val);
+        }
+        if (val.day_of_week == 6 && val.is_holiday == false){
+            hours_sat.push(val);
+        }
+        if (val.day_of_week == 0 && val.is_holiday == false){
+            hours_sun.push(val);
+        }
+    });
+    renderHours('#hours_mf_container','#hours_mf_template', hours_mf, 'reg_hours');
+    renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
+    renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
+}
+
+var default_image = {
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1508432729000/10dundas_default.jpg",
+}
+
+function get_instagram(url, total, size, callback){
+    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{caption}}"/></a></div>'
+    var item_rendered = [];
+    Mustache.parse(html); 
+    log('fetching instagram data from: ' + url);
+    $.getJSON(url).done(function(data) {
+        var insta_feed = data.social.instagram
+        if(insta_feed != null){
+            main_feed = insta_feed.splice(0,5);
+            $.each(main_feed, function(i,v){
+                var feed_obj = {}
+                feed_obj.image = v.images[size].url
+                feed_obj.link = v.link
+                if (i < total){
+                    var ig_rendered =  Mustache.render(html,feed_obj);
+                    item_rendered.push(ig_rendered.trim());
+                }
+            })
+            callback(item_rendered.join(''))
+        }
+    });
 }
 
 function isInt(value) {
@@ -109,34 +135,6 @@ function show_cat_stores(){
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
-}
-
-function show_content() {
-    $("#content").fadeIn();
-    $(".loader_backdrop").remove();
-    
-    var today_hours = getTodaysHours();
-    renderHomeHours('#home_hours_container', '#home_hours_template', today_hours);
-    renderHomeHours('#home_hours_container_footer', '#home_hours_template_footer', today_hours)
-    
-    var hours = getPropertyRegularHours();
-    var hours_mf = [];
-    var hours_sat = [];
-    var hours_sun = [];
-    $.each(hours, function(key, val){
-        if (val.day_of_week == 1 && val.is_holiday == false){
-            hours_mf.push(val);
-        }
-        if (val.day_of_week == 6 && val.is_holiday == false){
-            hours_sat.push(val);
-        }
-        if (val.day_of_week == 0 && val.is_holiday == false){
-            hours_sun.push(val);
-        }
-    });
-    renderHours('#hours_mf_container','#hours_mf_template', hours_mf, 'reg_hours');
-    renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
-    renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
 }
 
 function show_png_pin(trigger, map){
