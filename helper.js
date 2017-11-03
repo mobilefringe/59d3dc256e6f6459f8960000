@@ -111,7 +111,7 @@ function show_cat_stores(){
 
 function show_content() {
     $("#content").fadeIn();
-    $(".modal-backdrop").remove();
+    // $(".modal-backdrop").remove();
     
     var today_hours = getTodaysHours();
     renderHomeHours('#home_hours_container', '#home_hours_template', today_hours);
