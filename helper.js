@@ -110,7 +110,7 @@ function show_cat_stores(){
 }
 
 function show_content() {
-    $('.yield').fadeIn();
+    $("#content").fadeIn();
     $(".modal-backdrop").remove();
     
     var today_hours = getTodaysHours();
