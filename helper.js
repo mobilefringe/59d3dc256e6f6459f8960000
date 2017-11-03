@@ -26,7 +26,7 @@ function init() {
 }
 
 function show_content() {
-    $("#content").fadeIn();
+    $("#content").css('visibility','visible').hide().fadeIn('slow');
     $(".loader_backdrop").remove();
     
     var today_hours = getTodaysHours();
