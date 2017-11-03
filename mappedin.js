@@ -121,6 +121,7 @@ function getRandomInArray(array) {
 // }
 
 function hightlightStore(name) {
+    console.log(name)
     var store_details_name = name.toLowerCase();
     var locations = polygonedLocations;
     var store_details_location = [];
