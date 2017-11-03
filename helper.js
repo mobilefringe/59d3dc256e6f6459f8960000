@@ -26,6 +26,8 @@ function get_instagram(url, total, size, callback){
 }
 
 function init() {
+    $('<div class="modal-backdrop custom_backdrop"><div class="loader">Loading...</div></div>').appendTo(document.body);
+    
     $('#menu-icon').click(function(){
 		$(this).toggleClass('open');
 		$('.nav_container').slideToggle();
