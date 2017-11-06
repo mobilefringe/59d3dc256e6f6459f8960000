@@ -9,7 +9,7 @@ var polygonedLocations = []
 // Track which polygon belongs to which location
 var locationsByPolygon = {}
 
-var mapList = document.getElementById("mapList")
+// var mapList = document.getElementById("mapList")
 var div = document.getElementById( 'mapView' );
 
 // options for Mappedin.getVenue
@@ -72,17 +72,17 @@ function onNothingClicked() {
 }
 
 // Changes the map and updates the Map List
-function setMap(map) {
-	mapList.selectedIndex = mapList.namedItem(map).index
-	mapView.setMap(map)
-}
+// function setMap(map) {
+// 	mapList.selectedIndex = mapList.namedItem(map).index
+// 	mapView.setMap(map)
+// }
 
 // Changes the map in response to a Map List selection
-function changeMap() {
-	mapView.setMap(mapList.value, function () {
-		console.log("Map changed to " + mapList.value)
-	})
-}
+// function changeMap() {
+// 	mapView.setMap(mapList.value, function () {
+// 		console.log("Map changed to " + mapList.value)
+// 	})
+// }
 
 // Convenience function to help us get random array items
 function getRandomInArray(array) {
@@ -189,7 +189,7 @@ function onDataLoaded() {
 		if (mapId == mapView.currentMap) {
 			item.selected = true
 		}
-		mapList.add(item)
+// 		mapList.add(item)
 	}
 
 	// Shows off the pathing
@@ -226,4 +226,4 @@ function onDataLoaded() {
 // 	init();
 // }
 
-mapList.addEventListener("change", changeMap)
+// mapList.addEventListener("change", changeMap)
