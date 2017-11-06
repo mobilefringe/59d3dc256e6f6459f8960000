@@ -72,17 +72,17 @@ function onNothingClicked() {
 }
 
 // Changes the map and updates the Map List
-// function setMap(map) {
-// 	mapList.selectedIndex = mapList.namedItem(map).index
-// 	mapView.setMap(map)
-// }
+function setMap(map) {
+	mapList.selectedIndex = mapList.namedItem(map).index
+	mapView.setMap(map)
+}
 
 // Changes the map in response to a Map List selection
-// function changeMap() {
-// 	mapView.setMap(mapList.value, function () {
-// 		console.log("Map changed to " + mapList.value)
-// 	})
-// }
+function changeMap() {
+	mapView.setMap(mapList.value, function () {
+		console.log("Map changed to " + mapList.value)
+	})
+}
 
 // Convenience function to help us get random array items
 function getRandomInArray(array) {
