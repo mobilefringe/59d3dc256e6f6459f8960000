@@ -73,7 +73,7 @@ function onNothingClicked() {
 
 // Changes the map and updates the Map List
 function setMap(map) {
-	mapList.selectedIndex = mapList.namedItem(map).index
+// 	mapList.selectedIndex = mapList.namedItem(map).index
 	mapView.setMap(map)
 }
 
