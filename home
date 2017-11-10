@@ -135,7 +135,7 @@
         </div>
         <div class="width_50">
             <div class="home_promos">
-                <h2 class="details_title">Restaurants</h2>
+                <h2 class="details_title">Restaurants & Eateries</h2>
                 <div id="home_dine_container" class="dine_container margin_20">
                     <script id="home_dine_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
