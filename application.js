@@ -609,6 +609,30 @@ function renderStoreDetails(container, template, collection, slug){
             val.store_logo = val.store_front_url_abs; 
         }
         
+        switch(val.z_coordinate) {
+            case 0: 
+                val.z_coordinate = "B2"
+                break;
+            case 1:
+                val.z_coordinate = "B1"
+                break;
+            case 2:
+                val.z_coordinate = "Level 1"
+                break;
+            case 3:
+                val.z_coordinate = "Level 2"
+                break;
+            case 4:
+                val.z_coordinate = "Level 3"
+                break;
+            case 5:
+                val.z_coordinate = "Level 4"
+                break;
+            case 6:
+                val.z_coordinate = "Level 5"
+                break;
+        }
+                    
         if(val.categories != null){
             val.store_categories = getCategoriesNamesByStoreSlug(val.slug);
         }
