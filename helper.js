@@ -135,9 +135,7 @@ function show_cat_stores(){
                 var initial_id = val.getAttribute('value');
                 console.log(initial_id)
                 if(initial_id.length >= 1){
-                    $(".store_initial").css("display", "block");
-                } else {
-                    $(".store_initial").css("display", "none");   
+                    $(".store_initial").hide()
                 }
             });
         }
