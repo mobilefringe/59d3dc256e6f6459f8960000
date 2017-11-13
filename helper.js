@@ -136,6 +136,8 @@ function show_cat_stores(){
                 console.log(initial_id)
                 if(initial_id.length >= 1){
                     $(".store_initial").hide()
+                } else {
+                    $(".store_initial").show()
                 }
             });
         }
