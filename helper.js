@@ -129,16 +129,10 @@ function show_cat_stores(){
             $(".store_initial").css("display", "none");
         } else {
             rows.show();
-            // $(".store_initial").css("display", "block");
-            var initials = $('.store_initial');
-            $.each(initials, function(i, val){
-                var initial_id = val.getAttribute('value');
-                console.log(initial_id)
-                if(initial_id.length >= 1){
-                    $(".store_initial").hide()
-                } else {
-                    $(".store_initial").show()
-                }
+            $.each($('.store_initial'), function(i, val){
+                if ($(val).val().length > 0){
+                    $(val).show();
+                } 
             });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
