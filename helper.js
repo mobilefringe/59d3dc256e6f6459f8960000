@@ -132,9 +132,9 @@ function show_cat_stores(){
             $.each($(".store_initial"), function(i, val){
                 var initial = val.getAttribute('value');
                 console.log(initial);
-                // if ($(val).id().length > 0){
-                //     $(val).show();
-                // } 
+                if (initial.length > 0){
+                    $(val).show();
+                } 
             });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
