@@ -130,17 +130,17 @@ function show_cat_stores(){
         } else {
             rows.show();
             // $('#cat_name').hide();  
-            var initials = $('.store_initial');
-            $.each(initials, function(i, val){
+            // var initials = $('.store_initial');
+            // $.each(initials, function(i, val){
                 
-                var initial_id = val.getAttribute('value');
-                console.log(initial_id)
-                if(initial_id.length >= 1){
-                    $(".store_initial").css("display", "block");
-                } else {
-                    $(".store_initial").css("display", "none");   
-                }
-            });
+            //     var initial_id = val.getAttribute('value');
+            //     console.log(initial_id)
+            //     if(initial_id.length >= 1){
+            //         $(".store_initial").css("display", "block");
+            //     } else {
+            //         $(".store_initial").css("display", "none");   
+            //     }
+            // });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
