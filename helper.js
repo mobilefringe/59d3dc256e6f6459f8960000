@@ -126,22 +126,18 @@ function show_cat_stores(){
                     $(val).show();
                 }
             });
-            $(".store_initial").css("display", "none");
+            // $(".store_initial").css("display", "none");
         } else {
             rows.show();
             $('#cat_name').hide();  
-            if($('.store_initial[id]').length){
+            var initials = $('.store_initial');
+            $.each(initials, function(i, val){
+                var initial_id = val.getAttribute('value');
+                console.log(initial_id)
+                if($('.store_initial[id]').length){
                     $(".store_initial").css("display", "block");
                 }
-                
-            // var initials = $('.store_initial');
-            // $.each(initials, function(i, val){
-            //     var initial_id = val.getAttribute('value');
-            //     console.log(initial_id)
-            //     if($('.store_initial[id]').length){
-            //         $(".store_initial").css("display", "block");
-            //     }
-            // });
+            });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
