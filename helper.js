@@ -129,7 +129,7 @@ function show_cat_stores(){
             $(".store_initial").css("display", "none");
         } else {
             rows.show();
-            $(".store_initial").css("display", "none");
+            // $(".store_initial").css("display", "none");
             
             // var initials = $('.store_initial');
             // $.each(initials, function(i, val){
