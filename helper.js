@@ -128,6 +128,7 @@ function show_cat_stores(){
             });
             $(".store_initial").css("display", "none");
         } else {
+            var store_list = stores;
             renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             
             // rows.show();
