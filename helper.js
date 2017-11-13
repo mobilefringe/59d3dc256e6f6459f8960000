@@ -135,7 +135,9 @@ function show_cat_stores(){
                 if (initial.length > 0){
                     console.log(initial)
                     $(val).show();
-                } 
+                } else {
+                    $(val).hide();
+                }
             });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
