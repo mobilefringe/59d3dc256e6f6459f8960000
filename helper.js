@@ -130,11 +130,11 @@ function show_cat_stores(){
         } else {
             rows.show();
             $('#cat_name').hide();   
-            var initial = $(".store_initial").val();
-            console.log(initial)
-            if(initial == undefined){
+            // var initial = $(".store_initial").val();
+            // console.log(initial)
+            // if(initial == undefined){
                 $(".store_initial").css("display", "none");
-            }
+            // }
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
