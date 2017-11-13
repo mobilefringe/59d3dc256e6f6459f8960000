@@ -116,7 +116,7 @@
             renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
             
             show_content();
-            show_cat_stores(store_list);
+            show_cat_stores();
         }
         loadMallData(renderAll); 
     })
