@@ -134,9 +134,9 @@ function show_cat_stores(){
             $.each(initials, function(i, val){
                 var initial_id = val.getAttribute('value');
                 console.log(initial_id)
-                // if ($.inArray(cat_id, cat_array) >= 0){
-                //     $(val).show();
-                // }
+                if (initial_id != null ){
+                    $(".store_initial").css("display", "block");
+                }
             });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
