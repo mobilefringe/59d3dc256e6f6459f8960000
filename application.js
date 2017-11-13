@@ -543,18 +543,10 @@ function renderStoreList(container, template, collection, type){
             val.cat_list = val.categories.join(',')
         }
         
-        // var current_initial = val.name[0];
-        // if(isInt(current_initial)){
-        //     current_initial = "7";
-        // }
-        
-        // if(store_initial.toLowerCase() == current_initial.toLowerCase()){
-        //     val.initial = "";
-        //     val.show = "display:none;";
-        // } else {
-        //     val.initial = current_initial.toUpperCase();
-        //     store_initial = current_initial;
-        // }
+        var current_initial = val.name[0];
+        if(isInt(current_initial)){
+            current_initial = "7";
+        }
         
         var current_initial = val.name[0];
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
