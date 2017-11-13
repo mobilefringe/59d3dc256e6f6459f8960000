@@ -132,8 +132,8 @@ function show_cat_stores(){
             $('#cat_name').hide();   
             // var initial = $(".store_initial").val();
             // console.log(initial)
-            if(initial == undefined){
-                $(".store_initial").css("display", "none");
+            if($(".store_initial").val(); != undefined){
+                $(".store_initial").css("display", "block");
             }
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
