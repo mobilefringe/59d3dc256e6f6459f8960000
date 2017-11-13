@@ -131,14 +131,10 @@ function show_cat_stores(){
             rows.show();
             $('#cat_name').hide();  
             var initials = $('.store_initial');
-            console.log(initials)
             $.each(initials, function(i, val){
                 var initial_id = val.getAttribute('value');
                 console.log(initial_id)
-                if(initial_id == null || initial_id == undefined || initial_id == ""){
-                    $(".store_initial").css("display", "none");
-                    
-                } else {
+                if($('.store_initial[id]').length > 0){
                     $(".store_initial").css("display", "block");
                 }
             });
