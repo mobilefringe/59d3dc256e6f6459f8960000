@@ -71,7 +71,7 @@
         <div id="store_list_container">
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}" style="{{show}}">
-                    <div class="store_logo_container"  id="{{initial}}">
+                    <div class="store_initial_container" id="{{initial}}">
                         <a href="#">
                             
                             <p class="store_initial">{{initial}}</p>
