@@ -128,16 +128,18 @@ function show_cat_stores(){
             });
             $(".store_initial").css("display", "none");
         } else {
-            rows.show();
-            $('#cat_name').hide();  
-            var initials = $('.store_initial');
-            $.each(initials, function(i, val){
-                var initial_id = val.getAttribute('value');
-                console.log(initial_id)
-                if($('.store_initial[id]').length){
-                    $(".store_initial").css("display", "block");
-                }
-            });
+            renderStoreList('#store_list_container','#store_list_template', store_list, "stores");
+            
+            // rows.show();
+            // $('#cat_name').hide();  
+            // var initials = $('.store_initial');
+            // $.each(initials, function(i, val){
+            //     var initial_id = val.getAttribute('value');
+            //     console.log(initial_id)
+            //     if($('.store_initial[id]').length){
+            //         $(".store_initial").css("display", "block");
+            //     }
+            // });
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
