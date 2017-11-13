@@ -130,7 +130,8 @@ function show_cat_stores(){
         } else {
             rows.show();
             $('#cat_name').hide();   
-            var initial = $(".store_initial").val()
+            var initial = $(".store_initial").val();
+            conosle.log(initial)
             if(initial == null){
                 $(".store_initial").css("display", "none");
             }
