@@ -134,11 +134,11 @@ function show_cat_stores(){
             $.each(initials, function(i, val){
                 var initial_id = val.getAttribute('value');
                 console.log(initial_id)
-                if(initial_id != "" ){
-                    console.log("Hello!")
-                    $(".store_initial").css("display", "block");
-                } else {
+                if(initial_id == null || initial_id == undefined || initial_id == ""){
                     $(".store_initial").css("display", "none");
+                    
+                } else {
+                    $(".store_initial").css("display", "block");
                 }
             });
         }
