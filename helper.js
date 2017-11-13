@@ -134,7 +134,8 @@ function show_cat_stores(){
             $.each(initials, function(i, val){
                 var initial_id = val.getAttribute('value');
                 console.log(initial_id)
-                if (initial_id != undefined ){
+                if(initial_id != undefined ){
+                    console.log("Hello!")
                     $(".store_initial").css("display", "block");
                 } else {
                     $(".store_initial").css("display", "none");
