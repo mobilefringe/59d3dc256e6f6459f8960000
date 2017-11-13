@@ -70,9 +70,9 @@
     <div class="row">
         <div id="store_list_container">
             <script id="store_list_template" type="x-tmpl-mustache/text">
-                <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}" style="{{show}}">
+                <div class="col-xs-6 col-sm-3 col-md-2 cats_row store_initial" data-cat="{{cat_list}}" style="{{show}}">
                     <div class="store_initial_container" id="{{initial}}">
-                        <p class="store_initial">{{initial}}</p>
+                        <p class="">{{initial}}</p>
                     </div>
                 </div>
                 
