@@ -73,7 +73,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
                     <div class="store_logo_container" style="{{show}}" id="{{initial}}">
                         <a href="#">
-                            <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                            
                             <p class="store_initial">{{initial}}</p>
                         </a>
                     </div>
