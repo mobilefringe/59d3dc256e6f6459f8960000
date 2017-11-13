@@ -113,7 +113,7 @@ function render_instagram(data){
     $('#instafeed').html(data);
 }
 
-function show_cat_stores(){
+function show_cat_stores(stores){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
         var cat_name = $(this).attr('name');
