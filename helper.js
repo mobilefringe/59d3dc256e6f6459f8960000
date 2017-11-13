@@ -130,7 +130,7 @@ function show_cat_stores(){
         } else {
             rows.show();
             $.each($(".store_initial"), function(i, val){
-                var initial = getAttribute('value');
+                var initial = val.getAttribute('value');
                 console.log(initial);
                 // if ($(val).id().length > 0){
                 //     $(val).show();
