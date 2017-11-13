@@ -136,6 +136,8 @@ function show_cat_stores(){
                 console.log(initial_id)
                 if (initial_id != null ){
                     $(".store_initial").css("display", "block");
+                } else {
+                    $(".store_initial").css("display", "none");
                 }
             });
         }
