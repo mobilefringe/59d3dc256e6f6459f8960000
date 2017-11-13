@@ -131,7 +131,7 @@ function show_cat_stores(){
             rows.show();
             $.each($(".store_initial"), function(i, val){
                 var initial = val.getAttribute('value');
-                console.log(initial);
+                // console.log(initial);
                 if (initial.length > 0){
                     console.log(initial)
                     $(val).show();
