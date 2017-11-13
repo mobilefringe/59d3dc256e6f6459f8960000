@@ -132,7 +132,7 @@ function show_cat_stores(){
             $('#cat_name').hide();   
             // var initial = $(".store_initial").val();
             // console.log(initial)
-            if($(".store_initial").val(); != undefined){
+            if($(".store_initial").val() != undefined){
                 $(".store_initial").css("display", "block");
             }
         }
