@@ -132,9 +132,9 @@ function show_cat_stores(){
             $('#cat_name').hide();   
             // var initial = $(".store_initial").val();
             // console.log(initial)
-            // if(initial == undefined){
+            if(initial == undefined){
                 $(".store_initial").css("display", "none");
-            // }
+            }
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
