@@ -126,7 +126,7 @@ function show_cat_stores(){
                     $(val).show();
                 }
             });
-            // $(".store_initial").css("display", "none");
+            $(".store_initial").css("display", "none");
         } else {
             rows.show();
             $('#cat_name').hide();  
