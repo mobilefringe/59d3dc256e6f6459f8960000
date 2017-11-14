@@ -149,11 +149,11 @@
             </div>
         </div>
     </div>
-    <div class="margin_30"></div>
+    <div class="margin_60"></div>
     <div class="center">
         <h2 class="details_title">Follow 10Dundas on Instagram <i class="fa fa-instagram" aria-hidden="true"></i></h2>
     </div>
-    <div class="margin_30"></div>
+    <div class="margin_60"></div>
     <div class="instafeed_container">
         <div id="instafeed"></div> 
     </div>
