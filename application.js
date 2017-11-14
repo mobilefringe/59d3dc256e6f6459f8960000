@@ -558,6 +558,10 @@ function renderStoreList(container, template, collection, type){
             val.show = "display:block;";
         }
         
+        var window_width = $( window ).width();
+        if (window_width < 769) {
+            val.show = "display:none;";
+        }
         if(val.is_coming_soon_store == true){
             val.coming_soon_store = "display: block";
         } else {
