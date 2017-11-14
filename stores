@@ -89,9 +89,9 @@
                         </a>
                     </div>
                     <div class="store_list_promos">
-                        <span class="phone_exist hidden_phone" style="{{phone_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507214350000/phone.png" class="" alt="">{{phone}}</span>
-                        <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt="">{{job_list}}</span>
-                        <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt="">{{promotion_list}}</span>
+                        <span class="phone_exist hidden_phone" style="{{phone_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1510686786000/phone.png" class="" alt="">{{phone}}</span>
+                        <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1510686786000/suitcase.png" class="" alt="">{{job_list}}</span>
+                        <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1510686786000/tag.png" class="" alt="">{{promotion_list}}</span>
                     </div>
                 </div>
             </script>
