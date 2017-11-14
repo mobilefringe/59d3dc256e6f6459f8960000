@@ -28,7 +28,7 @@
         <div class="col-md-12">
             <div class="map_container">
                 <div id="mappedin-map"></div>
-                <main data-venue="10-dundas" data-key="" data-header="150" id="mappedin-app"></main> 
+                <main data-venue="10-dundas" data-key="" data-header="" id="mappedin-app"></main> 
             </div>
         </div> 
     </div>
