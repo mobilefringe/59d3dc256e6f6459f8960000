@@ -149,6 +149,7 @@
             </div>
         </div>
     </div>
+    <h2 class="details_title">Follow Us on Instagram</h2>
     <div class="instafeed_container">
         <div id="instafeed"></div> 
     </div>
@@ -159,7 +160,7 @@
             <!-- Slides Container -->
             <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
-                    <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
+                    <div><img u="image" alt="amazon" src="{{store_logo}}"/></div>
                 </script>
             </div>
         </div>
