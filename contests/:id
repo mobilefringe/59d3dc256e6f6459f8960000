@@ -8,7 +8,7 @@
                             <h1>{{name}}</h1>
                         </div>
                         <div class="col-md-4 hidden_phone">
-                            // <h4 class="pull-right">Contests</h4>
+                            
                         </div>
                     </script>
                 </div>
@@ -141,3 +141,5 @@
         loadMallDataCached(renderAll); 
     });
 </script>
+
+<!--<h4 class="pull-right">Contests</h4>-->
