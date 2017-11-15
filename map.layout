@@ -68,7 +68,7 @@
 
 <body>
     <header>
-        <div class="map_inside_banner">   
+        <div class="inside_banner map_banner">   
                 <div class="content_container">
                     <div class="inside_banner_content">
                         <div class="row">
