@@ -68,18 +68,7 @@
 
 <body>
     <header>
-        <div class="inside_banner map_banner">   
-                <div class="content_container">
-                    <div class="inside_banner_content">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1>Centre Map</h1>
-                            </div>
-                            <div class="col-md-6 hidden_phone"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
         <div class="header">
             <div class="social_header">
                 <div class="content_container">
@@ -153,6 +142,18 @@
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="inside_banner map_banner">   
+                <div class="content_container">
+                    <div class="inside_banner_content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>Centre Map</h1>
+                            </div>
+                            <div class="col-md-6 hidden_phone"></div>
+                        </div>
                     </div>
                 </div>
             </div>
