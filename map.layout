@@ -154,6 +154,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <section id="map_content">
             <div class="inside_banner">   
                 <div class="content_container">
                     <div class="inside_banner_content">
@@ -168,11 +170,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!--<section id="map_content">-->
-            
-        <!--</section>-->
+        </section>
     </header>
     
     <section >
