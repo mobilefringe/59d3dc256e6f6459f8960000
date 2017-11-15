@@ -89,37 +89,6 @@ function getRandomInArray(array) {
 	return array[Math.floor(Math.random() * array.length)]
 }
 
-// Draws a random path, highlighting the locations and focusing on the path and polygons
-// function drawRandomPath() {
-// 	var startLocation = getRandomInArray(polygonedLocations)
-// 	console.log(startLocation)
-// 	var startPolygon = getRandomInArray(startLocation.polygons)
-// 	console.log(startPolygon)
-// 	var startNode = getRandomInArray(startPolygon.entrances)
-
-// 	var endLocation = getRandomInArray(polygonedLocations)
-// 	var endPolygon = getRandomInArray(endLocation.polygons)
-// 	var endNode = getRandomInArray(endPolygon.entrances)
-
-// 	startNode.directionsTo(endNode, null, function(error, directions) {
-// 		if (error || directions.path.length == 0) {
-// 			drawRandomPath()
-// 			return
-// 		}
-
-// 		mapView.clearAllPolygonColors()
-// 		setMap(startPolygon.map)
-
-// 		mapView.setPolygonColor(startPolygon.id, mapView.colors.path)
-// 		mapView.setPolygonColor(endPolygon.id, mapView.colors.select)
-
-// 		mapView.focusOnPath(directions.path, [startPolygon, endPolygon], true, 2000)
-
-// 		mapView.removeAllPaths()
-// 		mapView.drawPath(directions.path)
-// 	})
-// }
-
 function hightlightStore(name) {
     console.log(name)
     var store_details_name = name.toLowerCase();
@@ -144,7 +113,6 @@ function hightlightStore(name) {
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
 function initMappedin() {
-
 	Mappedin.initialize(options, div).then(function (data) {
 		mapView = data.mapview
 		venue = data.venue
@@ -192,10 +160,6 @@ function onDataLoaded() {
 		}
 // 		mapList.add(item)
 	}
-
-	// Shows off the pathing
-    // 	drawRandomPath()
-    // 	window.setInterval(drawRandomPath, 9000)
 
 	mapView.labelAllLocations({
 		excludeTypes: [] // If there are certain Location types you don't want to have labels (like amenities), exclude them here)
