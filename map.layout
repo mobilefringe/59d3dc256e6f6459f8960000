@@ -68,9 +68,7 @@
 
 <body>
     <header>
-        
-        <div class="header">
-            <div class="inside_banner map_banner">   
+        <div class="inside_banner map_banner">   
                 <div class="content_container">
                     <div class="inside_banner_content">
                         <div class="row">
@@ -82,6 +80,7 @@
                     </div>
                 </div>
             </div>
+        <div class="header">
             <div class="social_header">
                 <div class="content_container">
                     <div class="row">
