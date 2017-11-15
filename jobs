@@ -76,7 +76,7 @@
                 $('#no_jobs').show();
                 $(".filter_jobs").click(function() {
                     $('#no_jobs').hide();
-                }
+                });
             }
             
             show_content();
