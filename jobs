@@ -73,7 +73,10 @@
             if(published_jobs.length > 0){
                 renderJobs('#jobs_container', '#jobs_template', published_jobs);
             } else {
-                $('#no_jobs').show()
+                $('#no_jobs').show();
+                $(".filter_jobs").click(function() {
+                    $('#no_jobs').hide();
+                }
             }
             
             show_content();
@@ -82,6 +85,7 @@
             $(".filter_jobs").click(function() {
                 $(".filter_jobs").removeClass("active");
                 $(this).addClass("active");
+                
             });
         }
         loadMallDataCached(renderAll); 
