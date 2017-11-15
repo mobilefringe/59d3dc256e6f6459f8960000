@@ -156,7 +156,7 @@
             </div>
         </div>
     </header>
-    <section>
+    <section id="map_content">
         <div class="inside_banner">   
             <div class="content_container">
                 <div class="inside_banner_content">
@@ -172,7 +172,7 @@
             </div>
         </div>
     </section>
-    <section id="map_content">
+    <section >
         {{yield}}
     </section>
 </body>
