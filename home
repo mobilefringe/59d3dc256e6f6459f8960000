@@ -101,23 +101,6 @@
                 </script>
             </div>
         </div>
-        <!--<div class="flex_container">-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/stores">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509743266000/Shop.jpg" alt="{{name}}"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/stores/10dundaseast-cineplex-cinemas-yonge-dundas-and-vip">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509743265000/Cinema.jpg" alt="{{name}}"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/find_us">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1509743266000/FindUs.jpg" alt="{{name}}"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--</div>-->
     </div>
 </div>
 <div class="content_container">
@@ -129,10 +112,6 @@
                 </script>
             </div>
         </div>
-        
-        <!--<div class="width_50">-->
-        <!--    <img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/jpeg/1510679673000/2017-11-10 13.06.02.jpg" alt="">-->
-        <!--</div>-->
         <div class="width_50">
             <div class="home_promos">
                 <h2 class="details_title">Restaurants & Eateries</h2>
