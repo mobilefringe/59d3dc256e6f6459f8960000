@@ -137,7 +137,8 @@ function hightlightStore(name) {
 	console.log(startPolygon)
 	var startNode = startPolygon.entrances[0];
 	setMap(startPolygon.map)
-
+    
+    var primary_color = "#DF62A5";
 	mapView.setPolygonColor(startPolygon.id, mapView.colors.select);
 }
 
