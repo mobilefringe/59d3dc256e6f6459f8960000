@@ -140,7 +140,6 @@ function hightlightStore(name) {
     
     var primary_color = 0xDF62A5;
 	mapView.setPolygonColor(startPolygon.id, primary_color);
-// 	mapView.colors.select
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
