@@ -138,7 +138,7 @@ function hightlightStore(name) {
 	var startNode = startPolygon.entrances[0];
 	setMap(startPolygon.map)
 
-	mapView.setPolygonColor(startPolygon.id, mapView.colors.hover);
+	mapView.setPolygonColor(startPolygon.id, mapView.colors.select);
 }
 
 // This is your main function. It talks to the mappedin API and sets everything up for you
