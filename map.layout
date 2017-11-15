@@ -75,9 +75,7 @@
                             <div class="col-md-6">
                                 <h1>Centre Map</h1>
                             </div>
-                            <div class="col-md-6 hidden_phone">
-                                <!--<h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>-->
-                            </div>
+                            <div class="col-md-6 hidden_phone"></div>
                         </div>
                     </div>
                 </div>
@@ -86,21 +84,11 @@
             <div class="social_header">
                 <div class="content_container">
                     <div class="row">
-                        <div class="col-md-6 pull-left hidden_phone">
-                            <!--<div class="hours_container">-->
-                            <!--    <span id="home_hours_container" class="">-->
-                            <!--        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
-                            <!--            <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>-->
-                            <!--        </script>-->
-                            <!--    </span>-->
-                            <!--    <a class="view_holiday_hours" href="/hours">View Holiday Hours</a>-->
-                            <!--</div>-->
-                        </div>
+                        <div class="col-md-6 pull-left hidden_phone"></div>
                         <div class="col-md-6">
                             <div class="social_container pull-right">
                                 <a href="https://www.facebook.com/10DundasEast" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="https://twitter.com/10DundasEast" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <!--<a href="" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>-->
                                 <a href="https://www.instagram.com/10dundaseast/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="https://www.youtube.com/user/10DundasEast" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                             </div>
@@ -168,26 +156,8 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        <!--<section id="map_content">-->
-        <!--    <div class="inside_banner">   -->
-        <!--        <div class="content_container">-->
-        <!--            <div class="inside_banner_content">-->
-        <!--                <div class="row">-->
-        <!--                    <div class="col-md-6">-->
-        <!--                        <h1>Centre Map</h1>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-6 hidden_phone">-->
-                                <!--<h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</section>-->
     </header>
-    
     <section >
         {{yield}}
     </section>
