@@ -90,7 +90,7 @@ function getRandomInArray(array) {
 }
 
 function hightlightStore(name) {
-    console.log(name)
+    // console.log(name)
     var store_details_name = name.toLowerCase();
     console.log(store_details_name)
     var locations = polygonedLocations;
@@ -105,7 +105,6 @@ function hightlightStore(name) {
 
 	var startLocation = store_details_location[0];
 	var startPolygon = startLocation.polygons[0];
-	console.log(startPolygon)
 	var startNode = startPolygon.entrances[0];
 	setMap(startPolygon.map)
     
