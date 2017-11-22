@@ -97,7 +97,7 @@ function hightlightStore(name) {
 	$.each( locations , function( key, val ) {
         var location_name = (val.name).toLowerCase();
         console.log(location_name)
-	    if(store_details_name == location_name){
+	    if(location_name.contains(store_details_name)){
 	        store_details_location.push(val);
         } 
 	});
