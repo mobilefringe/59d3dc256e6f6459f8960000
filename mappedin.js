@@ -99,7 +99,10 @@ function hightlightStore(name) {
         console.log(location_name)
 	    if(location_name == store_details_name){
 	        store_details_location.push(val);
+        } else {
+            console.log("No match!")
         } 
+        
 	});
 
 	var startLocation = store_details_location[0];
