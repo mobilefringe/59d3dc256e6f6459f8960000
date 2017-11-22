@@ -90,7 +90,6 @@ function getRandomInArray(array) {
 }
 
 function hightlightStore(name) {
-    // console.log(name)
     var store_details_name = name.toLowerCase();
     console.log(store_details_name)
     var locations = polygonedLocations;
@@ -98,7 +97,7 @@ function hightlightStore(name) {
 	$.each( locations , function( key, val ) {
         var location_name = (val.name).toLowerCase();
         console.log(location_name)
-	    if(location_name == store_details_name){
+	    if(location_name.indexOf(store_details_name)){
 	        store_details_location.push(val);
         } 
 	});
