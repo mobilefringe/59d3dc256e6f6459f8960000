@@ -101,7 +101,7 @@ function hightlightStore(name) {
 	   //     console.log(location_name)
 	   //     store_details_location.push(val);
     //     } 
-        if(Objects.equals(store_details_name, location_name){
+        if(Objects.equals(store_details_name, location_name)){
             store_details_location.push(val);
         }
 	});
