@@ -99,7 +99,6 @@ function hightlightStore(name) {
 	    if(store_details_name == location_name){
 	        console.log("Store Name" + store_details_name);
 	        console.log("Map Name" + location_name)
-	        console.log(location_name)
 	        store_details_location.push(val);
         } 
 	});
