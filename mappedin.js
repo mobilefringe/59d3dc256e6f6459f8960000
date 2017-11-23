@@ -98,13 +98,15 @@ function hightlightStore(name) {
 	    console.log("Locations" + locations)
         var location_name = (val.name).toLowerCase();
         console.log(location_name)
+        $.each( location_name , function( key, val ) {
 	   // if(store_details_name == location_name){
 	   //     console.log(location_name)
 	   //     store_details_location.push(val);
     //     } 
-        // if(Objects.equals(store_details_name, location_name)){
-        //     store_details_location.push(val);
-        // }
+            if(Objects.equals(store_details_name, location_name)){
+                store_details_location.push(val);
+            }
+        });
 	});
 
 	var startLocation = store_details_location[0];
