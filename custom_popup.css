@@ -101,7 +101,9 @@
     width:100%;
     font-weight:400;
 }
-
+.popuo_form_div img {
+    max-width: 100%;
+}
 .popup_submit{
     color: #FFF;
     display: block;
