@@ -62,7 +62,7 @@
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
-        setEndPoint('http://10dundaseast.mallmaverick.com/api/v4/10dundaseast/all.json');
+        setEndPoint('//10dundaseast.mallmaverick.com/api/v4/10dundaseast/all.json');
     </script>
 </head>
 
