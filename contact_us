@@ -33,7 +33,7 @@ Toronto, Ontario</p>
                 <div id="send_contact_success" class="alert alert-success hidden_now" role="alert">
                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                     <span class="sr-only">Success</span>
-                    Thank you for contacting us. A member from our team will contact you shortly.
+                    Thank you for your email. A member of our team will contact you within 48 hours.
                 </div>
                 <div id="send_contact_error" class="alert alert-danger hidden_now" role="alert">
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
