@@ -24,7 +24,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var repo = getRepoDetailsByName("Contact Us Banner");
+            var repo = getRepoDetailsByName("Events Banner");
             if (repo != undefined) {
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
