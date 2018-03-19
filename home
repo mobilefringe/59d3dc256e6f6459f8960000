@@ -133,7 +133,7 @@
             
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner', banners);
-            console.log("banners",banners);
+            
             var all_feature_items = getFeatureList();
             var three_items = all_feature_items.slice(0, 3);
             var single_item = all_feature_items.slice(3, 5);
