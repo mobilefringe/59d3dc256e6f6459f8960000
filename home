@@ -93,7 +93,9 @@
                     <script id="home_dine_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
                             <h2 class="home_promo_name"> {{name}} </h2>
+                            {{#z_coordinate}}
                             <p class="home_promo_dates"> {{phone}} | {{z_coordinate}} </p>
+                            {{/z_coordinate}}
                             <a class="home_read_more" href="/stores/{{slug}}"><p>See Store Details</p></a>
                         </div>
                     </script>
