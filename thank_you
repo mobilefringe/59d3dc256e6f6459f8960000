@@ -15,8 +15,8 @@
     <div class="row">
         <div class="col-md-12">
             <p>Your subscription has been confirmed. You've been added to our list and will hear from us soon.</p>
-            <br/>
-            <p><a href="/">Click here</a> to return to the site.</p>
+            <!--<br/>-->
+            <!--<p><a href="/">Click here</a> to return to the site.</p>-->
         </div>
     </div>
 </div>
