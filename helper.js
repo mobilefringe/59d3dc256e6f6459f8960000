@@ -13,7 +13,7 @@ function init() {
     store_search();
     
     get_instagram("//10dundaseast.mallmaverick.com/api/v2/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
- 
+    
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
@@ -61,7 +61,7 @@ var default_image = {
 }
 
 function get_instagram(url, total, size, callback){
-    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{{caption}}}"/></a></div>'
+    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt=""/></a></div>'
     var item_rendered = [];
     Mustache.parse(html); 
     log('fetching instagram data from: ' + url);
