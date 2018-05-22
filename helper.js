@@ -61,7 +61,7 @@ var default_image = {
 }
 
 function get_instagram(url, total, size, callback){
-    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{name}}"/></a></div>'
+    var html = '<div class="insta_container"><a target="_blank" href="{{{link}}}"><img src="{{{image}}}" alt="{{{caption}}}"/></a></div>'
     var item_rendered = [];
     Mustache.parse(html); 
     log('fetching instagram data from: ' + url);
