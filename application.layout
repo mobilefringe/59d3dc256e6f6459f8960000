@@ -72,16 +72,7 @@
             <div class="social_header">
                 <div class="content_container">
                     <div class="row">
-                        <div class="col-md-6 pull-left hidden_phone">
-                            <!--<div class="hours_container">-->
-                            <!--    <span id="home_hours_container" class="">-->
-                            <!--        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
-                            <!--            <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>-->
-                            <!--        </script>-->
-                            <!--    </span>-->
-                            <!--    <a class="view_holiday_hours" href="/hours">View Holiday Hours</a>-->
-                            <!--</div>-->
-                        </div>
+                        <div class="col-md-6 pull-left hidden_phone"></div>
                         <div class="col-md-6">
                             <div class="social_container pull-right">
                                 <a href="https://www.facebook.com/10DundasEast" target="_blank">
@@ -109,7 +100,7 @@
                 <div class="content_container position_rel">
                     <div class="logo_container">
                         <a href="/">
-                            <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png"/>
+                            <img class="10DundasEast Logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png"/>
                         </a>
                     </div>
                     <div id="menu-icon">
