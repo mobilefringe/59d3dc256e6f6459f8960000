@@ -79,7 +79,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
                     <div class="store_logo_container" id="{{initial}}">
                         <a href="/stores/{{slug}}">
-                            <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                            <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}" alt="{{name}}"/>
                             <div class="store_coming_soon" style="{{new_store}}">
                                 <div class="new_store">New Store</div>
                             </div>
