@@ -726,6 +726,9 @@ a {
             margin: 0;
             margin-top: 14px;
             position: relative;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.1;
             color: #FFF;
             text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
         }
