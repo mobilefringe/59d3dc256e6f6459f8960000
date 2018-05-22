@@ -958,6 +958,8 @@ a {
     }
     .promo_dates {
         margin: 10px 0;
+        font-size: 18px;
+    line-height: 26.4px;
         color: $primary;
     }
     .promo_desc {
