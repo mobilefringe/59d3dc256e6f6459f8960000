@@ -105,26 +105,3 @@
         loadMallData(renderAll); 
     })
 </script>
-
-
-                
-                
-                
-<!--<div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">-->
-<!--    <div class="store_logo_container" id="{{initial}}">-->
-<!--        <a href="/stores/{{slug}}">-->
-<!--            <img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>-->
-<!--            <div class="store_coming_soon" style="{{new_store}}">-->
-<!--                <div class="new_store">New Store</div>-->
-<!--            </div>-->
-<!--            <div class="store_coming_soon" style="{{coming_soon_store}}">-->
-<!--                <div class="new_store">Coming Soon</div>-->
-<!--            </div>-->
-<!--            <div class="store_list_promos">-->
-<!--                <span class="phone_exist hidden_phone" style="{{phone_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507214350000/phone.png" class="" alt="">{{phone}}</span>-->
-<!--                <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt="">{{job_list}}</span>-->
-<!--                <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt="">{{promotion_list}}</span>-->
-<!--            </div>-->
-<!--        </a>-->
-<!--    </div>-->
-<!--</div>-->
