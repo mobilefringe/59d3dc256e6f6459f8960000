@@ -82,7 +82,7 @@
         <div class="width_50">
             <div id="single_feature_container">
                 <script id="single_feature_template" type="x-tmpl-mustache/text">
-                    <img src="{{image_url}}" alt="Promotional Image">
+                    <img src="{{image_url}}" alt="{{name}}">
                 </script>
             </div>
         </div>
