@@ -71,8 +71,10 @@ function get_instagram(url, total, size, callback){
             main_feed = insta_feed.splice(0,5);
             $.each(main_feed, function(i,v){
                 var feed_obj = {}
+                console.log(v)
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
+                feed_obj.caption = v.
                 if (i < total){
                     var ig_rendered =  Mustache.render(html,feed_obj);
                     item_rendered.push(ig_rendered.trim());
