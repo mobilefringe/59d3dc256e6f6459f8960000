@@ -490,7 +490,7 @@ a {
         height: 48px;
         background: $primary;
         font-size: 14px;
-        color: #FFF;
+        color: #000;
         transition: background 0.3s ease;
         .footer_btn_text {
             padding: 15px 0 0 30px;
