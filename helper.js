@@ -113,7 +113,6 @@ function jobs_filter(){
 }
 
 function render_instagram(data){
-    console.log(data)
     $('#instafeed').html(data);
 }
 
