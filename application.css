@@ -648,7 +648,7 @@ a {
 }
 .home_see_all {
     font-size: 14px;
-    color: $primary;
+    // color: $primary;
     a {
         color: inherit;
         text-decoration: underline;
