@@ -511,10 +511,10 @@ a {
         }
     }
     .footer_btn:hover {
-        background: #FFF;
+        background: #000;
         color: $primary;
         .footer_btn_icon {
-            background: #FFF;
+            background: #000;
         }
     }
     .footer_menu {
