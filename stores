@@ -70,7 +70,9 @@
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row store_initial" id="{{initial}}" value="{{initial}}" data-cat="{{cat_list}}" style="{{show}}">
                     <div class="store_initial_container">
+                        {{#initial}}
                         <h3 class="">{{initial}}</h3>
+                        {{/initial}}
                     </div>
                 </div>
                 
