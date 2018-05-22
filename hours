@@ -44,12 +44,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Promotions Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            
             var hours = getPropertyRegularHours();
             renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
             var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
