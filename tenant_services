@@ -1,0 +1,35 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Tenant Services</h2>
+                </div>
+                <div class="col-md-6 hidden_phone"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe width="100%" height="600" style="border:none" src="//www.ng1.angusanywhere.com/tenant/Bentall/Main/default.aspx"></iframe>
+        </div> 
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var repo = getRepoDetailsByName("Contact Us Banner");
+            if (repo != undefined) {
+                var banner = getImageURL(repo.images[0].photo_url);
+                $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
