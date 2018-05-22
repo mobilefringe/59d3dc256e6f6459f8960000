@@ -1145,6 +1145,10 @@ a {
     vertical-align: middle;
     h3 {
         margin: 40px 0;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 60px;
+        color: #000;
+        text-align: center;
     }
 }
 .store_list_promos {
