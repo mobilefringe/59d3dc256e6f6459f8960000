@@ -1,7 +1,7 @@
 <div class="custom_popup">
     <div class="popup_form_div">
         <h2 class="pop_up_header p_name"></h2>
-        <img class="text-left width_100 hide_desk custom_img" src="" />
+        <img class="text-left width_100 hide_desk custom_img" src="" alt=""/>
         <h3 class="text-right right_desc hide_desk custom_text"></h3>
         <div class="custom_row">
             <div class="col-md-6">
@@ -40,7 +40,7 @@
                 </section>
             </div>
             <div class="col-md-6 hide_phone">
-                <img class="text-left width_100 custom_img" src="" />
+                <img class="text-left width_100 custom_img" src="" alt=""/>
                 <h2 class="text-right right_header p_name">Join Our eClub today!</h2>
                 <h3 class="text-right right_desc custom_text"></h3>
             </div>
