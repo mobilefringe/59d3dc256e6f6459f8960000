@@ -731,15 +731,15 @@ a {
             line-height: 1.1;
             color: #FFF;
             text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-        }
-        h1:after {
-	        content: " ";
-            width: 75px;
-            height: 4px;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            background-color: $primary;
+            &:after {
+    	        content: " ";
+                width: 75px;
+                height: 4px;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: $primary;
+            }
         }
         h4 {
             font-family: 'Titillium Web', sans-serif;
