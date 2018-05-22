@@ -20,7 +20,7 @@
                 <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
+                <ul class="dropdown-menu" aria-label="dropdownMenuLink" id="category_select">
                     <script id="category_select_template" type="x-tmpl-mustache/text">
                         <li class="dropdown-item show_cat_stores" data-id="{{id}}" name="{{name}}">{{name}}</li>
                     </script>
