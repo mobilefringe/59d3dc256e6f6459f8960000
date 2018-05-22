@@ -159,6 +159,7 @@
         </div>
     </header>
     <section id="content">
+        <h1 class="accessibility">10DundasEast</h1>
         {{yield}}
     </section>
     <footer>
