@@ -490,7 +490,7 @@ a {
         height: 48px;
         background: $primary;
         font-size: 14px;
-        color: #000;
+        color: #FFF;
         transition: background 0.3s ease;
         .footer_btn_text {
             padding: 15px 0 0 30px;
@@ -511,10 +511,10 @@ a {
         }
     }
     .footer_btn:hover {
-        background: #000;
+        background: #FFF;
         color: $primary;
         .footer_btn_icon {
-            background: #000;
+            background: #FFF;
         }
     }
     .footer_menu {
@@ -648,7 +648,7 @@ a {
 }
 .home_see_all {
     font-size: 14px;
-    // color: $primary;
+    color: $primary;
     a {
         color: inherit;
         text-decoration: underline;
