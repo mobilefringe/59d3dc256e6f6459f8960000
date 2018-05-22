@@ -1,0 +1,91 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Jobs</h2>
+                </div>
+                <div class="col-md-6 hidden_phone"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jobs_filter center hidden_phone">
+                <div class="directory_btn caps active filter_jobs" data-id="all"> All </div>
+                <div class="directory_btn caps filter_jobs" data-id="Full Time"> Full Time </div>
+                <div class="directory_btn caps filter_jobs" data-id="Part Time"> Part Time </div>
+                <div class="directory_btn caps filter_jobs" data-id="Seasonal"> Seasonal </div>
+            </div>
+        </div>
+    </div>
+    <div class="margin_30 hidden_phone"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="jobs_container">
+                <script id="jobs_template" type="x-tmpl-mustache/text">
+                    <div class="row filter_row" data-job-type="{{job_type}}">
+                        <div class="col-md-4">
+                            <h4 class="jobs_store_name"><a href="/stores/{{store_slug}}">{{store_name}}</a></h4>
+                        </div>
+                        <div class="col-md-5 mobile_padding">
+                            <h4 class="jobs_name"><a href="/jobs/{{slug}}">{{name}} <i class="fa fa-arrow-right arrow_custom show_phone pull-right"></i></a></h4>
+                        </div>
+                        <div class="col-md-3 hidden_phone">
+                            <h4 class="jobs_publish_date text-left"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h4>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <h3 id="no_jobs_in_filter"></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="no_jobs" class="hidden_now">There are currently no jobs available, please check back again later.</p>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var repo = getRepoDetailsByName("Contact Us Banner");
+            if (repo != undefined) {
+                var banner = getImageURL(repo.images[0].photo_url);
+                $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            }
+            
+            var jobs = getJobsList().sortBy(function(o){ return o.name});
+            var published_jobs = [];
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_jobs.push(val);
+                } 
+            });
+            if(published_jobs.length > 0){
+                renderJobs('#jobs_container', '#jobs_template', published_jobs);
+            } else {
+                $('#no_jobs').show();
+                $(".filter_jobs").click(function() {
+                    $('#no_jobs').hide();
+                });
+            }
+            
+            show_content();
+            jobs_filter();
+            
+            $(".filter_jobs").click(function() {
+                $(".filter_jobs").removeClass("active");
+                $(this).addClass("active");
+                
+            });
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
