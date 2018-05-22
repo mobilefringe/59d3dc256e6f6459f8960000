@@ -100,7 +100,7 @@
                 <div class="content_container position_rel">
                     <div class="logo_container">
                         <a href="/">
-                            <img class="10DundasEast Logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png"/>
+                            <img class="logo" src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507753556000/10dundas_logo.png" alt="10DundasEast Logo"/>
                         </a>
                     </div>
                     <div id="menu-icon">
