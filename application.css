@@ -1133,7 +1133,6 @@ a {
 }
 .store_initial_container {
     margin-bottom: 30px;
-    // min-height: 198px;
     min-height: 188px;
     border: 1px solid $primary;
     background: $primary;
@@ -1144,8 +1143,7 @@ a {
     color: #000;
     text-align: center;
     vertical-align: middle;
-    p {
-        // margin: 47px 0;
+    h3 {
         margin: 40px 0;
     }
 }
