@@ -170,7 +170,7 @@
                         <div class="margin_60 hidden_phone"></div>
                         <div class="footer_address">
                             <p class="caps">10 Dundas East</p>
-                            <a href="/find_us"><p class="">10 Dundas Street East,</br>Toronto, ON M5B 2G9</p></a>
+                            <a href="/find_us"><p class="">10 Dundas Street East,<br>Toronto, ON M5B 2G9</p></a>
                             <a href="tel:(416)591-2220"><p class="">(416) 591-2220</p></a>
                         </div>
                         <div class="footer_logo">
