@@ -122,7 +122,7 @@
             <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
                     <div>
-                        <img u="image" src="{{store_logo}}" alt="{{name}}/>
+                        <img u="image" src="{{store_logo}}" alt="{{name}}"/>
                     </div>
                 </script>
             </div>
