@@ -29,13 +29,19 @@
                 <script id="jobs_template" type="x-tmpl-mustache/text">
                     <div class="row filter_row" data-job-type="{{job_type}}">
                         <div class="col-md-4">
-                            <h4 class="jobs_store_name"><a href="/stores/{{store_slug}}">{{store_name}}</a></h4>
+                            <h4 class="jobs_store_name">
+                                <a href="/stores/{{store_slug}}">{{store_name}}</a>
+                            </h4>
                         </div>
                         <div class="col-md-5 mobile_padding">
-                            <h4 class="jobs_name"><a href="/jobs/{{slug}}">{{name}} <i class="fa fa-arrow-right arrow_custom show_phone pull-right"></i></a></h4>
+                            <h4 class="jobs_name">
+                                <a href="/jobs/{{slug}}">{{name}} <i class="fa fa-arrow-right arrow_custom show_phone pull-right"></i></a>
+                            </h4>
                         </div>
                         <div class="col-md-3 hidden_phone">
-                            <h4 class="jobs_publish_date text-left"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h4>
+                            <h4 class="jobs_publish_date text-left">
+                                <i class="fa fa-calendar"></i> &nbsp;{{dates}}
+                            </h4>
                         </div>
                     </div>
                 </script>
