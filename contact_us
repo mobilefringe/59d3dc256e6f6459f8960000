@@ -39,9 +39,13 @@ Toronto, Ontario</p>
                     There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
                 </div>
                 <form name="contact_form" id="contact_form" method="post">
+                    <label for="name" class="accessibility">Your Name</label>
                     <input name="name" id="name" class="form-control" type="text" value="" placeholder="Your Name" required>
+                    <label for="email" class="accessibility">Your Email</label>
                     <input name="email" id="email" class="form-control" type="text" value="" placeholder="Your Email" required>
+                    <label for="subject" class="accessibility">Subject</label>
                     <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
+                    <label for="message" class="accessibility">Message</label>
                     <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
                     <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
                 </form>
