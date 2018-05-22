@@ -60,10 +60,9 @@
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row store_initial" id="{{initial}}" value="{{initial}}" data-cat="{{cat_list}}" style="{{show}}">
                     <div class="store_initial_container">
-                        <h3 class="">{{initial}}</h3>
+                        <h3 class="" style="{{show}}">{{initial}}</h3>
                     </div>
                 </div>
-                
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
                     <div class="store_logo_container" id="{{initial}}">
                         <a href="/stores/{{slug}}">
