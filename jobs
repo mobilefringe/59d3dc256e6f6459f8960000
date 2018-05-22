@@ -40,7 +40,7 @@
                     </div>
                 </script>
             </div>
-            <h3 id="no_jobs_in_filter"></h3>
+            <p id="no_jobs_in_filter"></p>
         </div>
     </div>
     <div class="row">
