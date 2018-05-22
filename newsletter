@@ -25,7 +25,7 @@
         </div> 
         <div class="col-md-6">
             <form action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
-                <label for="fieldEmail" style="display:none"></label>
+                <label for="fieldEmail" style="display:none">Enter Your Email</label>
                 <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 
                 <label for="agree_terms">
