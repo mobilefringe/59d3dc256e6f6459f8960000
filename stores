@@ -84,7 +84,7 @@
                                 <div class="new_store">New Store</div>
                             </div>
                             <div class="store_coming_soon" style="{{coming_soon_store}}">
-                                <div class="new_store">Coming Soon</div>
+                                <div class="new_store">Opening Soon</div>
                             </div>
                         </a>
                     </div>
