@@ -12,7 +12,7 @@ function init() {
 	
     store_search();
     
-    get_instagram("//10dundaseast.mallmaverick.com/api/v4/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
+    get_instagram("//10dundaseast.mallmaverick.com/api/v3/10dundaseast/social.json", 5, 'standard_resolution', render_instagram);   
  
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
