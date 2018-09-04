@@ -30,6 +30,14 @@
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 
+                <label for="shark">
+                    <input type="checkbox" class="info_check" id="shark">
+                    I consent to receive news and upcoming events from Shark Club. You can unsubscribe at any time.
+                </label>
+                
+                <label  for="fieldvliutu">Shark Club</label>
+                <input id="fieldvliutu" name="cm-f-vliutu" type="text" />
+                
                 <label for="agree_terms">
                     <input type="checkbox" class="info_check" id="agree_terms" required>
                     I agree to receive emails from 10 Dundas East
@@ -51,8 +59,12 @@
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
             
+            if ($("#shark").is(':checked')) {
+                $("#fieldvliutu").val("Yes!");    
+            }
+            
             $.validate();
-        
+            
             show_content();
         }
         loadMallDataCached(renderAll); 
