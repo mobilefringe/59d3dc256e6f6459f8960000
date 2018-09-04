@@ -58,11 +58,12 @@
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
-            
-            if ($("#shark").is(':checked')) {
-                console.log("Cecked")
-                $("#fieldvliutu").val("Yes!");    
-            }
+            $('input:checkbox').change(function(){
+                if ($("#shark").is(':checked')) {
+                    console.log("Cecked")
+                    $("#fieldvliutu").val("Yes!");    
+                }
+            });
             
             $.validate();
             
