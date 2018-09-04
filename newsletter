@@ -59,15 +59,14 @@
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
             
-            
+            if ($("#shark").is(':checked')) {
+                console.log("Cecked")
+                $("#fieldvliutu").val("Yes!");    
+            }
             
             $.validate();
             
             show_content();
-            
-            if ($("#shark").is(':checked')) {
-                $("#fieldvliutu").val("Yes!");    
-            }
         }
         loadMallDataCached(renderAll); 
     });
