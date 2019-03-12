@@ -92,6 +92,7 @@ function getRandomInArray(array) {
 function hightlightStore(name) {
     var store_details_name = name.toLowerCase().replace(/[^a-zA-Z ]/g, "");
     var locations = polygonedLocations;
+    console.log("locations", locations)
     var store_details_location = [];
 	$.each( locations , function( key, val ) {
         var location_name = (val.name).toLowerCase().replace(/[^a-zA-Z ]/g, "");
