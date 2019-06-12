@@ -112,12 +112,11 @@
                         <span></span>
                     </div>
                     <div class="site_search pull-right">
-                        <label for="site_search" class="top_form_control no_margin">
+                            <label for="site_search" class="top_form_control no_margin"><p class="visibilityhidden">Search stores</p></label>
                             <span class="accessibility">Search</span>
                             <input type="text" placeholder="Search Stores" id="site_search" />
                             <i id="search_icon" class="fa fa-search"></i>
                             <i id="close_search" class="fa fa-times-circle"></i>
-                        </label>
                         <div class="site_search_results" id="search_results_stores"></div>
                         <div class="site_search_results" id="search_results_events"></div>
                         <div class="site_search_results" id="search_results_promotions"></div>
