@@ -564,7 +564,7 @@ a {
         background: #FFF;
     }
     .flex-control-paging li a.flex-active {
-        background: #000;
+        background: $primary;
     }
     .flex-direction-nav a {
         height: 60px;
