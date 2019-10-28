@@ -125,13 +125,20 @@
     <div class="logo_scroll">
         <div id="slider_container">
             <!-- Slides Container -->
+            <!--<div id="logo_container" class="logo_slides" u="slides">-->
+            <!--    <script id="logo_template" type="x-tmpl-mustache/text">-->
+            <!--        <div>-->
+            <!--            <img u="image" src="{{store_logo}}" alt="{{name}}"/>-->
+            <!--        </div>-->
+            <!--    </script>-->
+            <!--</div>-->
+            
             <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
-                    <div>
-                        <img u="image" src="{{store_logo}}" alt="{{name}}"/>
-                    </div>
+                    <div><img u="image" alt="amazon" src="{{store_logo}}"/></div>
                 </script>
             </div>
+            
         </div>
     </div> 
 </div>
