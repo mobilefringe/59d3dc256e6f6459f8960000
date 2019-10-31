@@ -565,6 +565,7 @@ a {
     }
     .flex-control-paging li a.flex-active {
         background: #ae005d;
+        color: white;
     }
     .flex-direction-nav a {
         height: 60px;
