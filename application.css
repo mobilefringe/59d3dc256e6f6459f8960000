@@ -565,7 +565,7 @@ a {
     }
     .flex-control-paging li a.flex-active {
         background: #ae005d;
-        color: white;
+        color: #fff;
     }
     .flex-direction-nav a {
         height: 60px;
@@ -687,8 +687,8 @@ a {
 }
 #slider_container {
     width: 1150px !important;
-    color: white;
     max-width: 1150px;
+    color: #fff;
     height: 200px; 
     position: relative; 
     top: 0; 
