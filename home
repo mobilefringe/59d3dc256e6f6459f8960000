@@ -132,11 +132,11 @@
             renderFeatureItems('#feature_container','#feature_template', three_items);
             renderFeatureItems('#single_feature_container','#single_feature_template', single_item);
 
-          
+            // RESTAURANTS //
             var restaurants = getStoresListByCategoryID(2538);
             renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");
             
-           
+            // LOGO SCROLL //
             var stores = getStoresList();
             renderLogoScroll('#logo_container','#logo_template', stores);
 
@@ -322,11 +322,11 @@
 <!--            renderFeatureItems('#feature_container','#feature_template', three_items);-->
 <!--            renderFeatureItems('#single_feature_container','#single_feature_template', single_item);-->
 
-            // RESTAURANTS //
+            <!--// RESTAURANTS //-->
 <!--            var restaurants = getStoresListByCategoryID(2538);-->
 <!--            renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");-->
             
-            // LOGO SCROLL //
+            <!--// LOGO SCROLL //-->
 <!--            var stores = getStoresList();-->
 <!--            renderLogoScroll('#logo_container','#logo_template', stores);-->
 
