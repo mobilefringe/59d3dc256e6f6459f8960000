@@ -769,7 +769,7 @@ a {
 }
 .read_more {
     font-size: 18px;
-    color: #4990e2;
+    color: $primary;
     text-decoration: underline;
 }
 .details_title {
