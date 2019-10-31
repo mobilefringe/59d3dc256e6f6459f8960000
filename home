@@ -1,179 +1,7 @@
-<div class="custom_popup">
-    <div class="popup_form_div">
-        <h2 class="pop_up_header p_name"></h2>
-        <img class="text-left width_100 hide_desk custom_img" src="" />
-        <h3 class="text-right right_desc hide_desk custom_text"></h3>
-        <div class="custom_row">
-            <div class="col-md-6">
-                <section class="">
-                    <form id="form_popup" class="" action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="POST">	
-                        <input type="hidden" value="Popup" name="cm-f-jrirhr" />
-                        <input type="hidden" value="" name="cm-name" id="cm-name" />
-                        <label for="FNAME" class="main_label"><span class="">First Name</span>
-                            <input id="FNAME" name="first_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
-                        </label>
-                        <label for="LNAME" class="main_label"><span class="">Last Name</span>
-                            <input id="LNAME" name="last_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
-                        </label>
-                        <label for="EMAIL" class="main_label"><span class="">Email Address</span>
-                            <input id="EMAIL" name="cm-tkyhii-tkyhii" placeholder="" class="custom_field_control" required="required" type="email" value="">	
-                        </label>
-                        <label for="PCODE" class="main_label"><span class="">Postal Code</span>
-					        <input id="PCODE" name="cm-f-jrirdk" placeholder="" class="custom_field_control" required="required" type="text" value="">
-                        </label>
-                        <label class="main_label">
-                            <input type="checkbox" id="popup_agree" />
-                            I agree to receive emails from 10 Dundas East.
-                        </label>
-                        <button type="submit" class="popup_submit contact_btn">Submit</button>	
-                    </form>	
-                </section>
-            </div>
-            <div class="col-md-6 hide_phone">
-                <img class="text-left width_100 custom_img" src="" />
-                <h2 class="text-right right_header p_name">Join Our eClub today!</h2>
-                <h3 class="text-right right_desc custom_text"></h3>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <span class="close_popup">CLOSE</span>
-</div>
-<div class="home_banner">   
-    <div class="flexslider">
-        <ul class="slides" id="home_banner">
-            <script id="banner_template" type="x-tmpl-mustache/text">
-                <li>
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_img" style="background-image: url({{image_url}});"
-                    </a>
-                </li>
-            </script>
-        </ul>
-    </div>
-</div>
-<div class="feature_container">
-    <div class="content_container">
-        <div class="flex_container">
-            <div id="feature_container">
-                <script id="feature_template" type="x-tmpl-mustache/text">
-                    <div class="width_30">
-                        <a href="{{url}}">
-                            <img src="{{image_url}}" alt="{{name}}"/>
-                        </a>
-                    </div>
-                </script>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="content_container">
-    <div class="flex_container">
-        <div class="width_50">
-            <div id="single_feature_container">
-                <script id="single_feature_template" type="x-tmpl-mustache/text">
-                    <img src="{{image_url}}" alt="Promotional Image">
-                </script>
-            </div>
-        </div>
-        <div class="width_50">
-            <div class="home_promos">
-                <h2 class="details_title">Restaurants & Eateries</h2>
-                <div id="home_dine_container" class="dine_container margin_20">
-                    <script id="home_dine_template" type="x-tmpl-mustache/text">
-                        <div class="margin_30">
-                            <h2 class="home_promo_name"> {{name}} </h2>
-                            {{#z_coordinate}}
-                            <p class="home_promo_dates"> {{phone}} | {{z_coordinate}} </p>
-                            {{/z_coordinate}}
-                            <a class="home_read_more" href="/stores/{{slug}}"><p>See Store Details</p></a>
-                        </div>
-                    </script>
-                </div>
-                <p class="home_see_all"><a href="/dine">See all Restaurants & Eateries </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
-            </div>
-        </div>
-    </div>
-    <div class="margin_60"></div>
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="details_title">Follow <a href="https://www.instagram.com/10dundaseast/" target="_blank">@10DundasEast</a> on Instagram <i class="fa fa-instagram" aria-hidden="true"></i></h2>
-        </div>
-    </div>
-    <div class="margin_60"></div>
-    <div class="instafeed_container">
-        <div id="instafeed"></div> 
-    </div>
-</div>
-<div class="feature_container">
-    <div class="logo_scroll">
-        <div id="slider_container">
-            <!-- Slides Container -->
-            <div id="logo_container" class="logo_slides" u="slides">
-                <script id="logo_template" type="x-tmpl-mustache/text">
-                    <div><img u="image" alt="amazon" src="{{store_logo}}"/></div>
-                </script>
-            </div>
-        </div>
-    </div> 
-</div>
-<script>
-    $(document).ready(function(e) {
-        init(e);
-        function renderAll (){
-            renderPopup();
-            
-            var banners = getBanners();
-            renderBanner('#banner_template','#home_banner', banners);
-            
-            var all_feature_items = getFeatureList();
-            var three_items = all_feature_items.slice(0, 3);
-            var single_item = all_feature_items.slice(3, 5);
-            renderFeatureItems('#feature_container','#feature_template', three_items);
-            renderFeatureItems('#single_feature_container','#single_feature_template', single_item);
-
-            // RESTAURANTS //
-            var restaurants = getStoresListByCategoryID(2538);
-            renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");
-            
-            // LOGO SCROLL //
-            var stores = getStoresList();
-            renderLogoScroll('#logo_container','#logo_template', stores);
-
-            show_content();
-            
-            $('.flexslider').flexslider({
-                animation: "slide",
-            });
-            
-            var logo_options = {
-                $AutoPlay: true,
-                $AutoPlaySteps: 1,                                 
-                $AutoPlayInterval: 0,                            
-                $PauseOnHover: 4,                               
-                $ArrowKeyNavigation: true,   			            
-                $SlideEasing: $Jease$.$Linear,          
-                $SlideDuration: 3000,                                
-                $MinDragOffsetToSlide: 20,                          
-                $SlideWidth: 160,                                                                  
-                $SlideSpacing: 50, 					                
-                $DisplayPieces: 7,                                 
-                $ParkingPosition: 0,                              
-                $UISearchMode: 1,                                  
-                $PlayOrientation: 1,                                
-                $DragOrientation: 1                               
-            };
-
-            var logo_slider = new $JssorSlider$("slider_container", logo_options);
-        }
-        loadMallDataCached(renderAll); 
-    })
-</script>
-
 <!--<div class="custom_popup">-->
 <!--    <div class="popup_form_div">-->
 <!--        <h2 class="pop_up_header p_name"></h2>-->
-<!--        <img class="text-left width_100 hide_desk custom_img" src="" alt=""/>-->
+<!--        <img class="text-left width_100 hide_desk custom_img" src="" />-->
 <!--        <h3 class="text-right right_desc hide_desk custom_text"></h3>-->
 <!--        <div class="custom_row">-->
 <!--            <div class="col-md-6">-->
@@ -193,20 +21,6 @@
 <!--                        <label for="PCODE" class="main_label"><span class="">Postal Code</span>-->
 <!--					        <input id="PCODE" name="cm-f-jrirdk" placeholder="" class="custom_field_control" required="required" type="text" value="">-->
 <!--                        </label>-->
-<!--                        <label for="FMALEMALE" class="main_label radio_main">-->
-<!--                            <fieldset>-->
-<!--                                <legend class="accessibility">Select a gender:</legend>-->
-<!--                                <span class="">Female/Male</span>-->
-<!--                                <label for="FMALEMALE-1" class="radio_inside" required="required">-->
-<!--                                    <input type="radio" name="cm-f-tihiuu" id="FMALEMALE-1" checked="checked" value="Female">-->
-<!--                                    <span class="">Female</span>-->
-<!--                                </label>-->
-<!--                                <label for="FMALEMALE-2" class="radio_inside">-->
-<!--                                    <input type="radio" name="cm-f-tihiuu" id="FMALEMALE-2" value="Male">-->
-<!--                                    <span class="">Male</span>-->
-<!--                                </label>-->
-<!--                            </fieldset>-->
-<!--                        </label>-->
 <!--                        <label class="main_label">-->
 <!--                            <input type="checkbox" id="popup_agree" />-->
 <!--                            I agree to receive emails from 10 Dundas East.-->
@@ -216,7 +30,7 @@
 <!--                </section>-->
 <!--            </div>-->
 <!--            <div class="col-md-6 hide_phone">-->
-<!--                <img class="text-left width_100 custom_img" src="" alt=""/>-->
+<!--                <img class="text-left width_100 custom_img" src="" />-->
 <!--                <h2 class="text-right right_header p_name">Join Our eClub today!</h2>-->
 <!--                <h3 class="text-right right_desc custom_text"></h3>-->
 <!--            </div>-->
@@ -230,9 +44,7 @@
 <!--        <ul class="slides" id="home_banner">-->
 <!--            <script id="banner_template" type="x-tmpl-mustache/text">-->
 <!--                <li>-->
-<!--                    {{#url}}-->
 <!--                    <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
-<!--                    {{/url}}-->
 <!--                        <div class="banner_img" style="background-image: url({{image_url}});"-->
 <!--                    </a>-->
 <!--                </li>-->
@@ -260,7 +72,7 @@
 <!--        <div class="width_50">-->
 <!--            <div id="single_feature_container">-->
 <!--                <script id="single_feature_template" type="x-tmpl-mustache/text">-->
-<!--                    <img src="{{image_url}}" alt="{{name}}">-->
+<!--                    <img src="{{image_url}}" alt="Promotional Image">-->
 <!--                </script>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -299,9 +111,7 @@
             <!-- Slides Container -->
 <!--            <div id="logo_container" class="logo_slides" u="slides">-->
 <!--                <script id="logo_template" type="x-tmpl-mustache/text">-->
-<!--                    <div>-->
-<!--                        <img u="image" src="{{store_logo}}" alt="{{name}}"/>-->
-<!--                    </div>-->
+<!--                    <div><img u="image" alt="amazon" src="{{store_logo}}"/></div>-->
 <!--                </script>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -342,7 +152,7 @@
 <!--                $AutoPlayInterval: 0,                            -->
 <!--                $PauseOnHover: 4,                               -->
 <!--                $ArrowKeyNavigation: true,   			            -->
-<!--                $SlideEasing: $JssorEasing$.$EaseLinear,          -->
+<!--                $SlideEasing: $Jease$.$Linear,          -->
 <!--                $SlideDuration: 3000,                                -->
 <!--                $MinDragOffsetToSlide: 20,                          -->
 <!--                $SlideWidth: 160,                                                                  -->
@@ -359,3 +169,193 @@
 <!--        loadMallDataCached(renderAll); -->
 <!--    })-->
 <!--</script>-->
+
+<div class="custom_popup">
+    <div class="popup_form_div">
+        <h2 class="pop_up_header p_name"></h2>
+        <img class="text-left width_100 hide_desk custom_img" src="" alt=""/>
+        <h3 class="text-right right_desc hide_desk custom_text"></h3>
+        <div class="custom_row">
+            <div class="col-md-6">
+                <section class="">
+                    <form id="form_popup" class="" action="//mobilefringe.createsend.com/t/d/s/tkyhii/" method="POST">	
+                        <input type="hidden" value="Popup" name="cm-f-jrirhr" />
+                        <input type="hidden" value="" name="cm-name" id="cm-name" />
+                        <label for="FNAME" class="main_label"><span class="">First Name</span>
+                            <input id="FNAME" name="first_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="LNAME" class="main_label"><span class="">Last Name</span>
+                            <input id="LNAME" name="last_name" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="EMAIL" class="main_label"><span class="">Email Address</span>
+                            <input id="EMAIL" name="cm-tkyhii-tkyhii" placeholder="" class="custom_field_control" required="required" type="email" value="">	
+                        </label>
+                        <label for="PCODE" class="main_label"><span class="">Postal Code</span>
+					        <input id="PCODE" name="cm-f-jrirdk" placeholder="" class="custom_field_control" required="required" type="text" value="">
+                        </label>
+                        <label for="FMALEMALE" class="main_label radio_main">
+                            <fieldset>
+                                <legend class="accessibility">Select a gender:</legend>
+                                <span class="">Female/Male</span>
+                                <label for="FMALEMALE-1" class="radio_inside" required="required">
+                                    <input type="radio" name="cm-f-tihiuu" id="FMALEMALE-1" checked="checked" value="Female">
+                                    <span class="">Female</span>
+                                </label>
+                                <label for="FMALEMALE-2" class="radio_inside">
+                                    <input type="radio" name="cm-f-tihiuu" id="FMALEMALE-2" value="Male">
+                                    <span class="">Male</span>
+                                </label>
+                            </fieldset>
+                        </label>
+                        <label class="main_label">
+                            <input type="checkbox" id="popup_agree" />
+                            I agree to receive emails from 10 Dundas East.
+                        </label>
+                        <button type="submit" class="popup_submit contact_btn">Submit</button>	
+                    </form>	
+                </section>
+            </div>
+            <div class="col-md-6 hide_phone">
+                <img class="text-left width_100 custom_img" src="" alt=""/>
+                <h2 class="text-right right_header p_name">Join Our eClub today!</h2>
+                <h3 class="text-right right_desc custom_text"></h3>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <span class="close_popup">CLOSE</span>
+</div>
+<div class="home_banner">   
+    <div class="flexslider">
+        <ul class="slides" id="home_banner">
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                <li>
+                    {{#url}}
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    {{/url}}
+                        <div class="banner_img" style="background-image: url({{image_url}});"
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+</div>
+<div class="feature_container">
+    <div class="content_container">
+        <div class="flex_container">
+            <div id="feature_container">
+                <script id="feature_template" type="x-tmpl-mustache/text">
+                    <div class="width_30">
+                        <a href="{{url}}">
+                            <img src="{{image_url}}" alt="{{name}}"/>
+                        </a>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="flex_container">
+        <div class="width_50">
+            <div id="single_feature_container">
+                <script id="single_feature_template" type="x-tmpl-mustache/text">
+                    <img src="{{image_url}}" alt="{{name}}">
+                </script>
+            </div>
+        </div>
+        <div class="width_50">
+            <div class="home_promos">
+                <h2 class="details_title">Restaurants & Eateries</h2>
+                <div id="home_dine_container" class="dine_container margin_20">
+                    <script id="home_dine_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <h2 class="home_promo_name"> {{name}} </h2>
+                            {{#z_coordinate}}
+                            <p class="home_promo_dates"> {{phone}} | {{z_coordinate}} </p>
+                            {{/z_coordinate}}
+                            <a class="home_read_more" href="/stores/{{slug}}"><p>See Store Details</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="/dine">See all Restaurants & Eateries </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="margin_60"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="details_title">Follow <a href="https://www.instagram.com/10dundaseast/" target="_blank">@10DundasEast</a> on Instagram <i class="fa fa-instagram" aria-hidden="true"></i></h2>
+        </div>
+    </div>
+    <div class="margin_60"></div>
+    <div class="instafeed_container">
+        <div id="instafeed"></div> 
+    </div>
+</div>
+<div class="feature_container">
+    <div class="logo_scroll">
+        <div id="slider_container">
+             Slides Container 
+            <div id="logo_container" class="logo_slides" u="slides">
+                <script id="logo_template" type="x-tmpl-mustache/text">
+                    <div>
+                        <img u="image" src="{{store_logo}}" alt="{{name}}"/>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div> 
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            renderPopup();
+            
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner', banners);
+            
+            var all_feature_items = getFeatureList();
+            var three_items = all_feature_items.slice(0, 3);
+            var single_item = all_feature_items.slice(3, 5);
+            renderFeatureItems('#feature_container','#feature_template', three_items);
+            renderFeatureItems('#single_feature_container','#single_feature_template', single_item);
+
+            // RESTAURANTS //
+            var restaurants = getStoresListByCategoryID(2538);
+            renderStoreList('#home_dine_container','#home_dine_template', restaurants, "stores");
+            
+            // LOGO SCROLL //
+            var stores = getStoresList();
+            renderLogoScroll('#logo_container','#logo_template', stores);
+
+            show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            var logo_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,                                 
+                $AutoPlayInterval: 0,                            
+                $PauseOnHover: 4,                               
+                $ArrowKeyNavigation: true,   			            
+                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideDuration: 3000,                                
+                $MinDragOffsetToSlide: 20,                          
+                $SlideWidth: 160,                                                                  
+                $SlideSpacing: 50, 					                
+                $DisplayPieces: 7,                                 
+                $ParkingPosition: 0,                              
+                $UISearchMode: 1,                                  
+                $PlayOrientation: 1,                                
+                $DragOrientation: 1                               
+            };
+
+            var logo_slider = new $JssorSlider$("slider_container", logo_options);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
