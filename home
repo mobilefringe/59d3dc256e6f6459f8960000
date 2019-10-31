@@ -289,7 +289,7 @@
         </div>
     </div>
     <div class="margin_60"></div>
-    <div class="instafeed_container">
+    <div class="img_container">
         <div id="instafeed"></div> 
     </div>
 </div>
