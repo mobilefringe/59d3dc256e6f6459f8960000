@@ -687,6 +687,7 @@ a {
 }
 #slider_container {
     width: 1150px !important;
+    color: white;
     max-width: 1150px;
     height: 200px; 
     position: relative; 
