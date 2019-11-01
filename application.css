@@ -449,16 +449,16 @@ a {
 }
 
 #primary_nav ul .menu_item {
-    &:hover > .dropdown_item,
-    &:focus > .dropdown_item,
-    .dropdown_item:hover,
-    .dropdown_item.focus {
+    &:hover > ul,
+    &:focus > ul,
+    ul:hover,
+    ul:focus {
        display: block;
     }
 }
 
 //for non-IE to allow tabable display on dropdown menu
-#primary_nav ul .menu_item:focus-within > .dropdown_item {
+#primary_nav ul .menu_item:focus-within > ul {
     display: block;
 }
 
