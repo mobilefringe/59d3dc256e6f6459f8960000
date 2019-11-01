@@ -79,21 +79,21 @@
                 <!--    </div>-->
                 <!--</script>-->
                 
-                    <div class="width_30">
-                        <a href="/stores">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549444000/Shop.jpg" alt="{{name}}"/>
-                        </a>
-                    </div>
-                    <div class="width_30">
-                        <a href="/stores/10dundaseast-cineplex-cinemas-yonge-dundas-and-vip">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549448000/Cinema.jpg"/>
-                        </a>
-                    </div>
-                    <div class="width_30">
-                        <a href="/find_us">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549446000/FindUs.jpg"/>
-                        </a>
-                    </div>
+                <div class="width_30">
+                    <a href="/stores">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549444000/Shop.jpg" alt="{{name}}"/>
+                    </a>
+                </div>
+                <div class="width_30">
+                    <a href="/stores/10dundaseast-cineplex-cinemas-yonge-dundas-and-vip">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549448000/Cinema.jpg"/>
+                    </a>
+                </div>
+                <div class="width_30">
+                    <a href="/find_us">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549446000/FindUs.jpg"/>
+                    </a>
+                </div>
                 
             </div>
         </div>
