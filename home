@@ -74,8 +74,8 @@
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="width_30">
                         <a href="{{url}}">
-                            // <img src="{{image_url}}" alt="{{name}}"/>
-                            <img src="" />
+                            
+                            <img src=""/>
                         </a>
                     </div>
                 </script>
