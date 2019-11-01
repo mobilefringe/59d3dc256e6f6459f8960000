@@ -127,7 +127,7 @@
                             <ul class="">
                                 <li class="menu_item"><a href="/">Home</a></li>
                                 <li class="menu_item">
-                                    <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <span tabindex=0>Stores <i class="fa fa-angle-down" aria-hidden="true"></i></span>
                                     <ul>
                                         <li class="dropdown_item"><a href="/stores">Store Directory</a></li>
                                         <li class="dropdown_item"><a href="/map">Centre Map</a></li>
@@ -138,14 +138,14 @@
                                 <li class="menu_item"><a href="/events">Events</a></li>
                                 <li class="menu_item"><a href="/promotions">Promos</a></li>
                                 <li class="menu_item">
-                                    <a href="#">Leasing <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <span tabindex=0>Leasing<i class="fa fa-angle-down" aria-hidden="true"></i></span>
                                     <ul>
                                         <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
                                         <li class="dropdown_item"><a href="/photos">Photos</a></li>
                                     </ul>        
                                 </li>
                                 <li class="menu_item">
-                                    <a href="#">Contact Us <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <span tabindex=0>Contact Us<i class="fa fa-angle-down" aria-hidden="true"></i></span>
                                     <ul>
                                         <li class="dropdown_item"><a href="/contact_us">Contact Us</a></li>
                                         <li class="dropdown_item"><a href="/find_us">Find Us</a></li>
