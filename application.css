@@ -448,7 +448,7 @@ a {
 	display: block;
 }
 
-#primary_nav ul .menu_item span {
+#primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
     .subdropdown:hover,
