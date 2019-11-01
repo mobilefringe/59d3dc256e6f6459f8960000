@@ -448,6 +448,21 @@ a {
 	display: block;
 }
 
+#primary_nav ul .menu_item {
+    &:hover > .subdropdown,
+    &:focus > .subdropdown,
+    .subdropdown:hover,
+    .subdropdown.focus {
+       display: block;
+    }
+}
+
+//for non-IE to allow tabable display on dropdown menu
+#primary_nav ul .menu_item:focus-within > .subdropdown {
+    display: block;
+}
+
+
 /* *** FOOTER *** */
 .footer_nav {
     padding: 32px 0 36px 0;
