@@ -71,14 +71,30 @@
     <div class="content_container">
         <div class="flex_container">
             <div id="feature_container">
-                <script id="feature_template" type="x-tmpl-mustache/text">
+                <!--<script id="feature_template" type="x-tmpl-mustache/text">-->
+                <!--    <div class="width_30">-->
+                <!--        <a href="{{url}}">-->
+                <!--            <img src="{{image_url}}" alt="{{name}}"/>-->
+                <!--        </a>-->
+                <!--    </div>-->
+                <!--</script>-->
+                
                     <div class="width_30">
-                        <a href="{{url}}">
-                            
-                            <img src=""/>
+                        <a href="/stores">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549444000/Shop.jpg" alt="{{name}}"/>
                         </a>
                     </div>
-                </script>
+                    <div class="width_30">
+                        <a href="/stores/10dundaseast-cineplex-cinemas-yonge-dundas-and-vip">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549448000/Cinema.jpg"/>
+                        </a>
+                    </div>
+                    <div class="width_30">
+                        <a href="/find_us">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5b0433e96e6f6443530d0000/image/jpeg/1572549446000/FindUs.jpg"/>
+                        </a>
+                    </div>
+                
             </div>
         </div>
     </div>
