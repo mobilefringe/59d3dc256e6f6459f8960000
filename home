@@ -123,7 +123,7 @@
 <div class="feature_container">
     <div class="logo_scroll">
         <div id="slider_container">
-             Slides Container 
+             <!--Slides Container -->
             <div id="logo_container" class="logo_slides" u="slides">
                 <script id="logo_template" type="x-tmpl-mustache/text">
                     <div>
