@@ -410,7 +410,7 @@ a {
     color: #4a4a4a;
     text-align: center;
 }
-#primary_nav ul .menu_item a {
+#primary_nav ul .menu_item a, #primary_nav ul .menu_item span {
 	display: block;
 	color: inherit;
 	text-transform: uppercase;
