@@ -317,7 +317,7 @@ function renderPopup(){
 	        $(".custom_popup").remove();
         });
         if(popup.contest.id != null){
-            $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
+            $('.custom_img').attr('src', '//assets.mallmaverick.com'+ popup.photo_url);
             $('.custom_text').text(popup.description1);
             $('.p_name').text(popup.name);
         } else {
